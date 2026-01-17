@@ -46,21 +46,7 @@
             sidesSideBarBtn = new Button();
             drinksSideBarBtn = new Button();
             burgersSideBarBtn = new Button();
-            classicCheeseBurgerGrpBox = new GroupBox();
-            addOrderPepperoniBtn = new Button();
-            pepperoniQuantLbl = new Label();
-            reducePepperoniQuantBtn = new Button();
-            addPepperoniQuantBtn = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            groupBox1 = new GroupBox();
-            addOrderHawaiianBtn = new Button();
-            hawaiianQuantLbl = new Label();
-            reduceHawaiianQuantBtn = new Button();
-            addHawaiianQuantBtn = new Button();
-            labe3 = new Label();
-            pictureBox3 = new PictureBox();
+            pizzaMenuPanel = new Panel();
             groupBox2 = new GroupBox();
             addOrderMushroomBtn = new Button();
             mushroomQuantLbl = new Label();
@@ -68,16 +54,35 @@
             addMushroomQuantBtn = new Button();
             label9 = new Label();
             pictureBox4 = new PictureBox();
+            groupBox1 = new GroupBox();
+            addOrderHawaiianBtn = new Button();
+            hawaiianQuantLbl = new Label();
+            reduceHawaiianQuantBtn = new Button();
+            addHawaiianQuantBtn = new Button();
+            labe3 = new Label();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            classicCheeseBurgerGrpBox = new GroupBox();
+            addOrderPepperoniBtn = new Button();
+            pepperoniQuantLbl = new Label();
+            reducePepperoniQuantBtn = new Button();
+            addPepperoniQuantBtn = new Button();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
+            pepperoniPizzaPriceLbl = new Label();
+            hawaiianPizzaPriceLbl = new Label();
+            mushroomPizzaPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             sidebarPanel.SuspendLayout();
-            classicCheeseBurgerGrpBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pizzaMenuPanel.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            classicCheeseBurgerGrpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // topHeaderPanel
@@ -142,9 +147,9 @@
             itemNumLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemNumLbl.Location = new Point(31, 9);
             itemNumLbl.Name = "itemNumLbl";
-            itemNumLbl.Size = new Size(58, 21);
+            itemNumLbl.Size = new Size(65, 21);
             itemNumLbl.TabIndex = 1;
-            itemNumLbl.Text = "0 Item";
+            itemNumLbl.Text = "0 Items";
             // 
             // checkoutBtn
             // 
@@ -317,200 +322,33 @@
             burgersSideBarBtn.UseVisualStyleBackColor = false;
             burgersSideBarBtn.Click += burgersSideBarBtn_Click;
             // 
-            // classicCheeseBurgerGrpBox
+            // pizzaMenuPanel
             // 
-            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
-            classicCheeseBurgerGrpBox.Controls.Add(addOrderPepperoniBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(pepperoniQuantLbl);
-            classicCheeseBurgerGrpBox.Controls.Add(reducePepperoniQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(addPepperoniQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(label4);
-            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
-            classicCheeseBurgerGrpBox.Location = new Point(104, 115);
-            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
-            classicCheeseBurgerGrpBox.Size = new Size(152, 255);
-            classicCheeseBurgerGrpBox.TabIndex = 4;
-            classicCheeseBurgerGrpBox.TabStop = false;
-            // 
-            // addOrderPepperoniBtn
-            // 
-            addOrderPepperoniBtn.BackColor = Color.Firebrick;
-            addOrderPepperoniBtn.Cursor = Cursors.Hand;
-            addOrderPepperoniBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderPepperoniBtn.ForeColor = SystemColors.Control;
-            addOrderPepperoniBtn.Location = new Point(7, 203);
-            addOrderPepperoniBtn.Name = "addOrderPepperoniBtn";
-            addOrderPepperoniBtn.Size = new Size(139, 46);
-            addOrderPepperoniBtn.TabIndex = 5;
-            addOrderPepperoniBtn.Text = "Add Order";
-            addOrderPepperoniBtn.UseVisualStyleBackColor = false;
-            // 
-            // pepperoniQuantLbl
-            // 
-            pepperoniQuantLbl.AutoSize = true;
-            pepperoniQuantLbl.BackColor = Color.DimGray;
-            pepperoniQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            pepperoniQuantLbl.ForeColor = SystemColors.Control;
-            pepperoniQuantLbl.Location = new Point(67, 170);
-            pepperoniQuantLbl.Name = "pepperoniQuantLbl";
-            pepperoniQuantLbl.Size = new Size(17, 20);
-            pepperoniQuantLbl.TabIndex = 4;
-            pepperoniQuantLbl.Text = "0";
-            // 
-            // reducePepperoniQuantBtn
-            // 
-            reducePepperoniQuantBtn.BackColor = Color.Orange;
-            reducePepperoniQuantBtn.Cursor = Cursors.Hand;
-            reducePepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reducePepperoniQuantBtn.Location = new Point(113, 164);
-            reducePepperoniQuantBtn.Name = "reducePepperoniQuantBtn";
-            reducePepperoniQuantBtn.Size = new Size(33, 33);
-            reducePepperoniQuantBtn.TabIndex = 3;
-            reducePepperoniQuantBtn.Text = "-";
-            reducePepperoniQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addPepperoniQuantBtn
-            // 
-            addPepperoniQuantBtn.BackColor = Color.Orange;
-            addPepperoniQuantBtn.Cursor = Cursors.Hand;
-            addPepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addPepperoniQuantBtn.Location = new Point(6, 164);
-            addPepperoniQuantBtn.Name = "addPepperoniQuantBtn";
-            addPepperoniQuantBtn.Size = new Size(33, 33);
-            addPepperoniQuantBtn.TabIndex = 2;
-            addPepperoniQuantBtn.Text = "+";
-            addPepperoniQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(23, 135);
-            label4.Name = "label4";
-            label4.Size = new Size(104, 17);
-            label4.TabIndex = 1;
-            label4.Text = "Pepperoni Pizza";
-            label4.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.pepperoni_pizza;
-            pictureBox2.Location = new Point(7, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 121);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(99, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(100, 40);
-            label2.TabIndex = 5;
-            label2.Text = "Pizzas";
-            label2.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.WhiteSmoke;
-            groupBox1.Controls.Add(addOrderHawaiianBtn);
-            groupBox1.Controls.Add(hawaiianQuantLbl);
-            groupBox1.Controls.Add(reduceHawaiianQuantBtn);
-            groupBox1.Controls.Add(addHawaiianQuantBtn);
-            groupBox1.Controls.Add(labe3);
-            groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Location = new Point(273, 115);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(152, 255);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            // 
-            // addOrderHawaiianBtn
-            // 
-            addOrderHawaiianBtn.BackColor = Color.Firebrick;
-            addOrderHawaiianBtn.Cursor = Cursors.Hand;
-            addOrderHawaiianBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderHawaiianBtn.ForeColor = SystemColors.Control;
-            addOrderHawaiianBtn.Location = new Point(7, 203);
-            addOrderHawaiianBtn.Name = "addOrderHawaiianBtn";
-            addOrderHawaiianBtn.Size = new Size(139, 46);
-            addOrderHawaiianBtn.TabIndex = 5;
-            addOrderHawaiianBtn.Text = "Add Order";
-            addOrderHawaiianBtn.UseVisualStyleBackColor = false;
-            // 
-            // hawaiianQuantLbl
-            // 
-            hawaiianQuantLbl.AutoSize = true;
-            hawaiianQuantLbl.BackColor = Color.DimGray;
-            hawaiianQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hawaiianQuantLbl.ForeColor = SystemColors.Control;
-            hawaiianQuantLbl.Location = new Point(67, 170);
-            hawaiianQuantLbl.Name = "hawaiianQuantLbl";
-            hawaiianQuantLbl.Size = new Size(17, 20);
-            hawaiianQuantLbl.TabIndex = 4;
-            hawaiianQuantLbl.Text = "0";
-            // 
-            // reduceHawaiianQuantBtn
-            // 
-            reduceHawaiianQuantBtn.BackColor = Color.Orange;
-            reduceHawaiianQuantBtn.Cursor = Cursors.Hand;
-            reduceHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceHawaiianQuantBtn.Location = new Point(113, 164);
-            reduceHawaiianQuantBtn.Name = "reduceHawaiianQuantBtn";
-            reduceHawaiianQuantBtn.Size = new Size(33, 33);
-            reduceHawaiianQuantBtn.TabIndex = 3;
-            reduceHawaiianQuantBtn.Text = "-";
-            reduceHawaiianQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addHawaiianQuantBtn
-            // 
-            addHawaiianQuantBtn.BackColor = Color.Orange;
-            addHawaiianQuantBtn.Cursor = Cursors.Hand;
-            addHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addHawaiianQuantBtn.Location = new Point(6, 164);
-            addHawaiianQuantBtn.Name = "addHawaiianQuantBtn";
-            addHawaiianQuantBtn.Size = new Size(33, 33);
-            addHawaiianQuantBtn.TabIndex = 2;
-            addHawaiianQuantBtn.Text = "+";
-            addHawaiianQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // labe3
-            // 
-            labe3.AutoSize = true;
-            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labe3.Location = new Point(25, 135);
-            labe3.Name = "labe3";
-            labe3.Size = new Size(97, 17);
-            labe3.TabIndex = 1;
-            labe3.Text = "Hawaiian Pizza";
-            labe3.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.hawaiian_pizza;
-            pictureBox3.Location = new Point(7, 10);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(139, 121);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
+            pizzaMenuPanel.AutoScroll = true;
+            pizzaMenuPanel.Controls.Add(groupBox2);
+            pizzaMenuPanel.Controls.Add(groupBox1);
+            pizzaMenuPanel.Controls.Add(label2);
+            pizzaMenuPanel.Controls.Add(classicCheeseBurgerGrpBox);
+            pizzaMenuPanel.Dock = DockStyle.Fill;
+            pizzaMenuPanel.Location = new Point(98, 57);
+            pizzaMenuPanel.Name = "pizzaMenuPanel";
+            pizzaMenuPanel.Size = new Size(336, 635);
+            pizzaMenuPanel.TabIndex = 4;
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(mushroomPizzaPriceLbl);
             groupBox2.Controls.Add(addOrderMushroomBtn);
             groupBox2.Controls.Add(mushroomQuantLbl);
             groupBox2.Controls.Add(reduceMushroomQuantBtn);
             groupBox2.Controls.Add(addMushroomQuantBtn);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Location = new Point(104, 395);
+            groupBox2.Location = new Point(10, 367);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(152, 255);
-            groupBox2.TabIndex = 6;
+            groupBox2.Size = new Size(152, 286);
+            groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             // 
             // addOrderMushroomBtn
@@ -519,7 +357,7 @@
             addOrderMushroomBtn.Cursor = Cursors.Hand;
             addOrderMushroomBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderMushroomBtn.ForeColor = SystemColors.Control;
-            addOrderMushroomBtn.Location = new Point(7, 203);
+            addOrderMushroomBtn.Location = new Point(6, 237);
             addOrderMushroomBtn.Name = "addOrderMushroomBtn";
             addOrderMushroomBtn.Size = new Size(139, 46);
             addOrderMushroomBtn.TabIndex = 5;
@@ -583,16 +421,235 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.WhiteSmoke;
+            groupBox1.Controls.Add(hawaiianPizzaPriceLbl);
+            groupBox1.Controls.Add(addOrderHawaiianBtn);
+            groupBox1.Controls.Add(hawaiianQuantLbl);
+            groupBox1.Controls.Add(reduceHawaiianQuantBtn);
+            groupBox1.Controls.Add(addHawaiianQuantBtn);
+            groupBox1.Controls.Add(labe3);
+            groupBox1.Controls.Add(pictureBox3);
+            groupBox1.Location = new Point(168, 62);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(152, 286);
+            groupBox1.TabIndex = 10;
+            groupBox1.TabStop = false;
+            // 
+            // addOrderHawaiianBtn
+            // 
+            addOrderHawaiianBtn.BackColor = Color.Firebrick;
+            addOrderHawaiianBtn.Cursor = Cursors.Hand;
+            addOrderHawaiianBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderHawaiianBtn.ForeColor = SystemColors.Control;
+            addOrderHawaiianBtn.Location = new Point(7, 234);
+            addOrderHawaiianBtn.Name = "addOrderHawaiianBtn";
+            addOrderHawaiianBtn.Size = new Size(139, 46);
+            addOrderHawaiianBtn.TabIndex = 5;
+            addOrderHawaiianBtn.Text = "Add Order";
+            addOrderHawaiianBtn.UseVisualStyleBackColor = false;
+            // 
+            // hawaiianQuantLbl
+            // 
+            hawaiianQuantLbl.AutoSize = true;
+            hawaiianQuantLbl.BackColor = Color.DimGray;
+            hawaiianQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hawaiianQuantLbl.ForeColor = SystemColors.Control;
+            hawaiianQuantLbl.Location = new Point(67, 170);
+            hawaiianQuantLbl.Name = "hawaiianQuantLbl";
+            hawaiianQuantLbl.Size = new Size(17, 20);
+            hawaiianQuantLbl.TabIndex = 4;
+            hawaiianQuantLbl.Text = "0";
+            // 
+            // reduceHawaiianQuantBtn
+            // 
+            reduceHawaiianQuantBtn.BackColor = Color.Orange;
+            reduceHawaiianQuantBtn.Cursor = Cursors.Hand;
+            reduceHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceHawaiianQuantBtn.Location = new Point(113, 164);
+            reduceHawaiianQuantBtn.Name = "reduceHawaiianQuantBtn";
+            reduceHawaiianQuantBtn.Size = new Size(33, 33);
+            reduceHawaiianQuantBtn.TabIndex = 3;
+            reduceHawaiianQuantBtn.Text = "-";
+            reduceHawaiianQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addHawaiianQuantBtn
+            // 
+            addHawaiianQuantBtn.BackColor = Color.Orange;
+            addHawaiianQuantBtn.Cursor = Cursors.Hand;
+            addHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addHawaiianQuantBtn.Location = new Point(6, 164);
+            addHawaiianQuantBtn.Name = "addHawaiianQuantBtn";
+            addHawaiianQuantBtn.Size = new Size(33, 33);
+            addHawaiianQuantBtn.TabIndex = 2;
+            addHawaiianQuantBtn.Text = "+";
+            addHawaiianQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // labe3
+            // 
+            labe3.AutoSize = true;
+            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labe3.Location = new Point(25, 135);
+            labe3.Name = "labe3";
+            labe3.Size = new Size(97, 17);
+            labe3.TabIndex = 1;
+            labe3.Text = "Hawaiian Pizza";
+            labe3.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.hawaiian_pizza;
+            pictureBox3.Location = new Point(7, 10);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(139, 121);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(5, 7);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 40);
+            label2.TabIndex = 8;
+            label2.Text = "Pizzas";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // classicCheeseBurgerGrpBox
+            // 
+            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
+            classicCheeseBurgerGrpBox.Controls.Add(pepperoniPizzaPriceLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(addOrderPepperoniBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(pepperoniQuantLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(reducePepperoniQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(addPepperoniQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(label4);
+            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
+            classicCheeseBurgerGrpBox.Location = new Point(10, 62);
+            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
+            classicCheeseBurgerGrpBox.Size = new Size(152, 286);
+            classicCheeseBurgerGrpBox.TabIndex = 7;
+            classicCheeseBurgerGrpBox.TabStop = false;
+            // 
+            // addOrderPepperoniBtn
+            // 
+            addOrderPepperoniBtn.BackColor = Color.Firebrick;
+            addOrderPepperoniBtn.Cursor = Cursors.Hand;
+            addOrderPepperoniBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderPepperoniBtn.ForeColor = SystemColors.Control;
+            addOrderPepperoniBtn.Location = new Point(7, 234);
+            addOrderPepperoniBtn.Name = "addOrderPepperoniBtn";
+            addOrderPepperoniBtn.Size = new Size(139, 46);
+            addOrderPepperoniBtn.TabIndex = 5;
+            addOrderPepperoniBtn.Text = "Add Order";
+            addOrderPepperoniBtn.UseVisualStyleBackColor = false;
+            // 
+            // pepperoniQuantLbl
+            // 
+            pepperoniQuantLbl.AutoSize = true;
+            pepperoniQuantLbl.BackColor = Color.DimGray;
+            pepperoniQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            pepperoniQuantLbl.ForeColor = SystemColors.Control;
+            pepperoniQuantLbl.Location = new Point(67, 170);
+            pepperoniQuantLbl.Name = "pepperoniQuantLbl";
+            pepperoniQuantLbl.Size = new Size(17, 20);
+            pepperoniQuantLbl.TabIndex = 4;
+            pepperoniQuantLbl.Text = "0";
+            // 
+            // reducePepperoniQuantBtn
+            // 
+            reducePepperoniQuantBtn.BackColor = Color.Orange;
+            reducePepperoniQuantBtn.Cursor = Cursors.Hand;
+            reducePepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reducePepperoniQuantBtn.Location = new Point(113, 164);
+            reducePepperoniQuantBtn.Name = "reducePepperoniQuantBtn";
+            reducePepperoniQuantBtn.Size = new Size(33, 33);
+            reducePepperoniQuantBtn.TabIndex = 3;
+            reducePepperoniQuantBtn.Text = "-";
+            reducePepperoniQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addPepperoniQuantBtn
+            // 
+            addPepperoniQuantBtn.BackColor = Color.Orange;
+            addPepperoniQuantBtn.Cursor = Cursors.Hand;
+            addPepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addPepperoniQuantBtn.Location = new Point(6, 164);
+            addPepperoniQuantBtn.Name = "addPepperoniQuantBtn";
+            addPepperoniQuantBtn.Size = new Size(33, 33);
+            addPepperoniQuantBtn.TabIndex = 2;
+            addPepperoniQuantBtn.Text = "+";
+            addPepperoniQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(23, 135);
+            label4.Name = "label4";
+            label4.Size = new Size(104, 17);
+            label4.TabIndex = 1;
+            label4.Text = "Pepperoni Pizza";
+            label4.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.pepperoni_pizza;
+            pictureBox2.Location = new Point(7, 10);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // pepperoniPizzaPriceLbl
+            // 
+            pepperoniPizzaPriceLbl.AutoSize = true;
+            pepperoniPizzaPriceLbl.BackColor = Color.Transparent;
+            pepperoniPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            pepperoniPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            pepperoniPizzaPriceLbl.Location = new Point(35, 206);
+            pepperoniPizzaPriceLbl.Name = "pepperoniPizzaPriceLbl";
+            pepperoniPizzaPriceLbl.Size = new Size(86, 25);
+            pepperoniPizzaPriceLbl.TabIndex = 7;
+            pepperoniPizzaPriceLbl.Text = "₱ 149.00";
+            pepperoniPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // hawaiianPizzaPriceLbl
+            // 
+            hawaiianPizzaPriceLbl.AutoSize = true;
+            hawaiianPizzaPriceLbl.BackColor = Color.Transparent;
+            hawaiianPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            hawaiianPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            hawaiianPizzaPriceLbl.Location = new Point(32, 208);
+            hawaiianPizzaPriceLbl.Name = "hawaiianPizzaPriceLbl";
+            hawaiianPizzaPriceLbl.Size = new Size(86, 25);
+            hawaiianPizzaPriceLbl.TabIndex = 7;
+            hawaiianPizzaPriceLbl.Text = "₱ 199.00";
+            hawaiianPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // mushroomPizzaPriceLbl
+            // 
+            mushroomPizzaPriceLbl.AutoSize = true;
+            mushroomPizzaPriceLbl.BackColor = Color.Transparent;
+            mushroomPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            mushroomPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            mushroomPizzaPriceLbl.Location = new Point(35, 209);
+            mushroomPizzaPriceLbl.Name = "mushroomPizzaPriceLbl";
+            mushroomPizzaPriceLbl.Size = new Size(84, 25);
+            mushroomPizzaPriceLbl.TabIndex = 8;
+            mushroomPizzaPriceLbl.Text = "₱249.00";
+            mushroomPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // ProductSelectionPizzasForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(434, 761);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(label2);
-            Controls.Add(classicCheeseBurgerGrpBox);
+            Controls.Add(pizzaMenuPanel);
             Controls.Add(sidebarPanel);
             Controls.Add(panel2);
             Controls.Add(topHeaderPanel);
@@ -604,17 +661,18 @@
             panel2.PerformLayout();
             sidebarPanel.ResumeLayout(false);
             sidebarPanel.PerformLayout();
-            classicCheeseBurgerGrpBox.ResumeLayout(false);
-            classicCheeseBurgerGrpBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pizzaMenuPanel.ResumeLayout(false);
+            pizzaMenuPanel.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            classicCheeseBurgerGrpBox.ResumeLayout(false);
+            classicCheeseBurgerGrpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -632,26 +690,12 @@
         private Label sidesLogoLbl;
         private Label drinksLogoLbl;
         private Label burgerLogoLbl;
-        private GroupBox classicCheeseBurgerGrpBox;
         private Label selectedItemsPrice;
         private Label itemNumLbl;
         private Label viewOrderDetailsLbl;
-        private Label label2;
         private Label pizzasLogoLbl;
         private Button pizzaSideBarBtn;
-        private PictureBox pictureBox2;
-        private Button addPepperoniQuantBtn;
-        private Label label4;
-        private Button reducePepperoniQuantBtn;
-        private GroupBox groupBox1;
-        private Button addOrderHawaiianBtn;
-        private Label hawaiianQuantLbl;
-        private Button reduceHawaiianQuantBtn;
-        private Button addHawaiianQuantBtn;
-        private Label labe3;
-        private Button addOrderPepperoniBtn;
-        private Label pepperoniQuantLbl;
-        private PictureBox pictureBox3;
+        private Panel pizzaMenuPanel;
         private GroupBox groupBox2;
         private Button addOrderMushroomBtn;
         private Label mushroomQuantLbl;
@@ -659,6 +703,23 @@
         private Button addMushroomQuantBtn;
         private Label label9;
         private PictureBox pictureBox4;
-       
+        private GroupBox groupBox1;
+        private Button addOrderHawaiianBtn;
+        private Label hawaiianQuantLbl;
+        private Button reduceHawaiianQuantBtn;
+        private Button addHawaiianQuantBtn;
+        private Label labe3;
+        private PictureBox pictureBox3;
+        private Label label2;
+        private GroupBox classicCheeseBurgerGrpBox;
+        private Button addOrderPepperoniBtn;
+        private Label pepperoniQuantLbl;
+        private Button reducePepperoniQuantBtn;
+        private Button addPepperoniQuantBtn;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private Label mushroomPizzaPriceLbl;
+        private Label hawaiianPizzaPriceLbl;
+        private Label pepperoniPizzaPriceLbl;
     }
 }

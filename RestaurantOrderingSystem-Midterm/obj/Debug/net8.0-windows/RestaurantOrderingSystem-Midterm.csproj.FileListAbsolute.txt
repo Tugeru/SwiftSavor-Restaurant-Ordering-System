@@ -14,7 +14,6 @@ C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSy
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.genruntimeconfig.cache
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\ref\RestaurantOrderingSystem-Midterm.dll
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.Properties.Resources.resources
-C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.CheckoutForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ReceiptForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ViewOrderDetailsForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.LandingForm.resources

@@ -46,38 +46,43 @@
             sidesSideBarBtn = new Button();
             drinksSideBarBtn = new Button();
             burgersSideBarBtn = new Button();
-            classicCheeseBurgerGrpBox = new GroupBox();
-            addOrderCokeBtn = new Button();
-            cocaColaQuantLbl = new Label();
-            reduceCocaColaQuantBtn = new Button();
-            addCocaColaQuantBtn = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            groupBox1 = new GroupBox();
-            addOrderIcedTeaBtn = new Button();
-            icedTeaQuantLbl = new Label();
-            reduceIcedTeaQuantBtn = new Button();
-            addIcedTeaQuantBtn = new Button();
-            labe3 = new Label();
-            pictureBox3 = new PictureBox();
+            drinksMenuPanel = new Panel();
             groupBox2 = new GroupBox();
+            icedCoffeePriceLbl = new Label();
             addOrderIcedCoffeeBtn = new Button();
             icedCoffeeQuantLbl = new Label();
             reduceIcedCoffeeQuantBtn = new Button();
             addIcedCoffeeQuantBtn = new Button();
             label9 = new Label();
             pictureBox4 = new PictureBox();
+            groupBox1 = new GroupBox();
+            icedTeaPriceLbl = new Label();
+            addOrderIcedTeaBtn = new Button();
+            icedTeaQuantLbl = new Label();
+            reduceIcedTeaQuantBtn = new Button();
+            addIcedTeaQuantBtn = new Button();
+            labe3 = new Label();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            classicCheeseBurgerGrpBox = new GroupBox();
+            cocaColaPriceLbl = new Label();
+            addOrderCokeBtn = new Button();
+            cocaColaQuantLbl = new Label();
+            reduceCocaColaQuantBtn = new Button();
+            addCocaColaQuantBtn = new Button();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             sidebarPanel.SuspendLayout();
-            classicCheeseBurgerGrpBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            drinksMenuPanel.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            classicCheeseBurgerGrpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // topHeaderPanel
@@ -315,117 +320,146 @@
             burgersSideBarBtn.UseVisualStyleBackColor = false;
             burgersSideBarBtn.Click += burgersSideBarBtn_Click;
             // 
-            // classicCheeseBurgerGrpBox
+            // drinksMenuPanel
             // 
-            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
-            classicCheeseBurgerGrpBox.Controls.Add(addOrderCokeBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(cocaColaQuantLbl);
-            classicCheeseBurgerGrpBox.Controls.Add(reduceCocaColaQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(addCocaColaQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(label4);
-            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
-            classicCheeseBurgerGrpBox.Location = new Point(104, 115);
-            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
-            classicCheeseBurgerGrpBox.Size = new Size(152, 255);
-            classicCheeseBurgerGrpBox.TabIndex = 4;
-            classicCheeseBurgerGrpBox.TabStop = false;
+            drinksMenuPanel.AutoScroll = true;
+            drinksMenuPanel.Controls.Add(groupBox2);
+            drinksMenuPanel.Controls.Add(groupBox1);
+            drinksMenuPanel.Controls.Add(label2);
+            drinksMenuPanel.Controls.Add(classicCheeseBurgerGrpBox);
+            drinksMenuPanel.Dock = DockStyle.Fill;
+            drinksMenuPanel.Location = new Point(98, 57);
+            drinksMenuPanel.Name = "drinksMenuPanel";
+            drinksMenuPanel.Size = new Size(336, 635);
+            drinksMenuPanel.TabIndex = 4;
             // 
-            // addOrderCokeBtn
+            // groupBox2
             // 
-            addOrderCokeBtn.BackColor = Color.Firebrick;
-            addOrderCokeBtn.Cursor = Cursors.Hand;
-            addOrderCokeBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderCokeBtn.ForeColor = SystemColors.Control;
-            addOrderCokeBtn.Location = new Point(7, 203);
-            addOrderCokeBtn.Name = "addOrderCokeBtn";
-            addOrderCokeBtn.Size = new Size(139, 46);
-            addOrderCokeBtn.TabIndex = 5;
-            addOrderCokeBtn.Text = "Add Order";
-            addOrderCokeBtn.UseVisualStyleBackColor = false;
+            groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(icedCoffeePriceLbl);
+            groupBox2.Controls.Add(addOrderIcedCoffeeBtn);
+            groupBox2.Controls.Add(icedCoffeeQuantLbl);
+            groupBox2.Controls.Add(reduceIcedCoffeeQuantBtn);
+            groupBox2.Controls.Add(addIcedCoffeeQuantBtn);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(pictureBox4);
+            groupBox2.Location = new Point(6, 364);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(152, 286);
+            groupBox2.TabIndex = 9;
+            groupBox2.TabStop = false;
             // 
-            // cocaColaQuantLbl
+            // icedCoffeePriceLbl
             // 
-            cocaColaQuantLbl.AutoSize = true;
-            cocaColaQuantLbl.BackColor = Color.DimGray;
-            cocaColaQuantLbl.Cursor = Cursors.Hand;
-            cocaColaQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cocaColaQuantLbl.ForeColor = SystemColors.Control;
-            cocaColaQuantLbl.Location = new Point(67, 170);
-            cocaColaQuantLbl.Name = "cocaColaQuantLbl";
-            cocaColaQuantLbl.Size = new Size(17, 20);
-            cocaColaQuantLbl.TabIndex = 4;
-            cocaColaQuantLbl.Text = "0";
+            icedCoffeePriceLbl.AutoSize = true;
+            icedCoffeePriceLbl.BackColor = Color.Transparent;
+            icedCoffeePriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            icedCoffeePriceLbl.ForeColor = Color.OrangeRed;
+            icedCoffeePriceLbl.Location = new Point(38, 209);
+            icedCoffeePriceLbl.Name = "icedCoffeePriceLbl";
+            icedCoffeePriceLbl.Size = new Size(78, 25);
+            icedCoffeePriceLbl.TabIndex = 7;
+            icedCoffeePriceLbl.Text = "₱ 99.00";
+            icedCoffeePriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
-            // reduceCocaColaQuantBtn
+            // addOrderIcedCoffeeBtn
             // 
-            reduceCocaColaQuantBtn.BackColor = Color.Orange;
-            reduceCocaColaQuantBtn.Cursor = Cursors.Hand;
-            reduceCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceCocaColaQuantBtn.Location = new Point(113, 164);
-            reduceCocaColaQuantBtn.Name = "reduceCocaColaQuantBtn";
-            reduceCocaColaQuantBtn.Size = new Size(33, 33);
-            reduceCocaColaQuantBtn.TabIndex = 3;
-            reduceCocaColaQuantBtn.Text = "-";
-            reduceCocaColaQuantBtn.UseVisualStyleBackColor = false;
+            addOrderIcedCoffeeBtn.BackColor = Color.Firebrick;
+            addOrderIcedCoffeeBtn.Cursor = Cursors.Hand;
+            addOrderIcedCoffeeBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderIcedCoffeeBtn.ForeColor = SystemColors.Control;
+            addOrderIcedCoffeeBtn.Location = new Point(6, 237);
+            addOrderIcedCoffeeBtn.Name = "addOrderIcedCoffeeBtn";
+            addOrderIcedCoffeeBtn.Size = new Size(139, 46);
+            addOrderIcedCoffeeBtn.TabIndex = 5;
+            addOrderIcedCoffeeBtn.Text = "Add Order";
+            addOrderIcedCoffeeBtn.UseVisualStyleBackColor = false;
             // 
-            // addCocaColaQuantBtn
+            // icedCoffeeQuantLbl
             // 
-            addCocaColaQuantBtn.BackColor = Color.Orange;
-            addCocaColaQuantBtn.Cursor = Cursors.Hand;
-            addCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addCocaColaQuantBtn.Location = new Point(6, 164);
-            addCocaColaQuantBtn.Name = "addCocaColaQuantBtn";
-            addCocaColaQuantBtn.Size = new Size(33, 33);
-            addCocaColaQuantBtn.TabIndex = 2;
-            addCocaColaQuantBtn.Text = "+";
-            addCocaColaQuantBtn.UseVisualStyleBackColor = false;
+            icedCoffeeQuantLbl.AutoSize = true;
+            icedCoffeeQuantLbl.BackColor = Color.DimGray;
+            icedCoffeeQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            icedCoffeeQuantLbl.ForeColor = SystemColors.Control;
+            icedCoffeeQuantLbl.Location = new Point(67, 170);
+            icedCoffeeQuantLbl.Name = "icedCoffeeQuantLbl";
+            icedCoffeeQuantLbl.Size = new Size(17, 20);
+            icedCoffeeQuantLbl.TabIndex = 4;
+            icedCoffeeQuantLbl.Text = "0";
             // 
-            // label4
+            // reduceIcedCoffeeQuantBtn
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(42, 135);
-            label4.Name = "label4";
-            label4.Size = new Size(67, 17);
-            label4.TabIndex = 1;
-            label4.Text = "Coca Cola";
-            label4.TextAlign = ContentAlignment.TopCenter;
+            reduceIcedCoffeeQuantBtn.BackColor = Color.Orange;
+            reduceIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
+            reduceIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceIcedCoffeeQuantBtn.Location = new Point(113, 164);
+            reduceIcedCoffeeQuantBtn.Name = "reduceIcedCoffeeQuantBtn";
+            reduceIcedCoffeeQuantBtn.Size = new Size(33, 33);
+            reduceIcedCoffeeQuantBtn.TabIndex = 3;
+            reduceIcedCoffeeQuantBtn.Text = "-";
+            reduceIcedCoffeeQuantBtn.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
+            // addIcedCoffeeQuantBtn
             // 
-            pictureBox2.Image = Properties.Resources.Coke;
-            pictureBox2.Location = new Point(7, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 121);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            addIcedCoffeeQuantBtn.BackColor = Color.Orange;
+            addIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
+            addIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addIcedCoffeeQuantBtn.Location = new Point(6, 164);
+            addIcedCoffeeQuantBtn.Name = "addIcedCoffeeQuantBtn";
+            addIcedCoffeeQuantBtn.Size = new Size(33, 33);
+            addIcedCoffeeQuantBtn.TabIndex = 2;
+            addIcedCoffeeQuantBtn.Text = "+";
+            addIcedCoffeeQuantBtn.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // label9
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(99, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(105, 40);
-            label2.TabIndex = 5;
-            label2.Text = "Drinks";
-            label2.TextAlign = ContentAlignment.TopCenter;
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(42, 134);
+            label9.Name = "label9";
+            label9.Size = new Size(75, 17);
+            label9.TabIndex = 1;
+            label9.Text = "Iced Coffee";
+            label9.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.iced_coffee;
+            pictureBox4.Location = new Point(7, 10);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(139, 121);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.WhiteSmoke;
+            groupBox1.Controls.Add(icedTeaPriceLbl);
             groupBox1.Controls.Add(addOrderIcedTeaBtn);
             groupBox1.Controls.Add(icedTeaQuantLbl);
             groupBox1.Controls.Add(reduceIcedTeaQuantBtn);
             groupBox1.Controls.Add(addIcedTeaQuantBtn);
             groupBox1.Controls.Add(labe3);
             groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Location = new Point(273, 115);
+            groupBox1.Location = new Point(172, 48);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(152, 255);
-            groupBox1.TabIndex = 6;
+            groupBox1.Size = new Size(152, 286);
+            groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
+            // 
+            // icedTeaPriceLbl
+            // 
+            icedTeaPriceLbl.AutoSize = true;
+            icedTeaPriceLbl.BackColor = Color.Transparent;
+            icedTeaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            icedTeaPriceLbl.ForeColor = Color.OrangeRed;
+            icedTeaPriceLbl.Location = new Point(39, 207);
+            icedTeaPriceLbl.Name = "icedTeaPriceLbl";
+            icedTeaPriceLbl.Size = new Size(78, 25);
+            icedTeaPriceLbl.TabIndex = 7;
+            icedTeaPriceLbl.Text = "₱ 49.00";
+            icedTeaPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // addOrderIcedTeaBtn
             // 
@@ -433,7 +467,7 @@
             addOrderIcedTeaBtn.Cursor = Cursors.Hand;
             addOrderIcedTeaBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderIcedTeaBtn.ForeColor = SystemColors.Control;
-            addOrderIcedTeaBtn.Location = new Point(7, 203);
+            addOrderIcedTeaBtn.Location = new Point(6, 234);
             addOrderIcedTeaBtn.Name = "addOrderIcedTeaBtn";
             addOrderIcedTeaBtn.Size = new Size(139, 46);
             addOrderIcedTeaBtn.TabIndex = 5;
@@ -498,90 +532,116 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // groupBox2
+            // label2
             // 
-            groupBox2.BackColor = Color.WhiteSmoke;
-            groupBox2.Controls.Add(addOrderIcedCoffeeBtn);
-            groupBox2.Controls.Add(icedCoffeeQuantLbl);
-            groupBox2.Controls.Add(reduceIcedCoffeeQuantBtn);
-            groupBox2.Controls.Add(addIcedCoffeeQuantBtn);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Location = new Point(104, 395);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(152, 255);
-            groupBox2.TabIndex = 6;
-            groupBox2.TabStop = false;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(6, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(105, 40);
+            label2.TabIndex = 8;
+            label2.Text = "Drinks";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
-            // addOrderIcedCoffeeBtn
+            // classicCheeseBurgerGrpBox
             // 
-            addOrderIcedCoffeeBtn.BackColor = Color.Firebrick;
-            addOrderIcedCoffeeBtn.Cursor = Cursors.Hand;
-            addOrderIcedCoffeeBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderIcedCoffeeBtn.ForeColor = SystemColors.Control;
-            addOrderIcedCoffeeBtn.Location = new Point(7, 203);
-            addOrderIcedCoffeeBtn.Name = "addOrderIcedCoffeeBtn";
-            addOrderIcedCoffeeBtn.Size = new Size(139, 46);
-            addOrderIcedCoffeeBtn.TabIndex = 5;
-            addOrderIcedCoffeeBtn.Text = "Add Order";
-            addOrderIcedCoffeeBtn.UseVisualStyleBackColor = false;
+            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
+            classicCheeseBurgerGrpBox.Controls.Add(cocaColaPriceLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(addOrderCokeBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(cocaColaQuantLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(reduceCocaColaQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(addCocaColaQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(label4);
+            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
+            classicCheeseBurgerGrpBox.Location = new Point(6, 48);
+            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
+            classicCheeseBurgerGrpBox.Size = new Size(152, 286);
+            classicCheeseBurgerGrpBox.TabIndex = 7;
+            classicCheeseBurgerGrpBox.TabStop = false;
             // 
-            // icedCoffeeQuantLbl
+            // cocaColaPriceLbl
             // 
-            icedCoffeeQuantLbl.AutoSize = true;
-            icedCoffeeQuantLbl.BackColor = Color.DimGray;
-            icedCoffeeQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            icedCoffeeQuantLbl.ForeColor = SystemColors.Control;
-            icedCoffeeQuantLbl.Location = new Point(67, 170);
-            icedCoffeeQuantLbl.Name = "icedCoffeeQuantLbl";
-            icedCoffeeQuantLbl.Size = new Size(17, 20);
-            icedCoffeeQuantLbl.TabIndex = 4;
-            icedCoffeeQuantLbl.Text = "0";
+            cocaColaPriceLbl.AutoSize = true;
+            cocaColaPriceLbl.BackColor = Color.Transparent;
+            cocaColaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            cocaColaPriceLbl.ForeColor = Color.OrangeRed;
+            cocaColaPriceLbl.Location = new Point(39, 207);
+            cocaColaPriceLbl.Name = "cocaColaPriceLbl";
+            cocaColaPriceLbl.Size = new Size(77, 25);
+            cocaColaPriceLbl.TabIndex = 7;
+            cocaColaPriceLbl.Text = "₱ 79.00";
+            cocaColaPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
-            // reduceIcedCoffeeQuantBtn
+            // addOrderCokeBtn
             // 
-            reduceIcedCoffeeQuantBtn.BackColor = Color.Orange;
-            reduceIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
-            reduceIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceIcedCoffeeQuantBtn.Location = new Point(113, 164);
-            reduceIcedCoffeeQuantBtn.Name = "reduceIcedCoffeeQuantBtn";
-            reduceIcedCoffeeQuantBtn.Size = new Size(33, 33);
-            reduceIcedCoffeeQuantBtn.TabIndex = 3;
-            reduceIcedCoffeeQuantBtn.Text = "-";
-            reduceIcedCoffeeQuantBtn.UseVisualStyleBackColor = false;
+            addOrderCokeBtn.BackColor = Color.Firebrick;
+            addOrderCokeBtn.Cursor = Cursors.Hand;
+            addOrderCokeBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderCokeBtn.ForeColor = SystemColors.Control;
+            addOrderCokeBtn.Location = new Point(6, 234);
+            addOrderCokeBtn.Name = "addOrderCokeBtn";
+            addOrderCokeBtn.Size = new Size(139, 46);
+            addOrderCokeBtn.TabIndex = 5;
+            addOrderCokeBtn.Text = "Add Order";
+            addOrderCokeBtn.UseVisualStyleBackColor = false;
             // 
-            // addIcedCoffeeQuantBtn
+            // cocaColaQuantLbl
             // 
-            addIcedCoffeeQuantBtn.BackColor = Color.Orange;
-            addIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
-            addIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addIcedCoffeeQuantBtn.Location = new Point(6, 164);
-            addIcedCoffeeQuantBtn.Name = "addIcedCoffeeQuantBtn";
-            addIcedCoffeeQuantBtn.Size = new Size(33, 33);
-            addIcedCoffeeQuantBtn.TabIndex = 2;
-            addIcedCoffeeQuantBtn.Text = "+";
-            addIcedCoffeeQuantBtn.UseVisualStyleBackColor = false;
+            cocaColaQuantLbl.AutoSize = true;
+            cocaColaQuantLbl.BackColor = Color.DimGray;
+            cocaColaQuantLbl.Cursor = Cursors.Hand;
+            cocaColaQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cocaColaQuantLbl.ForeColor = SystemColors.Control;
+            cocaColaQuantLbl.Location = new Point(67, 170);
+            cocaColaQuantLbl.Name = "cocaColaQuantLbl";
+            cocaColaQuantLbl.Size = new Size(17, 20);
+            cocaColaQuantLbl.TabIndex = 4;
+            cocaColaQuantLbl.Text = "0";
             // 
-            // label9
+            // reduceCocaColaQuantBtn
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(42, 134);
-            label9.Name = "label9";
-            label9.Size = new Size(75, 17);
-            label9.TabIndex = 1;
-            label9.Text = "Iced Coffee";
-            label9.TextAlign = ContentAlignment.TopCenter;
+            reduceCocaColaQuantBtn.BackColor = Color.Orange;
+            reduceCocaColaQuantBtn.Cursor = Cursors.Hand;
+            reduceCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceCocaColaQuantBtn.Location = new Point(113, 164);
+            reduceCocaColaQuantBtn.Name = "reduceCocaColaQuantBtn";
+            reduceCocaColaQuantBtn.Size = new Size(33, 33);
+            reduceCocaColaQuantBtn.TabIndex = 3;
+            reduceCocaColaQuantBtn.Text = "-";
+            reduceCocaColaQuantBtn.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
+            // addCocaColaQuantBtn
             // 
-            pictureBox4.Image = Properties.Resources.iced_coffee;
-            pictureBox4.Location = new Point(7, 10);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(139, 121);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
+            addCocaColaQuantBtn.BackColor = Color.Orange;
+            addCocaColaQuantBtn.Cursor = Cursors.Hand;
+            addCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addCocaColaQuantBtn.Location = new Point(6, 164);
+            addCocaColaQuantBtn.Name = "addCocaColaQuantBtn";
+            addCocaColaQuantBtn.Size = new Size(33, 33);
+            addCocaColaQuantBtn.TabIndex = 2;
+            addCocaColaQuantBtn.Text = "+";
+            addCocaColaQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(42, 135);
+            label4.Name = "label4";
+            label4.Size = new Size(67, 17);
+            label4.TabIndex = 1;
+            label4.Text = "Coca Cola";
+            label4.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.Coke;
+            pictureBox2.Location = new Point(7, 10);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // ProductSelectionDrinksForm
             // 
@@ -589,10 +649,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(434, 761);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(label2);
-            Controls.Add(classicCheeseBurgerGrpBox);
+            Controls.Add(drinksMenuPanel);
             Controls.Add(sidebarPanel);
             Controls.Add(panel2);
             Controls.Add(topHeaderPanel);
@@ -604,17 +661,18 @@
             panel2.PerformLayout();
             sidebarPanel.ResumeLayout(false);
             sidebarPanel.PerformLayout();
-            classicCheeseBurgerGrpBox.ResumeLayout(false);
-            classicCheeseBurgerGrpBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            drinksMenuPanel.ResumeLayout(false);
+            drinksMenuPanel.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            classicCheeseBurgerGrpBox.ResumeLayout(false);
+            classicCheeseBurgerGrpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -632,26 +690,12 @@
         private Label sidesLogoLbl;
         private Label drinksLogoLbl;
         private Label burgerLogoLbl;
-        private GroupBox classicCheeseBurgerGrpBox;
         private Label selectedItemsPrice;
         private Label itemNumLbl;
         private Label viewOrderDetailsLbl;
-        private Label label2;
         private Label pizzasLogoLbl;
         private Button pizzaSideBarBtn;
-        private PictureBox pictureBox2;
-        private Button addCocaColaQuantBtn;
-        private Label label4;
-        private Button reduceCocaColaQuantBtn;
-        private GroupBox groupBox1;
-        private Button addOrderIcedTeaBtn;
-        private Label icedTeaQuantLbl;
-        private Button reduceIcedTeaQuantBtn;
-        private Button addIcedTeaQuantBtn;
-        private Label labe3;
-        private Button addOrderCokeBtn;
-        private Label cocaColaQuantLbl;
-        private PictureBox pictureBox3;
+        private Panel drinksMenuPanel;
         private GroupBox groupBox2;
         private Button addOrderIcedCoffeeBtn;
         private Label icedCoffeeQuantLbl;
@@ -659,5 +703,23 @@
         private Button addIcedCoffeeQuantBtn;
         private Label label9;
         private PictureBox pictureBox4;
+        private GroupBox groupBox1;
+        private Button addOrderIcedTeaBtn;
+        private Label icedTeaQuantLbl;
+        private Button reduceIcedTeaQuantBtn;
+        private Button addIcedTeaQuantBtn;
+        private Label labe3;
+        private PictureBox pictureBox3;
+        private Label label2;
+        private GroupBox classicCheeseBurgerGrpBox;
+        private Button addOrderCokeBtn;
+        private Label cocaColaQuantLbl;
+        private Button reduceCocaColaQuantBtn;
+        private Button addCocaColaQuantBtn;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private Label icedCoffeePriceLbl;
+        private Label icedTeaPriceLbl;
+        private Label cocaColaPriceLbl;
     }
 }

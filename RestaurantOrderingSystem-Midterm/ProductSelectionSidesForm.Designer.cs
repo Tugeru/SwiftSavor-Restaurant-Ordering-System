@@ -47,21 +47,7 @@
             sidesSideBarBtn = new Button();
             drinksSideBarBtn = new Button();
             burgersSideBarBtn = new Button();
-            classicCheeseBurgerGrpBox = new GroupBox();
-            addOrderFriesBtn = new Button();
-            friesQuantLbl = new Label();
-            reduceFriesQuantBtn = new Button();
-            addFriesQuantBtn = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            groupBox1 = new GroupBox();
-            addOrderColeslawBtn = new Button();
-            coleslawQuantLbl = new Label();
-            reduceColeslawQuantBtn = new Button();
-            addColeslawQuantBtn = new Button();
-            labe3 = new Label();
-            pictureBox3 = new PictureBox();
+            sidesMenuPanel = new Panel();
             groupBox2 = new GroupBox();
             addOrderSaladBtn = new Button();
             saladQuantLbl = new Label();
@@ -69,16 +55,35 @@
             addSaladQuantBtn = new Button();
             label9 = new Label();
             pictureBox4 = new PictureBox();
+            groupBox1 = new GroupBox();
+            addOrderColeslawBtn = new Button();
+            coleslawQuantLbl = new Label();
+            reduceColeslawQuantBtn = new Button();
+            addColeslawQuantBtn = new Button();
+            labe3 = new Label();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            classicCheeseBurgerGrpBox = new GroupBox();
+            addOrderFriesBtn = new Button();
+            friesQuantLbl = new Label();
+            reduceFriesQuantBtn = new Button();
+            addFriesQuantBtn = new Button();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
+            frenchFriesPriceLbl = new Label();
+            coleslawPriceLbl = new Label();
+            gardenSaladPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             sidebarPanel.SuspendLayout();
-            classicCheeseBurgerGrpBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            sidesMenuPanel.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            classicCheeseBurgerGrpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // topHeaderPanel
@@ -311,200 +316,33 @@
             burgersSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             burgersSideBarBtn.UseVisualStyleBackColor = false;
             // 
-            // classicCheeseBurgerGrpBox
+            // sidesMenuPanel
             // 
-            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
-            classicCheeseBurgerGrpBox.Controls.Add(addOrderFriesBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(friesQuantLbl);
-            classicCheeseBurgerGrpBox.Controls.Add(reduceFriesQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(addFriesQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(label4);
-            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
-            classicCheeseBurgerGrpBox.Location = new Point(104, 115);
-            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
-            classicCheeseBurgerGrpBox.Size = new Size(152, 255);
-            classicCheeseBurgerGrpBox.TabIndex = 4;
-            classicCheeseBurgerGrpBox.TabStop = false;
-            // 
-            // addOrderFriesBtn
-            // 
-            addOrderFriesBtn.BackColor = Color.Firebrick;
-            addOrderFriesBtn.Cursor = Cursors.Hand;
-            addOrderFriesBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderFriesBtn.ForeColor = SystemColors.Control;
-            addOrderFriesBtn.Location = new Point(7, 203);
-            addOrderFriesBtn.Name = "addOrderFriesBtn";
-            addOrderFriesBtn.Size = new Size(139, 46);
-            addOrderFriesBtn.TabIndex = 5;
-            addOrderFriesBtn.Text = "Add Order";
-            addOrderFriesBtn.UseVisualStyleBackColor = false;
-            // 
-            // friesQuantLbl
-            // 
-            friesQuantLbl.AutoSize = true;
-            friesQuantLbl.BackColor = Color.DimGray;
-            friesQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            friesQuantLbl.ForeColor = SystemColors.Control;
-            friesQuantLbl.Location = new Point(67, 170);
-            friesQuantLbl.Name = "friesQuantLbl";
-            friesQuantLbl.Size = new Size(17, 20);
-            friesQuantLbl.TabIndex = 4;
-            friesQuantLbl.Text = "0";
-            // 
-            // reduceFriesQuantBtn
-            // 
-            reduceFriesQuantBtn.BackColor = Color.Orange;
-            reduceFriesQuantBtn.Cursor = Cursors.Hand;
-            reduceFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceFriesQuantBtn.Location = new Point(113, 164);
-            reduceFriesQuantBtn.Name = "reduceFriesQuantBtn";
-            reduceFriesQuantBtn.Size = new Size(33, 33);
-            reduceFriesQuantBtn.TabIndex = 3;
-            reduceFriesQuantBtn.Text = "-";
-            reduceFriesQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addFriesQuantBtn
-            // 
-            addFriesQuantBtn.BackColor = Color.Orange;
-            addFriesQuantBtn.Cursor = Cursors.Hand;
-            addFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addFriesQuantBtn.Location = new Point(6, 164);
-            addFriesQuantBtn.Name = "addFriesQuantBtn";
-            addFriesQuantBtn.Size = new Size(33, 33);
-            addFriesQuantBtn.TabIndex = 2;
-            addFriesQuantBtn.Text = "+";
-            addFriesQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(35, 135);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 17);
-            label4.TabIndex = 1;
-            label4.Text = "French Fries";
-            label4.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.french_fries;
-            pictureBox2.Location = new Point(7, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 121);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(99, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(88, 40);
-            label2.TabIndex = 5;
-            label2.Text = "Sides";
-            label2.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.WhiteSmoke;
-            groupBox1.Controls.Add(addOrderColeslawBtn);
-            groupBox1.Controls.Add(coleslawQuantLbl);
-            groupBox1.Controls.Add(reduceColeslawQuantBtn);
-            groupBox1.Controls.Add(addColeslawQuantBtn);
-            groupBox1.Controls.Add(labe3);
-            groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Location = new Point(273, 115);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(152, 255);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            // 
-            // addOrderColeslawBtn
-            // 
-            addOrderColeslawBtn.BackColor = Color.Firebrick;
-            addOrderColeslawBtn.Cursor = Cursors.Hand;
-            addOrderColeslawBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderColeslawBtn.ForeColor = SystemColors.Control;
-            addOrderColeslawBtn.Location = new Point(7, 203);
-            addOrderColeslawBtn.Name = "addOrderColeslawBtn";
-            addOrderColeslawBtn.Size = new Size(139, 46);
-            addOrderColeslawBtn.TabIndex = 5;
-            addOrderColeslawBtn.Text = "Add Order";
-            addOrderColeslawBtn.UseVisualStyleBackColor = false;
-            // 
-            // coleslawQuantLbl
-            // 
-            coleslawQuantLbl.AutoSize = true;
-            coleslawQuantLbl.BackColor = Color.DimGray;
-            coleslawQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            coleslawQuantLbl.ForeColor = SystemColors.Control;
-            coleslawQuantLbl.Location = new Point(67, 170);
-            coleslawQuantLbl.Name = "coleslawQuantLbl";
-            coleslawQuantLbl.Size = new Size(17, 20);
-            coleslawQuantLbl.TabIndex = 4;
-            coleslawQuantLbl.Text = "0";
-            // 
-            // reduceColeslawQuantBtn
-            // 
-            reduceColeslawQuantBtn.BackColor = Color.Orange;
-            reduceColeslawQuantBtn.Cursor = Cursors.Hand;
-            reduceColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceColeslawQuantBtn.Location = new Point(113, 164);
-            reduceColeslawQuantBtn.Name = "reduceColeslawQuantBtn";
-            reduceColeslawQuantBtn.Size = new Size(33, 33);
-            reduceColeslawQuantBtn.TabIndex = 3;
-            reduceColeslawQuantBtn.Text = "-";
-            reduceColeslawQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addColeslawQuantBtn
-            // 
-            addColeslawQuantBtn.BackColor = Color.Orange;
-            addColeslawQuantBtn.Cursor = Cursors.Hand;
-            addColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addColeslawQuantBtn.Location = new Point(6, 164);
-            addColeslawQuantBtn.Name = "addColeslawQuantBtn";
-            addColeslawQuantBtn.Size = new Size(33, 33);
-            addColeslawQuantBtn.TabIndex = 2;
-            addColeslawQuantBtn.Text = "+";
-            addColeslawQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // labe3
-            // 
-            labe3.AutoSize = true;
-            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labe3.Location = new Point(47, 134);
-            labe3.Name = "labe3";
-            labe3.Size = new Size(60, 17);
-            labe3.TabIndex = 1;
-            labe3.Text = "Coleslaw";
-            labe3.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.Coleslaw;
-            pictureBox3.Location = new Point(7, 10);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(139, 121);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
+            sidesMenuPanel.AutoScroll = true;
+            sidesMenuPanel.Controls.Add(groupBox2);
+            sidesMenuPanel.Controls.Add(groupBox1);
+            sidesMenuPanel.Controls.Add(label2);
+            sidesMenuPanel.Controls.Add(classicCheeseBurgerGrpBox);
+            sidesMenuPanel.Dock = DockStyle.Fill;
+            sidesMenuPanel.Location = new Point(98, 57);
+            sidesMenuPanel.Name = "sidesMenuPanel";
+            sidesMenuPanel.Size = new Size(336, 635);
+            sidesMenuPanel.TabIndex = 4;
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(gardenSaladPriceLbl);
             groupBox2.Controls.Add(addOrderSaladBtn);
             groupBox2.Controls.Add(saladQuantLbl);
             groupBox2.Controls.Add(reduceSaladQuantBtn);
             groupBox2.Controls.Add(addSaladQuantBtn);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Location = new Point(104, 395);
+            groupBox2.Location = new Point(10, 368);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(152, 255);
-            groupBox2.TabIndex = 6;
+            groupBox2.Size = new Size(152, 286);
+            groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             // 
             // addOrderSaladBtn
@@ -513,7 +351,7 @@
             addOrderSaladBtn.Cursor = Cursors.Hand;
             addOrderSaladBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderSaladBtn.ForeColor = SystemColors.Control;
-            addOrderSaladBtn.Location = new Point(7, 203);
+            addOrderSaladBtn.Location = new Point(6, 234);
             addOrderSaladBtn.Name = "addOrderSaladBtn";
             addOrderSaladBtn.Size = new Size(139, 46);
             addOrderSaladBtn.TabIndex = 5;
@@ -577,16 +415,235 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.WhiteSmoke;
+            groupBox1.Controls.Add(coleslawPriceLbl);
+            groupBox1.Controls.Add(addOrderColeslawBtn);
+            groupBox1.Controls.Add(coleslawQuantLbl);
+            groupBox1.Controls.Add(reduceColeslawQuantBtn);
+            groupBox1.Controls.Add(addColeslawQuantBtn);
+            groupBox1.Controls.Add(labe3);
+            groupBox1.Controls.Add(pictureBox3);
+            groupBox1.Location = new Point(168, 53);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(152, 286);
+            groupBox1.TabIndex = 10;
+            groupBox1.TabStop = false;
+            // 
+            // addOrderColeslawBtn
+            // 
+            addOrderColeslawBtn.BackColor = Color.Firebrick;
+            addOrderColeslawBtn.Cursor = Cursors.Hand;
+            addOrderColeslawBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderColeslawBtn.ForeColor = SystemColors.Control;
+            addOrderColeslawBtn.Location = new Point(7, 234);
+            addOrderColeslawBtn.Name = "addOrderColeslawBtn";
+            addOrderColeslawBtn.Size = new Size(139, 46);
+            addOrderColeslawBtn.TabIndex = 5;
+            addOrderColeslawBtn.Text = "Add Order";
+            addOrderColeslawBtn.UseVisualStyleBackColor = false;
+            // 
+            // coleslawQuantLbl
+            // 
+            coleslawQuantLbl.AutoSize = true;
+            coleslawQuantLbl.BackColor = Color.DimGray;
+            coleslawQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            coleslawQuantLbl.ForeColor = SystemColors.Control;
+            coleslawQuantLbl.Location = new Point(67, 170);
+            coleslawQuantLbl.Name = "coleslawQuantLbl";
+            coleslawQuantLbl.Size = new Size(17, 20);
+            coleslawQuantLbl.TabIndex = 4;
+            coleslawQuantLbl.Text = "0";
+            // 
+            // reduceColeslawQuantBtn
+            // 
+            reduceColeslawQuantBtn.BackColor = Color.Orange;
+            reduceColeslawQuantBtn.Cursor = Cursors.Hand;
+            reduceColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceColeslawQuantBtn.Location = new Point(113, 164);
+            reduceColeslawQuantBtn.Name = "reduceColeslawQuantBtn";
+            reduceColeslawQuantBtn.Size = new Size(33, 33);
+            reduceColeslawQuantBtn.TabIndex = 3;
+            reduceColeslawQuantBtn.Text = "-";
+            reduceColeslawQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addColeslawQuantBtn
+            // 
+            addColeslawQuantBtn.BackColor = Color.Orange;
+            addColeslawQuantBtn.Cursor = Cursors.Hand;
+            addColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addColeslawQuantBtn.Location = new Point(6, 164);
+            addColeslawQuantBtn.Name = "addColeslawQuantBtn";
+            addColeslawQuantBtn.Size = new Size(33, 33);
+            addColeslawQuantBtn.TabIndex = 2;
+            addColeslawQuantBtn.Text = "+";
+            addColeslawQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // labe3
+            // 
+            labe3.AutoSize = true;
+            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labe3.Location = new Point(47, 134);
+            labe3.Name = "labe3";
+            labe3.Size = new Size(60, 17);
+            labe3.TabIndex = 1;
+            labe3.Text = "Coleslaw";
+            labe3.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.Coleslaw;
+            pictureBox3.Location = new Point(7, 10);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(139, 121);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(5, -2);
+            label2.Name = "label2";
+            label2.Size = new Size(88, 40);
+            label2.TabIndex = 8;
+            label2.Text = "Sides";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // classicCheeseBurgerGrpBox
+            // 
+            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
+            classicCheeseBurgerGrpBox.Controls.Add(frenchFriesPriceLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(addOrderFriesBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(friesQuantLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(reduceFriesQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(addFriesQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(label4);
+            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
+            classicCheeseBurgerGrpBox.Location = new Point(10, 53);
+            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
+            classicCheeseBurgerGrpBox.Size = new Size(152, 286);
+            classicCheeseBurgerGrpBox.TabIndex = 7;
+            classicCheeseBurgerGrpBox.TabStop = false;
+            // 
+            // addOrderFriesBtn
+            // 
+            addOrderFriesBtn.BackColor = Color.Firebrick;
+            addOrderFriesBtn.Cursor = Cursors.Hand;
+            addOrderFriesBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderFriesBtn.ForeColor = SystemColors.Control;
+            addOrderFriesBtn.Location = new Point(7, 234);
+            addOrderFriesBtn.Name = "addOrderFriesBtn";
+            addOrderFriesBtn.Size = new Size(139, 46);
+            addOrderFriesBtn.TabIndex = 5;
+            addOrderFriesBtn.Text = "Add Order";
+            addOrderFriesBtn.UseVisualStyleBackColor = false;
+            // 
+            // friesQuantLbl
+            // 
+            friesQuantLbl.AutoSize = true;
+            friesQuantLbl.BackColor = Color.DimGray;
+            friesQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            friesQuantLbl.ForeColor = SystemColors.Control;
+            friesQuantLbl.Location = new Point(67, 170);
+            friesQuantLbl.Name = "friesQuantLbl";
+            friesQuantLbl.Size = new Size(17, 20);
+            friesQuantLbl.TabIndex = 4;
+            friesQuantLbl.Text = "0";
+            // 
+            // reduceFriesQuantBtn
+            // 
+            reduceFriesQuantBtn.BackColor = Color.Orange;
+            reduceFriesQuantBtn.Cursor = Cursors.Hand;
+            reduceFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceFriesQuantBtn.Location = new Point(113, 164);
+            reduceFriesQuantBtn.Name = "reduceFriesQuantBtn";
+            reduceFriesQuantBtn.Size = new Size(33, 33);
+            reduceFriesQuantBtn.TabIndex = 3;
+            reduceFriesQuantBtn.Text = "-";
+            reduceFriesQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addFriesQuantBtn
+            // 
+            addFriesQuantBtn.BackColor = Color.Orange;
+            addFriesQuantBtn.Cursor = Cursors.Hand;
+            addFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addFriesQuantBtn.Location = new Point(6, 164);
+            addFriesQuantBtn.Name = "addFriesQuantBtn";
+            addFriesQuantBtn.Size = new Size(33, 33);
+            addFriesQuantBtn.TabIndex = 2;
+            addFriesQuantBtn.Text = "+";
+            addFriesQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(35, 135);
+            label4.Name = "label4";
+            label4.Size = new Size(81, 17);
+            label4.TabIndex = 1;
+            label4.Text = "French Fries";
+            label4.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.french_fries;
+            pictureBox2.Location = new Point(7, 10);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // frenchFriesPriceLbl
+            // 
+            frenchFriesPriceLbl.AutoSize = true;
+            frenchFriesPriceLbl.BackColor = Color.Transparent;
+            frenchFriesPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            frenchFriesPriceLbl.ForeColor = Color.OrangeRed;
+            frenchFriesPriceLbl.Location = new Point(38, 206);
+            frenchFriesPriceLbl.Name = "frenchFriesPriceLbl";
+            frenchFriesPriceLbl.Size = new Size(77, 25);
+            frenchFriesPriceLbl.TabIndex = 7;
+            frenchFriesPriceLbl.Text = "₱ 79.00";
+            frenchFriesPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // coleslawPriceLbl
+            // 
+            coleslawPriceLbl.AutoSize = true;
+            coleslawPriceLbl.BackColor = Color.Transparent;
+            coleslawPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            coleslawPriceLbl.ForeColor = Color.OrangeRed;
+            coleslawPriceLbl.Location = new Point(38, 206);
+            coleslawPriceLbl.Name = "coleslawPriceLbl";
+            coleslawPriceLbl.Size = new Size(78, 25);
+            coleslawPriceLbl.TabIndex = 7;
+            coleslawPriceLbl.Text = "₱ 59.00";
+            coleslawPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // gardenSaladPriceLbl
+            // 
+            gardenSaladPriceLbl.AutoSize = true;
+            gardenSaladPriceLbl.BackColor = Color.Transparent;
+            gardenSaladPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            gardenSaladPriceLbl.ForeColor = Color.OrangeRed;
+            gardenSaladPriceLbl.Location = new Point(35, 206);
+            gardenSaladPriceLbl.Name = "gardenSaladPriceLbl";
+            gardenSaladPriceLbl.Size = new Size(78, 25);
+            gardenSaladPriceLbl.TabIndex = 7;
+            gardenSaladPriceLbl.Text = "₱ 99.00";
+            gardenSaladPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // ProductSelectionSidesForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(434, 761);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(label2);
-            Controls.Add(classicCheeseBurgerGrpBox);
+            Controls.Add(sidesMenuPanel);
             Controls.Add(sidebarPanel);
             Controls.Add(panel2);
             Controls.Add(topHeaderPanel);
@@ -598,17 +655,18 @@
             panel2.PerformLayout();
             sidebarPanel.ResumeLayout(false);
             sidebarPanel.PerformLayout();
-            classicCheeseBurgerGrpBox.ResumeLayout(false);
-            classicCheeseBurgerGrpBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            sidesMenuPanel.ResumeLayout(false);
+            sidesMenuPanel.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            classicCheeseBurgerGrpBox.ResumeLayout(false);
+            classicCheeseBurgerGrpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -626,26 +684,12 @@
         private Label sidesLogoLbl;
         private Label drinksLogoLbl;
         private Label burgerLogoLbl;
-        private GroupBox classicCheeseBurgerGrpBox;
         private Label selectedItemsPrice;
         private Label itemNumLbl;
         private Label viewOrderDetailsLbl;
-        private Label label2;
         private Label pizzasLogoLbl;
         private Button pizzaSideBarBtn;
-        private PictureBox pictureBox2;
-        private Button addFriesQuantBtn;
-        private Label label4;
-        private Button reduceFriesQuantBtn;
-        private GroupBox groupBox1;
-        private Button addOrderColeslawBtn;
-        private Label coleslawQuantLbl;
-        private Button reduceColeslawQuantBtn;
-        private Button addColeslawQuantBtn;
-        private Label labe3;
-        private Button addOrderFriesBtn;
-        private Label friesQuantLbl;
-        private PictureBox pictureBox3;
+        private Panel sidesMenuPanel;
         private GroupBox groupBox2;
         private Button addOrderSaladBtn;
         private Label saladQuantLbl;
@@ -653,7 +697,23 @@
         private Button addSaladQuantBtn;
         private Label label9;
         private PictureBox pictureBox4;
-
-      
+        private GroupBox groupBox1;
+        private Button addOrderColeslawBtn;
+        private Label coleslawQuantLbl;
+        private Button reduceColeslawQuantBtn;
+        private Button addColeslawQuantBtn;
+        private Label labe3;
+        private PictureBox pictureBox3;
+        private Label label2;
+        private GroupBox classicCheeseBurgerGrpBox;
+        private Button addOrderFriesBtn;
+        private Label friesQuantLbl;
+        private Button reduceFriesQuantBtn;
+        private Button addFriesQuantBtn;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private Label coleslawPriceLbl;
+        private Label frenchFriesPriceLbl;
+        private Label gardenSaladPriceLbl;
     }
 }

@@ -47,28 +47,7 @@
             sidesSideBarBtn = new Button();
             drinksSideBarBtn = new Button();
             burgersSideBarBtn = new Button();
-            classicCheeseBurgerGrpBox = new GroupBox();
-            addOrderClassicCheeseBurgerBtn = new Button();
-            classicBurgerQuantLbl = new Label();
-            reduceClassicQuantBtn = new Button();
-            addClassicQuantBtn = new Button();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            groupBox1 = new GroupBox();
-            addOrderDoubleCheeseBtn = new Button();
-            doubleCheeseQuantLbl = new Label();
-            reduceDoubleCheeseQuantBtn = new Button();
-            addDoubleCheeseQuantBtn = new Button();
-            labe3 = new Label();
-            pictureBox3 = new PictureBox();
-            groupBox2 = new GroupBox();
-            addOrderChickenBtn = new Button();
-            chickenQuantLbl = new Label();
-            reduceChickenQuantBtn = new Button();
-            addChickenQuantBtn = new Button();
-            label9 = new Label();
-            pictureBox4 = new PictureBox();
+            burgerMenuPanel = new Panel();
             groupBox3 = new GroupBox();
             addOrderDoubleChickenBtn = new Button();
             doubleChickenQuantLbl = new Label();
@@ -76,18 +55,45 @@
             button10 = new Button();
             label11 = new Label();
             pictureBox5 = new PictureBox();
+            groupBox2 = new GroupBox();
+            addOrderChickenBtn = new Button();
+            chickenQuantLbl = new Label();
+            reduceChickenQuantBtn = new Button();
+            addChickenQuantBtn = new Button();
+            label9 = new Label();
+            pictureBox4 = new PictureBox();
+            groupBox1 = new GroupBox();
+            addOrderDoubleCheeseBtn = new Button();
+            doubleCheeseQuantLbl = new Label();
+            reduceDoubleCheeseQuantBtn = new Button();
+            addDoubleCheeseQuantBtn = new Button();
+            labe3 = new Label();
+            pictureBox3 = new PictureBox();
+            label2 = new Label();
+            classicCheeseBurgerGrpBox = new GroupBox();
+            addOrderClassicCheeseBurgerBtn = new Button();
+            classicBurgerQuantLbl = new Label();
+            reduceClassicQuantBtn = new Button();
+            addClassicQuantBtn = new Button();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
+            classicCheeseBurgerPriceLbl = new Label();
+            doubleCheeseBurgerPriceLbl = new Label();
+            chickenBurgerPriceLbl = new Label();
+            doubleChickenBurgerPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             sidebarPanel.SuspendLayout();
-            classicCheeseBurgerGrpBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            burgerMenuPanel.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            classicCheeseBurgerGrpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // topHeaderPanel
@@ -97,7 +103,7 @@
             topHeaderPanel.Dock = DockStyle.Top;
             topHeaderPanel.Location = new Point(0, 0);
             topHeaderPanel.Name = "topHeaderPanel";
-            topHeaderPanel.Size = new Size(434, 57);
+            topHeaderPanel.Size = new Size(459, 57);
             topHeaderPanel.TabIndex = 0;
             // 
             // pictureBox1
@@ -120,7 +126,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 692);
             panel2.Name = "panel2";
-            panel2.Size = new Size(434, 69);
+            panel2.Size = new Size(459, 69);
             panel2.TabIndex = 2;
             // 
             // viewOrderDetailsLbl
@@ -323,284 +329,34 @@
             burgersSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             burgersSideBarBtn.UseVisualStyleBackColor = false;
             // 
-            // classicCheeseBurgerGrpBox
+            // burgerMenuPanel
             // 
-            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
-            classicCheeseBurgerGrpBox.Controls.Add(addOrderClassicCheeseBurgerBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(classicBurgerQuantLbl);
-            classicCheeseBurgerGrpBox.Controls.Add(reduceClassicQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(addClassicQuantBtn);
-            classicCheeseBurgerGrpBox.Controls.Add(label4);
-            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
-            classicCheeseBurgerGrpBox.Location = new Point(104, 115);
-            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
-            classicCheeseBurgerGrpBox.Size = new Size(152, 255);
-            classicCheeseBurgerGrpBox.TabIndex = 4;
-            classicCheeseBurgerGrpBox.TabStop = false;
-            // 
-            // addOrderClassicCheeseBurgerBtn
-            // 
-            addOrderClassicCheeseBurgerBtn.BackColor = Color.Firebrick;
-            addOrderClassicCheeseBurgerBtn.Cursor = Cursors.Hand;
-            addOrderClassicCheeseBurgerBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderClassicCheeseBurgerBtn.ForeColor = SystemColors.Control;
-            addOrderClassicCheeseBurgerBtn.Location = new Point(7, 203);
-            addOrderClassicCheeseBurgerBtn.Name = "addOrderClassicCheeseBurgerBtn";
-            addOrderClassicCheeseBurgerBtn.Size = new Size(139, 46);
-            addOrderClassicCheeseBurgerBtn.TabIndex = 5;
-            addOrderClassicCheeseBurgerBtn.Text = "Add Order";
-            addOrderClassicCheeseBurgerBtn.UseVisualStyleBackColor = false;
-            // 
-            // classicBurgerQuantLbl
-            // 
-            classicBurgerQuantLbl.AutoSize = true;
-            classicBurgerQuantLbl.BackColor = Color.DimGray;
-            classicBurgerQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            classicBurgerQuantLbl.ForeColor = SystemColors.Control;
-            classicBurgerQuantLbl.Location = new Point(67, 170);
-            classicBurgerQuantLbl.Name = "classicBurgerQuantLbl";
-            classicBurgerQuantLbl.Size = new Size(17, 20);
-            classicBurgerQuantLbl.TabIndex = 4;
-            classicBurgerQuantLbl.Text = "0";
-            // 
-            // reduceClassicQuantBtn
-            // 
-            reduceClassicQuantBtn.BackColor = Color.Orange;
-            reduceClassicQuantBtn.Cursor = Cursors.Hand;
-            reduceClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceClassicQuantBtn.Location = new Point(113, 164);
-            reduceClassicQuantBtn.Name = "reduceClassicQuantBtn";
-            reduceClassicQuantBtn.Size = new Size(33, 33);
-            reduceClassicQuantBtn.TabIndex = 3;
-            reduceClassicQuantBtn.Text = "-";
-            reduceClassicQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addClassicQuantBtn
-            // 
-            addClassicQuantBtn.BackColor = Color.Orange;
-            addClassicQuantBtn.Cursor = Cursors.Hand;
-            addClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addClassicQuantBtn.Location = new Point(6, 164);
-            addClassicQuantBtn.Name = "addClassicQuantBtn";
-            addClassicQuantBtn.Size = new Size(33, 33);
-            addClassicQuantBtn.TabIndex = 2;
-            addClassicQuantBtn.Text = "+";
-            addClassicQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(7, 135);
-            label4.Name = "label4";
-            label4.Size = new Size(139, 17);
-            label4.TabIndex = 1;
-            label4.Text = "Classic Cheese Burger";
-            label4.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.classic_cheese_burger;
-            pictureBox2.Location = new Point(7, 10);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(139, 121);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(99, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(125, 40);
-            label2.TabIndex = 5;
-            label2.Text = "Burgers";
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.WhiteSmoke;
-            groupBox1.Controls.Add(addOrderDoubleCheeseBtn);
-            groupBox1.Controls.Add(doubleCheeseQuantLbl);
-            groupBox1.Controls.Add(reduceDoubleCheeseQuantBtn);
-            groupBox1.Controls.Add(addDoubleCheeseQuantBtn);
-            groupBox1.Controls.Add(labe3);
-            groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Location = new Point(273, 115);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(152, 255);
-            groupBox1.TabIndex = 6;
-            groupBox1.TabStop = false;
-            // 
-            // addOrderDoubleCheeseBtn
-            // 
-            addOrderDoubleCheeseBtn.BackColor = Color.Firebrick;
-            addOrderDoubleCheeseBtn.Cursor = Cursors.Hand;
-            addOrderDoubleCheeseBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderDoubleCheeseBtn.ForeColor = SystemColors.Control;
-            addOrderDoubleCheeseBtn.Location = new Point(7, 203);
-            addOrderDoubleCheeseBtn.Name = "addOrderDoubleCheeseBtn";
-            addOrderDoubleCheeseBtn.Size = new Size(139, 46);
-            addOrderDoubleCheeseBtn.TabIndex = 5;
-            addOrderDoubleCheeseBtn.Text = "Add Order";
-            addOrderDoubleCheeseBtn.UseVisualStyleBackColor = false;
-            // 
-            // doubleCheeseQuantLbl
-            // 
-            doubleCheeseQuantLbl.AutoSize = true;
-            doubleCheeseQuantLbl.BackColor = Color.DimGray;
-            doubleCheeseQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            doubleCheeseQuantLbl.ForeColor = SystemColors.Control;
-            doubleCheeseQuantLbl.Location = new Point(67, 170);
-            doubleCheeseQuantLbl.Name = "doubleCheeseQuantLbl";
-            doubleCheeseQuantLbl.Size = new Size(17, 20);
-            doubleCheeseQuantLbl.TabIndex = 4;
-            doubleCheeseQuantLbl.Text = "0";
-            // 
-            // reduceDoubleCheeseQuantBtn
-            // 
-            reduceDoubleCheeseQuantBtn.BackColor = Color.Orange;
-            reduceDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
-            reduceDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceDoubleCheeseQuantBtn.Location = new Point(113, 164);
-            reduceDoubleCheeseQuantBtn.Name = "reduceDoubleCheeseQuantBtn";
-            reduceDoubleCheeseQuantBtn.Size = new Size(33, 33);
-            reduceDoubleCheeseQuantBtn.TabIndex = 3;
-            reduceDoubleCheeseQuantBtn.Text = "-";
-            reduceDoubleCheeseQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addDoubleCheeseQuantBtn
-            // 
-            addDoubleCheeseQuantBtn.BackColor = Color.Orange;
-            addDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
-            addDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addDoubleCheeseQuantBtn.Location = new Point(6, 164);
-            addDoubleCheeseQuantBtn.Name = "addDoubleCheeseQuantBtn";
-            addDoubleCheeseQuantBtn.Size = new Size(33, 33);
-            addDoubleCheeseQuantBtn.TabIndex = 2;
-            addDoubleCheeseQuantBtn.Text = "+";
-            addDoubleCheeseQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // labe3
-            // 
-            labe3.AutoSize = true;
-            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labe3.Location = new Point(7, 135);
-            labe3.Name = "labe3";
-            labe3.Size = new Size(143, 17);
-            labe3.TabIndex = 1;
-            labe3.Text = "Double Cheese Burger";
-            labe3.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.double_cheese_burger;
-            pictureBox3.Location = new Point(7, 10);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(139, 121);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 0;
-            pictureBox3.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            groupBox2.BackColor = Color.WhiteSmoke;
-            groupBox2.Controls.Add(addOrderChickenBtn);
-            groupBox2.Controls.Add(chickenQuantLbl);
-            groupBox2.Controls.Add(reduceChickenQuantBtn);
-            groupBox2.Controls.Add(addChickenQuantBtn);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Location = new Point(104, 395);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(152, 255);
-            groupBox2.TabIndex = 6;
-            groupBox2.TabStop = false;
-            // 
-            // addOrderChickenBtn
-            // 
-            addOrderChickenBtn.BackColor = Color.Firebrick;
-            addOrderChickenBtn.Cursor = Cursors.Hand;
-            addOrderChickenBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addOrderChickenBtn.ForeColor = SystemColors.Control;
-            addOrderChickenBtn.Location = new Point(7, 203);
-            addOrderChickenBtn.Name = "addOrderChickenBtn";
-            addOrderChickenBtn.Size = new Size(139, 46);
-            addOrderChickenBtn.TabIndex = 5;
-            addOrderChickenBtn.Text = "Add Order";
-            addOrderChickenBtn.UseVisualStyleBackColor = false;
-            // 
-            // chickenQuantLbl
-            // 
-            chickenQuantLbl.AutoSize = true;
-            chickenQuantLbl.BackColor = Color.DimGray;
-            chickenQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chickenQuantLbl.ForeColor = SystemColors.Control;
-            chickenQuantLbl.Location = new Point(67, 170);
-            chickenQuantLbl.Name = "chickenQuantLbl";
-            chickenQuantLbl.Size = new Size(17, 20);
-            chickenQuantLbl.TabIndex = 4;
-            chickenQuantLbl.Text = "0";
-            // 
-            // reduceChickenQuantBtn
-            // 
-            reduceChickenQuantBtn.BackColor = Color.Orange;
-            reduceChickenQuantBtn.Cursor = Cursors.Hand;
-            reduceChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceChickenQuantBtn.Location = new Point(113, 164);
-            reduceChickenQuantBtn.Name = "reduceChickenQuantBtn";
-            reduceChickenQuantBtn.Size = new Size(33, 33);
-            reduceChickenQuantBtn.TabIndex = 3;
-            reduceChickenQuantBtn.Text = "-";
-            reduceChickenQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // addChickenQuantBtn
-            // 
-            addChickenQuantBtn.BackColor = Color.Orange;
-            addChickenQuantBtn.Cursor = Cursors.Hand;
-            addChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addChickenQuantBtn.Location = new Point(6, 164);
-            addChickenQuantBtn.Name = "addChickenQuantBtn";
-            addChickenQuantBtn.Size = new Size(33, 33);
-            addChickenQuantBtn.TabIndex = 2;
-            addChickenQuantBtn.Text = "+";
-            addChickenQuantBtn.UseVisualStyleBackColor = false;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(27, 135);
-            label9.Name = "label9";
-            label9.Size = new Size(100, 17);
-            label9.TabIndex = 1;
-            label9.Text = "Chicken Burger";
-            label9.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.chicken_burger;
-            pictureBox4.Location = new Point(7, 10);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(139, 121);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 0;
-            pictureBox4.TabStop = false;
+            burgerMenuPanel.AutoScroll = true;
+            burgerMenuPanel.Controls.Add(groupBox3);
+            burgerMenuPanel.Controls.Add(groupBox2);
+            burgerMenuPanel.Controls.Add(groupBox1);
+            burgerMenuPanel.Controls.Add(label2);
+            burgerMenuPanel.Controls.Add(classicCheeseBurgerGrpBox);
+            burgerMenuPanel.Dock = DockStyle.Fill;
+            burgerMenuPanel.Location = new Point(98, 57);
+            burgerMenuPanel.Name = "burgerMenuPanel";
+            burgerMenuPanel.Size = new Size(361, 635);
+            burgerMenuPanel.TabIndex = 4;
             // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.WhiteSmoke;
+            groupBox3.Controls.Add(doubleChickenBurgerPriceLbl);
             groupBox3.Controls.Add(addOrderDoubleChickenBtn);
             groupBox3.Controls.Add(doubleChickenQuantLbl);
             groupBox3.Controls.Add(button9);
             groupBox3.Controls.Add(button10);
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(pictureBox5);
-            groupBox3.Location = new Point(273, 395);
+            groupBox3.Location = new Point(175, 366);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(152, 255);
-            groupBox3.TabIndex = 6;
+            groupBox3.Size = new Size(152, 286);
+            groupBox3.TabIndex = 9;
             groupBox3.TabStop = false;
             // 
             // addOrderDoubleChickenBtn
@@ -609,7 +365,7 @@
             addOrderDoubleChickenBtn.Cursor = Cursors.Hand;
             addOrderDoubleChickenBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderDoubleChickenBtn.ForeColor = SystemColors.Control;
-            addOrderDoubleChickenBtn.Location = new Point(7, 203);
+            addOrderDoubleChickenBtn.Location = new Point(7, 234);
             addOrderDoubleChickenBtn.Name = "addOrderDoubleChickenBtn";
             addOrderDoubleChickenBtn.Size = new Size(139, 46);
             addOrderDoubleChickenBtn.TabIndex = 5;
@@ -673,17 +429,333 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = Color.WhiteSmoke;
+            groupBox2.Controls.Add(chickenBurgerPriceLbl);
+            groupBox2.Controls.Add(addOrderChickenBtn);
+            groupBox2.Controls.Add(chickenQuantLbl);
+            groupBox2.Controls.Add(reduceChickenQuantBtn);
+            groupBox2.Controls.Add(addChickenQuantBtn);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Controls.Add(pictureBox4);
+            groupBox2.Location = new Point(10, 366);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(152, 286);
+            groupBox2.TabIndex = 10;
+            groupBox2.TabStop = false;
+            // 
+            // addOrderChickenBtn
+            // 
+            addOrderChickenBtn.BackColor = Color.Firebrick;
+            addOrderChickenBtn.Cursor = Cursors.Hand;
+            addOrderChickenBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderChickenBtn.ForeColor = SystemColors.Control;
+            addOrderChickenBtn.Location = new Point(6, 234);
+            addOrderChickenBtn.Name = "addOrderChickenBtn";
+            addOrderChickenBtn.Size = new Size(139, 46);
+            addOrderChickenBtn.TabIndex = 5;
+            addOrderChickenBtn.Text = "Add Order";
+            addOrderChickenBtn.UseVisualStyleBackColor = false;
+            // 
+            // chickenQuantLbl
+            // 
+            chickenQuantLbl.AutoSize = true;
+            chickenQuantLbl.BackColor = Color.DimGray;
+            chickenQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chickenQuantLbl.ForeColor = SystemColors.Control;
+            chickenQuantLbl.Location = new Point(67, 170);
+            chickenQuantLbl.Name = "chickenQuantLbl";
+            chickenQuantLbl.Size = new Size(17, 20);
+            chickenQuantLbl.TabIndex = 4;
+            chickenQuantLbl.Text = "0";
+            // 
+            // reduceChickenQuantBtn
+            // 
+            reduceChickenQuantBtn.BackColor = Color.Orange;
+            reduceChickenQuantBtn.Cursor = Cursors.Hand;
+            reduceChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceChickenQuantBtn.Location = new Point(113, 164);
+            reduceChickenQuantBtn.Name = "reduceChickenQuantBtn";
+            reduceChickenQuantBtn.Size = new Size(33, 33);
+            reduceChickenQuantBtn.TabIndex = 3;
+            reduceChickenQuantBtn.Text = "-";
+            reduceChickenQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addChickenQuantBtn
+            // 
+            addChickenQuantBtn.BackColor = Color.Orange;
+            addChickenQuantBtn.Cursor = Cursors.Hand;
+            addChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addChickenQuantBtn.Location = new Point(6, 164);
+            addChickenQuantBtn.Name = "addChickenQuantBtn";
+            addChickenQuantBtn.Size = new Size(33, 33);
+            addChickenQuantBtn.TabIndex = 2;
+            addChickenQuantBtn.Text = "+";
+            addChickenQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(27, 135);
+            label9.Name = "label9";
+            label9.Size = new Size(100, 17);
+            label9.TabIndex = 1;
+            label9.Text = "Chicken Burger";
+            label9.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.chicken_burger;
+            pictureBox4.Location = new Point(7, 10);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(139, 121);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.WhiteSmoke;
+            groupBox1.Controls.Add(doubleCheeseBurgerPriceLbl);
+            groupBox1.Controls.Add(addOrderDoubleCheeseBtn);
+            groupBox1.Controls.Add(doubleCheeseQuantLbl);
+            groupBox1.Controls.Add(reduceDoubleCheeseQuantBtn);
+            groupBox1.Controls.Add(addDoubleCheeseQuantBtn);
+            groupBox1.Controls.Add(labe3);
+            groupBox1.Controls.Add(pictureBox3);
+            groupBox1.Location = new Point(179, 64);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(152, 286);
+            groupBox1.TabIndex = 11;
+            groupBox1.TabStop = false;
+            // 
+            // addOrderDoubleCheeseBtn
+            // 
+            addOrderDoubleCheeseBtn.BackColor = Color.Firebrick;
+            addOrderDoubleCheeseBtn.Cursor = Cursors.Hand;
+            addOrderDoubleCheeseBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderDoubleCheeseBtn.ForeColor = SystemColors.Control;
+            addOrderDoubleCheeseBtn.Location = new Point(7, 234);
+            addOrderDoubleCheeseBtn.Name = "addOrderDoubleCheeseBtn";
+            addOrderDoubleCheeseBtn.Size = new Size(139, 46);
+            addOrderDoubleCheeseBtn.TabIndex = 5;
+            addOrderDoubleCheeseBtn.Text = "Add Order";
+            addOrderDoubleCheeseBtn.UseVisualStyleBackColor = false;
+            // 
+            // doubleCheeseQuantLbl
+            // 
+            doubleCheeseQuantLbl.AutoSize = true;
+            doubleCheeseQuantLbl.BackColor = Color.DimGray;
+            doubleCheeseQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            doubleCheeseQuantLbl.ForeColor = SystemColors.Control;
+            doubleCheeseQuantLbl.Location = new Point(67, 170);
+            doubleCheeseQuantLbl.Name = "doubleCheeseQuantLbl";
+            doubleCheeseQuantLbl.Size = new Size(17, 20);
+            doubleCheeseQuantLbl.TabIndex = 4;
+            doubleCheeseQuantLbl.Text = "0";
+            // 
+            // reduceDoubleCheeseQuantBtn
+            // 
+            reduceDoubleCheeseQuantBtn.BackColor = Color.Orange;
+            reduceDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
+            reduceDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceDoubleCheeseQuantBtn.Location = new Point(113, 164);
+            reduceDoubleCheeseQuantBtn.Name = "reduceDoubleCheeseQuantBtn";
+            reduceDoubleCheeseQuantBtn.Size = new Size(33, 33);
+            reduceDoubleCheeseQuantBtn.TabIndex = 3;
+            reduceDoubleCheeseQuantBtn.Text = "-";
+            reduceDoubleCheeseQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addDoubleCheeseQuantBtn
+            // 
+            addDoubleCheeseQuantBtn.BackColor = Color.Orange;
+            addDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
+            addDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addDoubleCheeseQuantBtn.Location = new Point(6, 164);
+            addDoubleCheeseQuantBtn.Name = "addDoubleCheeseQuantBtn";
+            addDoubleCheeseQuantBtn.Size = new Size(33, 33);
+            addDoubleCheeseQuantBtn.TabIndex = 2;
+            addDoubleCheeseQuantBtn.Text = "+";
+            addDoubleCheeseQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // labe3
+            // 
+            labe3.AutoSize = true;
+            labe3.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labe3.Location = new Point(7, 135);
+            labe3.Name = "labe3";
+            labe3.Size = new Size(143, 17);
+            labe3.TabIndex = 1;
+            labe3.Text = "Double Cheese Burger";
+            labe3.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.double_cheese_burger;
+            pictureBox3.Location = new Point(7, 10);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(139, 121);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(5, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(125, 40);
+            label2.TabIndex = 8;
+            label2.Text = "Burgers";
+            // 
+            // classicCheeseBurgerGrpBox
+            // 
+            classicCheeseBurgerGrpBox.BackColor = Color.WhiteSmoke;
+            classicCheeseBurgerGrpBox.Controls.Add(classicCheeseBurgerPriceLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(addOrderClassicCheeseBurgerBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(classicBurgerQuantLbl);
+            classicCheeseBurgerGrpBox.Controls.Add(reduceClassicQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(addClassicQuantBtn);
+            classicCheeseBurgerGrpBox.Controls.Add(label4);
+            classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
+            classicCheeseBurgerGrpBox.Location = new Point(10, 64);
+            classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
+            classicCheeseBurgerGrpBox.Size = new Size(152, 286);
+            classicCheeseBurgerGrpBox.TabIndex = 7;
+            classicCheeseBurgerGrpBox.TabStop = false;
+            // 
+            // addOrderClassicCheeseBurgerBtn
+            // 
+            addOrderClassicCheeseBurgerBtn.BackColor = Color.Firebrick;
+            addOrderClassicCheeseBurgerBtn.Cursor = Cursors.Hand;
+            addOrderClassicCheeseBurgerBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addOrderClassicCheeseBurgerBtn.ForeColor = SystemColors.Control;
+            addOrderClassicCheeseBurgerBtn.Location = new Point(6, 234);
+            addOrderClassicCheeseBurgerBtn.Name = "addOrderClassicCheeseBurgerBtn";
+            addOrderClassicCheeseBurgerBtn.Size = new Size(139, 46);
+            addOrderClassicCheeseBurgerBtn.TabIndex = 5;
+            addOrderClassicCheeseBurgerBtn.Text = "Add Order";
+            addOrderClassicCheeseBurgerBtn.UseVisualStyleBackColor = false;
+            // 
+            // classicBurgerQuantLbl
+            // 
+            classicBurgerQuantLbl.AutoSize = true;
+            classicBurgerQuantLbl.BackColor = Color.DimGray;
+            classicBurgerQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            classicBurgerQuantLbl.ForeColor = SystemColors.Control;
+            classicBurgerQuantLbl.Location = new Point(67, 170);
+            classicBurgerQuantLbl.Name = "classicBurgerQuantLbl";
+            classicBurgerQuantLbl.Size = new Size(17, 20);
+            classicBurgerQuantLbl.TabIndex = 4;
+            classicBurgerQuantLbl.Text = "0";
+            // 
+            // reduceClassicQuantBtn
+            // 
+            reduceClassicQuantBtn.BackColor = Color.Orange;
+            reduceClassicQuantBtn.Cursor = Cursors.Hand;
+            reduceClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reduceClassicQuantBtn.Location = new Point(113, 164);
+            reduceClassicQuantBtn.Name = "reduceClassicQuantBtn";
+            reduceClassicQuantBtn.Size = new Size(33, 33);
+            reduceClassicQuantBtn.TabIndex = 3;
+            reduceClassicQuantBtn.Text = "-";
+            reduceClassicQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // addClassicQuantBtn
+            // 
+            addClassicQuantBtn.BackColor = Color.Orange;
+            addClassicQuantBtn.Cursor = Cursors.Hand;
+            addClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addClassicQuantBtn.Location = new Point(6, 164);
+            addClassicQuantBtn.Name = "addClassicQuantBtn";
+            addClassicQuantBtn.Size = new Size(33, 33);
+            addClassicQuantBtn.TabIndex = 2;
+            addClassicQuantBtn.Text = "+";
+            addClassicQuantBtn.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(7, 135);
+            label4.Name = "label4";
+            label4.Size = new Size(139, 17);
+            label4.TabIndex = 1;
+            label4.Text = "Classic Cheese Burger";
+            label4.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.classic_cheese_burger;
+            pictureBox2.Location = new Point(7, 10);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(139, 121);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // classicCheeseBurgerPriceLbl
+            // 
+            classicCheeseBurgerPriceLbl.AutoSize = true;
+            classicCheeseBurgerPriceLbl.BackColor = Color.Transparent;
+            classicCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            classicCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            classicCheeseBurgerPriceLbl.Location = new Point(33, 205);
+            classicCheeseBurgerPriceLbl.Name = "classicCheeseBurgerPriceLbl";
+            classicCheeseBurgerPriceLbl.Size = new Size(78, 25);
+            classicCheeseBurgerPriceLbl.TabIndex = 6;
+            classicCheeseBurgerPriceLbl.Text = "₱ 99.00";
+            classicCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // doubleCheeseBurgerPriceLbl
+            // 
+            doubleCheeseBurgerPriceLbl.AutoSize = true;
+            doubleCheeseBurgerPriceLbl.BackColor = Color.Transparent;
+            doubleCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            doubleCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            doubleCheeseBurgerPriceLbl.Location = new Point(31, 205);
+            doubleCheeseBurgerPriceLbl.Name = "doubleCheeseBurgerPriceLbl";
+            doubleCheeseBurgerPriceLbl.Size = new Size(86, 25);
+            doubleCheeseBurgerPriceLbl.TabIndex = 7;
+            doubleCheeseBurgerPriceLbl.Text = "₱ 149.00";
+            doubleCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // chickenBurgerPriceLbl
+            // 
+            chickenBurgerPriceLbl.AutoSize = true;
+            chickenBurgerPriceLbl.BackColor = Color.Transparent;
+            chickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            chickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            chickenBurgerPriceLbl.Location = new Point(34, 203);
+            chickenBurgerPriceLbl.Name = "chickenBurgerPriceLbl";
+            chickenBurgerPriceLbl.Size = new Size(86, 25);
+            chickenBurgerPriceLbl.TabIndex = 7;
+            chickenBurgerPriceLbl.Text = "₱ 109.00";
+            chickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // doubleChickenBurgerPriceLbl
+            // 
+            doubleChickenBurgerPriceLbl.AutoSize = true;
+            doubleChickenBurgerPriceLbl.BackColor = Color.Transparent;
+            doubleChickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            doubleChickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            doubleChickenBurgerPriceLbl.Location = new Point(38, 204);
+            doubleChickenBurgerPriceLbl.Name = "doubleChickenBurgerPriceLbl";
+            doubleChickenBurgerPriceLbl.Size = new Size(85, 25);
+            doubleChickenBurgerPriceLbl.TabIndex = 7;
+            doubleChickenBurgerPriceLbl.Text = "₱ 179.00";
+            doubleChickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // ProductSelectionBurgersForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(434, 761);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(label2);
-            Controls.Add(classicCheeseBurgerGrpBox);
+            ClientSize = new Size(459, 761);
+            Controls.Add(burgerMenuPanel);
             Controls.Add(sidebarPanel);
             Controls.Add(panel2);
             Controls.Add(topHeaderPanel);
@@ -695,20 +767,21 @@
             panel2.PerformLayout();
             sidebarPanel.ResumeLayout(false);
             sidebarPanel.PerformLayout();
-            classicCheeseBurgerGrpBox.ResumeLayout(false);
-            classicCheeseBurgerGrpBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            burgerMenuPanel.ResumeLayout(false);
+            burgerMenuPanel.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            classicCheeseBurgerGrpBox.ResumeLayout(false);
+            classicCheeseBurgerGrpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -726,32 +799,12 @@
         private Label sidesLogoLbl;
         private Label drinksLogoLbl;
         private Label burgerLogoLbl;
-        private GroupBox classicCheeseBurgerGrpBox;
         private Label selectedItemsPrice;
         private Label itemNumLbl;
-        private Label label2;
         private Label pizzasLogoLbl;
         private Button pizzaSideBarBtn;
-        private PictureBox pictureBox2;
-        private Button addClassicQuantBtn;
-        private Label label4;
-        private Button reduceClassicQuantBtn;
-        private GroupBox groupBox1;
-        private Button addOrderDoubleCheeseBtn;
-        private Label doubleCheeseQuantLbl;
-        private Button reduceDoubleCheeseQuantBtn;
-        private Button addDoubleCheeseQuantBtn;
-        private Label labe3;
-        private Button addOrderClassicCheeseBurgerBtn;
-        private Label classicBurgerQuantLbl;
-        private PictureBox pictureBox3;
-        private GroupBox groupBox2;
-        private Button addOrderChickenBtn;
-        private Label chickenQuantLbl;
-        private Button reduceChickenQuantBtn;
-        private Button addChickenQuantBtn;
-        private Label label9;
-        private PictureBox pictureBox4;
+        private Label viewOrderDetailsLbl;
+        private Panel burgerMenuPanel;
         private GroupBox groupBox3;
         private Button addOrderDoubleChickenBtn;
         private Label doubleChickenQuantLbl;
@@ -759,6 +812,31 @@
         private Button button10;
         private Label label11;
         private PictureBox pictureBox5;
-        private Label viewOrderDetailsLbl;
+        private GroupBox groupBox2;
+        private Button addOrderChickenBtn;
+        private Label chickenQuantLbl;
+        private Button reduceChickenQuantBtn;
+        private Button addChickenQuantBtn;
+        private Label label9;
+        private PictureBox pictureBox4;
+        private GroupBox groupBox1;
+        private Button addOrderDoubleCheeseBtn;
+        private Label doubleCheeseQuantLbl;
+        private Button reduceDoubleCheeseQuantBtn;
+        private Button addDoubleCheeseQuantBtn;
+        private Label labe3;
+        private PictureBox pictureBox3;
+        private Label label2;
+        private GroupBox classicCheeseBurgerGrpBox;
+        private Button addOrderClassicCheeseBurgerBtn;
+        private Label classicBurgerQuantLbl;
+        private Button reduceClassicQuantBtn;
+        private Button addClassicQuantBtn;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private Label doubleChickenBurgerPriceLbl;
+        private Label chickenBurgerPriceLbl;
+        private Label doubleCheeseBurgerPriceLbl;
+        private Label classicCheeseBurgerPriceLbl;
     }
 }
