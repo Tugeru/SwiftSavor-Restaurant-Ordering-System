@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             returnBtn = new Button();
+            pictureBox1 = new PictureBox();
             takeOutLogo = new Label();
             dineInLogo = new Label();
             takeOutButton = new Button();
@@ -51,16 +51,6 @@
             panel1.Size = new Size(434, 75);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.SwiftSavor_Logo1;
-            pictureBox1.Location = new Point(70, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(151, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // returnBtn
             // 
             returnBtn.Cursor = Cursors.Hand;
@@ -71,6 +61,17 @@
             returnBtn.TabIndex = 1;
             returnBtn.Text = "⬅";
             returnBtn.UseVisualStyleBackColor = true;
+            returnBtn.Click += returnBtn_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.SwiftSavor_Logo1;
+            pictureBox1.Location = new Point(70, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(151, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // takeOutLogo
             // 
@@ -83,6 +84,7 @@
             takeOutLogo.Size = new Size(69, 47);
             takeOutLogo.TabIndex = 12;
             takeOutLogo.Text = "🚗";
+            takeOutLogo.Click += takeOutButton_Click;
             // 
             // dineInLogo
             // 
@@ -95,6 +97,7 @@
             dineInLogo.Size = new Size(69, 47);
             dineInLogo.TabIndex = 13;
             dineInLogo.Text = "🍽";
+            dineInLogo.Click += dineInBtn_Click;
             // 
             // takeOutButton
             // 
@@ -108,6 +111,7 @@
             takeOutButton.Text = "Take Out";
             takeOutButton.TextAlign = ContentAlignment.BottomCenter;
             takeOutButton.UseVisualStyleBackColor = false;
+            takeOutButton.Click += takeOutButton_Click;
             // 
             // dineInBtn
             // 
@@ -121,6 +125,7 @@
             dineInBtn.Text = "Dine In";
             dineInBtn.TextAlign = ContentAlignment.BottomCenter;
             dineInBtn.UseVisualStyleBackColor = false;
+            dineInBtn.Click += dineInBtn_Click;
             // 
             // label1
             // 
@@ -131,7 +136,6 @@
             label1.Size = new Size(159, 40);
             label1.TabIndex = 14;
             label1.Text = "Meal Type";
-            label1.Click += label1_Click;
             // 
             // MealTypeForm
             // 

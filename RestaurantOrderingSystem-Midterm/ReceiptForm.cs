@@ -15,6 +15,7 @@ namespace RestaurantOrderingSystem_Midterm
         public ReceiptForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             LoadReceipt();
             startNewOrderBtn.Click += StartNewOrderBtn_Click;
         }
@@ -98,6 +99,9 @@ namespace RestaurantOrderingSystem_Midterm
             taxAmountLbl.Text = $"₱ {tax:N2}";
 
             receiptTotalOrderAmountLbl.Text = $"₱ {grandTotal:N2}";
+
+            // Meal Type
+            mealServiceType.Text = OrderManager.MealType;
         }
 
         private void StartNewOrderBtn_Click(object sender, EventArgs e)

@@ -6,6 +6,7 @@ namespace RestaurantOrderingSystem_Midterm
         public LandingForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void touchStartBtn_Click(object sender, EventArgs e)
         {
@@ -17,6 +18,7 @@ namespace RestaurantOrderingSystem_Midterm
 
         private void dineInBtn_Click(object sender, EventArgs e)
         {
+            OrderManager.MealType = "Dine In";
             ProductSelectionBurgersForm productSelectionBurgersForm = new ProductSelectionBurgersForm();
 
             productSelectionBurgersForm.Show();
@@ -26,6 +28,7 @@ namespace RestaurantOrderingSystem_Midterm
 
         private void takeOutButton_Click(object sender, EventArgs e)
         {
+            OrderManager.MealType = "Take Out";
             ProductSelectionBurgersForm productSelectionBurgersForm = new ProductSelectionBurgersForm();
 
             productSelectionBurgersForm.Show();

@@ -34,11 +34,6 @@
             orderNowLbl = new Label();
             taglineLbl = new Label();
             pictureBox1 = new PictureBox();
-            dineInBtn = new Button();
-            dineInLogo = new Label();
-            takeOutButton = new Button();
-            takeOutLogo = new Label();
-            label1 = new Label();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,9 +45,9 @@
             touchStartBtn.Cursor = Cursors.Hand;
             touchStartBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             touchStartBtn.ForeColor = Color.White;
-            touchStartBtn.Location = new Point(29, 534);
+            touchStartBtn.Location = new Point(12, 582);
             touchStartBtn.Name = "touchStartBtn";
-            touchStartBtn.Size = new Size(379, 71);
+            touchStartBtn.Size = new Size(410, 117);
             touchStartBtn.TabIndex = 0;
             touchStartBtn.Text = "👆 TOUCH TO START";
             touchStartBtn.UseVisualStyleBackColor = false;
@@ -63,7 +58,7 @@
             hungryLbl.AutoSize = true;
             hungryLbl.BackColor = Color.Transparent;
             hungryLbl.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hungryLbl.Location = new Point(108, 320);
+            hungryLbl.Location = new Point(107, 347);
             hungryLbl.Name = "hungryLbl";
             hungryLbl.Size = new Size(221, 65);
             hungryLbl.TabIndex = 2;
@@ -75,7 +70,7 @@
             orderNowLbl.AutoSize = true;
             orderNowLbl.BackColor = Color.Transparent;
             orderNowLbl.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            orderNowLbl.Location = new Point(75, 385);
+            orderNowLbl.Location = new Point(74, 424);
             orderNowLbl.Name = "orderNowLbl";
             orderNowLbl.Size = new Size(292, 65);
             orderNowLbl.TabIndex = 3;
@@ -87,7 +82,7 @@
             taglineLbl.AutoSize = true;
             taglineLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             taglineLbl.ForeColor = SystemColors.AppWorkspace;
-            taglineLbl.Location = new Point(136, 476);
+            taglineLbl.Location = new Point(136, 504);
             taglineLbl.Name = "taglineLbl";
             taglineLbl.Size = new Size(166, 21);
             taglineLbl.TabIndex = 4;
@@ -103,70 +98,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
-            // 
-            // dineInBtn
-            // 
-            dineInBtn.BackColor = SystemColors.ButtonHighlight;
-            dineInBtn.Cursor = Cursors.Hand;
-            dineInBtn.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dineInBtn.Location = new Point(31, 651);
-            dineInBtn.Name = "dineInBtn";
-            dineInBtn.Size = new Size(158, 83);
-            dineInBtn.TabIndex = 8;
-            dineInBtn.Text = "Dine In";
-            dineInBtn.TextAlign = ContentAlignment.BottomCenter;
-            dineInBtn.UseVisualStyleBackColor = false;
-            dineInBtn.Click += dineInBtn_Click;
-            // 
-            // dineInLogo
-            // 
-            dineInLogo.AutoSize = true;
-            dineInLogo.BackColor = SystemColors.ButtonHighlight;
-            dineInLogo.Cursor = Cursors.Hand;
-            dineInLogo.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dineInLogo.Location = new Point(75, 658);
-            dineInLogo.Name = "dineInLogo";
-            dineInLogo.Size = new Size(69, 47);
-            dineInLogo.TabIndex = 9;
-            dineInLogo.Text = "🍽";
-            dineInLogo.Click += dineInBtn_Click;
-            // 
-            // takeOutButton
-            // 
-            takeOutButton.BackColor = SystemColors.ButtonHighlight;
-            takeOutButton.Cursor = Cursors.Hand;
-            takeOutButton.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            takeOutButton.Location = new Point(245, 651);
-            takeOutButton.Name = "takeOutButton";
-            takeOutButton.Size = new Size(158, 83);
-            takeOutButton.TabIndex = 8;
-            takeOutButton.Text = "Take Out";
-            takeOutButton.TextAlign = ContentAlignment.BottomCenter;
-            takeOutButton.UseVisualStyleBackColor = false;
-            takeOutButton.Click += takeOutButton_Click;
-            // 
-            // takeOutLogo
-            // 
-            takeOutLogo.AutoSize = true;
-            takeOutLogo.BackColor = SystemColors.ButtonHighlight;
-            takeOutLogo.Cursor = Cursors.Hand;
-            takeOutLogo.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            takeOutLogo.Location = new Point(290, 656);
-            takeOutLogo.Name = "takeOutLogo";
-            takeOutLogo.Size = new Size(69, 47);
-            takeOutLogo.TabIndex = 9;
-            takeOutLogo.Text = "🚗";
-            takeOutLogo.Click += takeOutButton_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = SystemColors.AppWorkspace;
-            label1.Location = new Point(31, 620);
-            label1.Name = "label1";
-            label1.Size = new Size(378, 15);
-            label1.TabIndex = 10;
-            label1.Text = "---------------------------Quick Service---------------------------------";
             // 
             // pictureBox2
             // 
@@ -186,11 +117,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(434, 761);
             Controls.Add(pictureBox2);
-            Controls.Add(label1);
-            Controls.Add(takeOutLogo);
-            Controls.Add(dineInLogo);
-            Controls.Add(takeOutButton);
-            Controls.Add(dineInBtn);
             Controls.Add(pictureBox1);
             Controls.Add(taglineLbl);
             Controls.Add(orderNowLbl);
@@ -212,11 +138,6 @@
         private Label orderNowLbl;
         private Label taglineLbl;
         private PictureBox pictureBox1;
-        private Button dineInBtn;
-        private Label dineInLogo;
-        private Button takeOutButton;
-        private Label takeOutLogo;
-        private Label label1;
         private PictureBox pictureBox2;
     }
 }

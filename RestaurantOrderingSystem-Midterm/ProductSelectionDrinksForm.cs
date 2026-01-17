@@ -19,6 +19,7 @@ namespace RestaurantOrderingSystem_Midterm
         public ProductSelectionDrinksForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             UpdateFooter();
             BindEvents();
         }
@@ -43,8 +44,13 @@ namespace RestaurantOrderingSystem_Midterm
             // Navigation
             checkoutBtn.Click += (s, e) =>
             {
-                OrderReviewForm reviewForm = new OrderReviewForm();
-                reviewForm.Show();
+                if (OrderManager.GetTotalItems() == 0)
+                {
+                    MessageBox.Show("You have not added any order", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                MealTypeForm mealTypeForm = new MealTypeForm();
+                mealTypeForm.Show();
                 this.Hide();
             };
 
@@ -74,7 +80,7 @@ namespace RestaurantOrderingSystem_Midterm
         private void UpdateFooter()
         {
             itemNumLbl.Text = $"{OrderManager.GetTotalItems()} Items";
-            selectedItemsPrice.Text = $"₱ {OrderManager.GetGrandTotal():N2}";
+            selectedItemsPrice.Text = $"₱ {OrderManager.GetSubtotal():N2}";
         }
 
         private void burgersSideBarBtn_Click(object sender, EventArgs e)

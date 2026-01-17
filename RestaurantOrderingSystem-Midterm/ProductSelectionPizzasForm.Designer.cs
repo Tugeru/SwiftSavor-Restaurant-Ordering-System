@@ -48,6 +48,7 @@
             burgersSideBarBtn = new Button();
             pizzaMenuPanel = new Panel();
             groupBox2 = new GroupBox();
+            mushroomPizzaPriceLbl = new Label();
             addOrderMushroomBtn = new Button();
             mushroomQuantLbl = new Label();
             reduceMushroomQuantBtn = new Button();
@@ -55,6 +56,7 @@
             label9 = new Label();
             pictureBox4 = new PictureBox();
             groupBox1 = new GroupBox();
+            hawaiianPizzaPriceLbl = new Label();
             addOrderHawaiianBtn = new Button();
             hawaiianQuantLbl = new Label();
             reduceHawaiianQuantBtn = new Button();
@@ -63,15 +65,13 @@
             pictureBox3 = new PictureBox();
             label2 = new Label();
             classicCheeseBurgerGrpBox = new GroupBox();
+            pepperoniPizzaPriceLbl = new Label();
             addOrderPepperoniBtn = new Button();
             pepperoniQuantLbl = new Label();
             reducePepperoniQuantBtn = new Button();
             addPepperoniQuantBtn = new Button();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            pepperoniPizzaPriceLbl = new Label();
-            hawaiianPizzaPriceLbl = new Label();
-            mushroomPizzaPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -351,6 +351,19 @@
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             // 
+            // mushroomPizzaPriceLbl
+            // 
+            mushroomPizzaPriceLbl.AutoSize = true;
+            mushroomPizzaPriceLbl.BackColor = Color.Transparent;
+            mushroomPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            mushroomPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            mushroomPizzaPriceLbl.Location = new Point(35, 209);
+            mushroomPizzaPriceLbl.Name = "mushroomPizzaPriceLbl";
+            mushroomPizzaPriceLbl.Size = new Size(84, 25);
+            mushroomPizzaPriceLbl.TabIndex = 8;
+            mushroomPizzaPriceLbl.Text = "₱249.00";
+            mushroomPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderMushroomBtn
             // 
             addOrderMushroomBtn.BackColor = Color.Firebrick;
@@ -381,7 +394,7 @@
             reduceMushroomQuantBtn.BackColor = Color.Orange;
             reduceMushroomQuantBtn.Cursor = Cursors.Hand;
             reduceMushroomQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceMushroomQuantBtn.Location = new Point(113, 164);
+            reduceMushroomQuantBtn.Location = new Point(7, 163);
             reduceMushroomQuantBtn.Name = "reduceMushroomQuantBtn";
             reduceMushroomQuantBtn.Size = new Size(33, 33);
             reduceMushroomQuantBtn.TabIndex = 3;
@@ -393,7 +406,7 @@
             addMushroomQuantBtn.BackColor = Color.Orange;
             addMushroomQuantBtn.Cursor = Cursors.Hand;
             addMushroomQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addMushroomQuantBtn.Location = new Point(6, 164);
+            addMushroomQuantBtn.Location = new Point(112, 163);
             addMushroomQuantBtn.Name = "addMushroomQuantBtn";
             addMushroomQuantBtn.Size = new Size(33, 33);
             addMushroomQuantBtn.TabIndex = 2;
@@ -437,6 +450,19 @@
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             // 
+            // hawaiianPizzaPriceLbl
+            // 
+            hawaiianPizzaPriceLbl.AutoSize = true;
+            hawaiianPizzaPriceLbl.BackColor = Color.Transparent;
+            hawaiianPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            hawaiianPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            hawaiianPizzaPriceLbl.Location = new Point(32, 208);
+            hawaiianPizzaPriceLbl.Name = "hawaiianPizzaPriceLbl";
+            hawaiianPizzaPriceLbl.Size = new Size(86, 25);
+            hawaiianPizzaPriceLbl.TabIndex = 7;
+            hawaiianPizzaPriceLbl.Text = "₱ 199.00";
+            hawaiianPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderHawaiianBtn
             // 
             addOrderHawaiianBtn.BackColor = Color.Firebrick;
@@ -467,7 +493,7 @@
             reduceHawaiianQuantBtn.BackColor = Color.Orange;
             reduceHawaiianQuantBtn.Cursor = Cursors.Hand;
             reduceHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceHawaiianQuantBtn.Location = new Point(113, 164);
+            reduceHawaiianQuantBtn.Location = new Point(7, 165);
             reduceHawaiianQuantBtn.Name = "reduceHawaiianQuantBtn";
             reduceHawaiianQuantBtn.Size = new Size(33, 33);
             reduceHawaiianQuantBtn.TabIndex = 3;
@@ -479,7 +505,7 @@
             addHawaiianQuantBtn.BackColor = Color.Orange;
             addHawaiianQuantBtn.Cursor = Cursors.Hand;
             addHawaiianQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addHawaiianQuantBtn.Location = new Point(6, 164);
+            addHawaiianQuantBtn.Location = new Point(113, 165);
             addHawaiianQuantBtn.Name = "addHawaiianQuantBtn";
             addHawaiianQuantBtn.Size = new Size(33, 33);
             addHawaiianQuantBtn.TabIndex = 2;
@@ -534,6 +560,19 @@
             classicCheeseBurgerGrpBox.TabIndex = 7;
             classicCheeseBurgerGrpBox.TabStop = false;
             // 
+            // pepperoniPizzaPriceLbl
+            // 
+            pepperoniPizzaPriceLbl.AutoSize = true;
+            pepperoniPizzaPriceLbl.BackColor = Color.Transparent;
+            pepperoniPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            pepperoniPizzaPriceLbl.ForeColor = Color.OrangeRed;
+            pepperoniPizzaPriceLbl.Location = new Point(35, 206);
+            pepperoniPizzaPriceLbl.Name = "pepperoniPizzaPriceLbl";
+            pepperoniPizzaPriceLbl.Size = new Size(86, 25);
+            pepperoniPizzaPriceLbl.TabIndex = 7;
+            pepperoniPizzaPriceLbl.Text = "₱ 149.00";
+            pepperoniPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderPepperoniBtn
             // 
             addOrderPepperoniBtn.BackColor = Color.Firebrick;
@@ -564,7 +603,7 @@
             reducePepperoniQuantBtn.BackColor = Color.Orange;
             reducePepperoniQuantBtn.Cursor = Cursors.Hand;
             reducePepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reducePepperoniQuantBtn.Location = new Point(113, 164);
+            reducePepperoniQuantBtn.Location = new Point(7, 165);
             reducePepperoniQuantBtn.Name = "reducePepperoniQuantBtn";
             reducePepperoniQuantBtn.Size = new Size(33, 33);
             reducePepperoniQuantBtn.TabIndex = 3;
@@ -576,7 +615,7 @@
             addPepperoniQuantBtn.BackColor = Color.Orange;
             addPepperoniQuantBtn.Cursor = Cursors.Hand;
             addPepperoniQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addPepperoniQuantBtn.Location = new Point(6, 164);
+            addPepperoniQuantBtn.Location = new Point(113, 165);
             addPepperoniQuantBtn.Name = "addPepperoniQuantBtn";
             addPepperoniQuantBtn.Size = new Size(33, 33);
             addPepperoniQuantBtn.TabIndex = 2;
@@ -603,45 +642,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            // 
-            // pepperoniPizzaPriceLbl
-            // 
-            pepperoniPizzaPriceLbl.AutoSize = true;
-            pepperoniPizzaPriceLbl.BackColor = Color.Transparent;
-            pepperoniPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            pepperoniPizzaPriceLbl.ForeColor = Color.OrangeRed;
-            pepperoniPizzaPriceLbl.Location = new Point(35, 206);
-            pepperoniPizzaPriceLbl.Name = "pepperoniPizzaPriceLbl";
-            pepperoniPizzaPriceLbl.Size = new Size(86, 25);
-            pepperoniPizzaPriceLbl.TabIndex = 7;
-            pepperoniPizzaPriceLbl.Text = "₱ 149.00";
-            pepperoniPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // hawaiianPizzaPriceLbl
-            // 
-            hawaiianPizzaPriceLbl.AutoSize = true;
-            hawaiianPizzaPriceLbl.BackColor = Color.Transparent;
-            hawaiianPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            hawaiianPizzaPriceLbl.ForeColor = Color.OrangeRed;
-            hawaiianPizzaPriceLbl.Location = new Point(32, 208);
-            hawaiianPizzaPriceLbl.Name = "hawaiianPizzaPriceLbl";
-            hawaiianPizzaPriceLbl.Size = new Size(86, 25);
-            hawaiianPizzaPriceLbl.TabIndex = 7;
-            hawaiianPizzaPriceLbl.Text = "₱ 199.00";
-            hawaiianPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // mushroomPizzaPriceLbl
-            // 
-            mushroomPizzaPriceLbl.AutoSize = true;
-            mushroomPizzaPriceLbl.BackColor = Color.Transparent;
-            mushroomPizzaPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            mushroomPizzaPriceLbl.ForeColor = Color.OrangeRed;
-            mushroomPizzaPriceLbl.Location = new Point(35, 209);
-            mushroomPizzaPriceLbl.Name = "mushroomPizzaPriceLbl";
-            mushroomPizzaPriceLbl.Size = new Size(84, 25);
-            mushroomPizzaPriceLbl.TabIndex = 8;
-            mushroomPizzaPriceLbl.Text = "₱249.00";
-            mushroomPizzaPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // ProductSelectionPizzasForm
             // 

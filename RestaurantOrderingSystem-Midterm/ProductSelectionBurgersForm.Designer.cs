@@ -103,7 +103,7 @@
             topHeaderPanel.Dock = DockStyle.Top;
             topHeaderPanel.Location = new Point(0, 0);
             topHeaderPanel.Name = "topHeaderPanel";
-            topHeaderPanel.Size = new Size(459, 57);
+            topHeaderPanel.Size = new Size(434, 57);
             topHeaderPanel.TabIndex = 0;
             // 
             // pictureBox1
@@ -126,7 +126,7 @@
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(0, 692);
             panel2.Name = "panel2";
-            panel2.Size = new Size(459, 69);
+            panel2.Size = new Size(434, 69);
             panel2.TabIndex = 2;
             // 
             // viewOrderDetailsLbl
@@ -340,7 +340,7 @@
             burgerMenuPanel.Dock = DockStyle.Fill;
             burgerMenuPanel.Location = new Point(98, 57);
             burgerMenuPanel.Name = "burgerMenuPanel";
-            burgerMenuPanel.Size = new Size(361, 635);
+            burgerMenuPanel.Size = new Size(336, 635);
             burgerMenuPanel.TabIndex = 4;
             // 
             // groupBox3
@@ -353,7 +353,7 @@
             groupBox3.Controls.Add(button10);
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(pictureBox5);
-            groupBox3.Location = new Point(175, 366);
+            groupBox3.Location = new Point(164, 366);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(152, 286);
             groupBox3.TabIndex = 9;
@@ -402,7 +402,7 @@
             button9.BackColor = Color.Orange;
             button9.Cursor = Cursors.Hand;
             button9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button9.Location = new Point(113, 164);
+            button9.Location = new Point(11, 168);
             button9.Name = "button9";
             button9.Size = new Size(33, 33);
             button9.TabIndex = 3;
@@ -414,7 +414,7 @@
             button10.BackColor = Color.Orange;
             button10.Cursor = Cursors.Hand;
             button10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.Location = new Point(6, 164);
+            button10.Location = new Point(113, 168);
             button10.Name = "button10";
             button10.Size = new Size(33, 33);
             button10.TabIndex = 2;
@@ -452,7 +452,7 @@
             groupBox2.Controls.Add(addChickenQuantBtn);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(pictureBox4);
-            groupBox2.Location = new Point(10, 366);
+            groupBox2.Location = new Point(5, 366);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(152, 286);
             groupBox2.TabIndex = 10;
@@ -501,7 +501,7 @@
             reduceChickenQuantBtn.BackColor = Color.Orange;
             reduceChickenQuantBtn.Cursor = Cursors.Hand;
             reduceChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceChickenQuantBtn.Location = new Point(113, 164);
+            reduceChickenQuantBtn.Location = new Point(7, 167);
             reduceChickenQuantBtn.Name = "reduceChickenQuantBtn";
             reduceChickenQuantBtn.Size = new Size(33, 33);
             reduceChickenQuantBtn.TabIndex = 3;
@@ -513,7 +513,7 @@
             addChickenQuantBtn.BackColor = Color.Orange;
             addChickenQuantBtn.Cursor = Cursors.Hand;
             addChickenQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addChickenQuantBtn.Location = new Point(6, 164);
+            addChickenQuantBtn.Location = new Point(112, 167);
             addChickenQuantBtn.Name = "addChickenQuantBtn";
             addChickenQuantBtn.Size = new Size(33, 33);
             addChickenQuantBtn.TabIndex = 2;
@@ -551,7 +551,7 @@
             groupBox1.Controls.Add(addDoubleCheeseQuantBtn);
             groupBox1.Controls.Add(labe3);
             groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Location = new Point(179, 64);
+            groupBox1.Location = new Point(164, 64);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(152, 286);
             groupBox1.TabIndex = 11;
@@ -600,7 +600,7 @@
             reduceDoubleCheeseQuantBtn.BackColor = Color.Orange;
             reduceDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
             reduceDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceDoubleCheeseQuantBtn.Location = new Point(113, 164);
+            reduceDoubleCheeseQuantBtn.Location = new Point(7, 163);
             reduceDoubleCheeseQuantBtn.Name = "reduceDoubleCheeseQuantBtn";
             reduceDoubleCheeseQuantBtn.Size = new Size(33, 33);
             reduceDoubleCheeseQuantBtn.TabIndex = 3;
@@ -612,7 +612,7 @@
             addDoubleCheeseQuantBtn.BackColor = Color.Orange;
             addDoubleCheeseQuantBtn.Cursor = Cursors.Hand;
             addDoubleCheeseQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addDoubleCheeseQuantBtn.Location = new Point(6, 164);
+            addDoubleCheeseQuantBtn.Location = new Point(109, 163);
             addDoubleCheeseQuantBtn.Name = "addDoubleCheeseQuantBtn";
             addDoubleCheeseQuantBtn.Size = new Size(33, 33);
             addDoubleCheeseQuantBtn.TabIndex = 2;
@@ -660,7 +660,7 @@
             classicCheeseBurgerGrpBox.Controls.Add(addClassicQuantBtn);
             classicCheeseBurgerGrpBox.Controls.Add(label4);
             classicCheeseBurgerGrpBox.Controls.Add(pictureBox2);
-            classicCheeseBurgerGrpBox.Location = new Point(10, 64);
+            classicCheeseBurgerGrpBox.Location = new Point(6, 64);
             classicCheeseBurgerGrpBox.Name = "classicCheeseBurgerGrpBox";
             classicCheeseBurgerGrpBox.Size = new Size(152, 286);
             classicCheeseBurgerGrpBox.TabIndex = 7;
@@ -709,7 +709,7 @@
             reduceClassicQuantBtn.BackColor = Color.Orange;
             reduceClassicQuantBtn.Cursor = Cursors.Hand;
             reduceClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceClassicQuantBtn.Location = new Point(113, 164);
+            reduceClassicQuantBtn.Location = new Point(7, 163);
             reduceClassicQuantBtn.Name = "reduceClassicQuantBtn";
             reduceClassicQuantBtn.Size = new Size(33, 33);
             reduceClassicQuantBtn.TabIndex = 3;
@@ -721,7 +721,7 @@
             addClassicQuantBtn.BackColor = Color.Orange;
             addClassicQuantBtn.Cursor = Cursors.Hand;
             addClassicQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addClassicQuantBtn.Location = new Point(6, 164);
+            addClassicQuantBtn.Location = new Point(113, 163);
             addClassicQuantBtn.Name = "addClassicQuantBtn";
             addClassicQuantBtn.Size = new Size(33, 33);
             addClassicQuantBtn.TabIndex = 2;
@@ -754,7 +754,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(459, 761);
+            ClientSize = new Size(434, 761);
             Controls.Add(burgerMenuPanel);
             Controls.Add(sidebarPanel);
             Controls.Add(panel2);

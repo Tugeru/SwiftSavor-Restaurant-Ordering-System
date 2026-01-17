@@ -1,6 +1,6 @@
 namespace RestaurantOrderingSystem_Midterm
 {
-    // Data Models
+    
     public class Product
     {
         public string Name { get; set; }
@@ -27,10 +27,11 @@ namespace RestaurantOrderingSystem_Midterm
         }
     }
 
-    // Global State Manager
+  
     public static class OrderManager
     {
         public static List<OrderItem> Items { get; private set; } = new List<OrderItem>();
+        public static string MealType { get; set; } = "Dine In";
 
         public static void AddItem(string name, decimal price, int quantity)
         {
@@ -110,7 +111,6 @@ namespace RestaurantOrderingSystem_Midterm
         public static decimal GetTax()
         {
             decimal taxableAmount = GetSubtotal() - GetBundleDiscount() - GetVolumeDiscount();
-            // Ensure taxable amount doesn't go negative (unlikely but safe)
             if (taxableAmount < 0) taxableAmount = 0;
             return taxableAmount * 0.08m;
         }

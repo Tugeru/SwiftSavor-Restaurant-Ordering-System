@@ -119,14 +119,14 @@
             orderDetailsPanel.Controls.Add(itemLbl);
             orderDetailsPanel.Location = new Point(18, 77);
             orderDetailsPanel.Name = "orderDetailsPanel";
-            orderDetailsPanel.Size = new Size(326, 291);
+            orderDetailsPanel.Size = new Size(358, 289);
             orderDetailsPanel.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(124, 14);
+            label3.Location = new Point(163, 13);
             label3.Name = "label3";
             label3.Size = new Size(77, 21);
             label3.TabIndex = 35;
@@ -136,7 +136,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(248, 14);
+            label2.Location = new Point(276, 14);
             label2.Name = "label2";
             label2.Size = new Size(48, 21);
             label2.TabIndex = 34;
@@ -162,9 +162,9 @@
             flowLayoutPanel1.Controls.Add(label18);
             flowLayoutPanel1.Controls.Add(label19);
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel1.Location = new Point(147, 38);
+            flowLayoutPanel1.Location = new Point(184, 35);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(34, 450);
+            flowLayoutPanel1.Size = new Size(34, 484);
             flowLayoutPanel1.TabIndex = 30;
             flowLayoutPanel1.Visible = false;
             // 
@@ -391,9 +391,9 @@
             receiptPriceFlowLayout.Controls.Add(order15PriceLbl);
             receiptPriceFlowLayout.Controls.Add(order16PriceLbl);
             receiptPriceFlowLayout.FlowDirection = FlowDirection.TopDown;
-            receiptPriceFlowLayout.Location = new Point(218, 38);
+            receiptPriceFlowLayout.Location = new Point(258, 38);
             receiptPriceFlowLayout.Name = "receiptPriceFlowLayout";
-            receiptPriceFlowLayout.Size = new Size(78, 450);
+            receiptPriceFlowLayout.Size = new Size(78, 481);
             receiptPriceFlowLayout.TabIndex = 32;
             receiptPriceFlowLayout.Visible = false;
             // 
@@ -612,7 +612,7 @@
             receiptItemListFlowLayout.FlowDirection = FlowDirection.TopDown;
             receiptItemListFlowLayout.Location = new Point(6, 38);
             receiptItemListFlowLayout.Name = "receiptItemListFlowLayout";
-            receiptItemListFlowLayout.Size = new Size(112, 450);
+            receiptItemListFlowLayout.Size = new Size(150, 450);
             receiptItemListFlowLayout.TabIndex = 29;
             receiptItemListFlowLayout.Visible = false;
             // 
@@ -865,7 +865,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(363, 489);
+            ClientSize = new Size(388, 489);
             Controls.Add(closeBtn);
             Controls.Add(subtotalPriceLbl);
             Controls.Add(subTotalLbl);

@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace RestaurantOrderingSystem_Midterm
+﻿namespace RestaurantOrderingSystem_Midterm
 {
     public partial class OrderReviewForm : Form
     {
         public OrderReviewForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             LoadOrderReview();
             backBtn.Click += (s, e) =>
             {
@@ -27,13 +18,9 @@ namespace RestaurantOrderingSystem_Midterm
 
         private void LoadOrderReview()
         {
-            // Clear the existing panel which contains all the hardcoded junk
             orderReviewListPanel.Controls.Clear();
 
-            // Re-add header labels manually since we cleared the whole panel
-            // Actually, looking at the designer, labels "Item", "Quantity", "Price" are inside the panel.
-            // We should reconstruct the header or just add rows. 
-            // Let's create a header row first.
+
 
             TableLayoutPanel headerTable = new TableLayoutPanel();
             headerTable.ColumnCount = 3;
@@ -50,29 +37,27 @@ namespace RestaurantOrderingSystem_Midterm
 
             orderReviewListPanel.Controls.Add(headerTable);
 
-            // Use a flow layout for the items so they stack nicely
+    
             FlowLayoutPanel itemContainer = new FlowLayoutPanel();
             itemContainer.Dock = DockStyle.Fill;
             itemContainer.AutoScroll = true;
             itemContainer.FlowDirection = FlowDirection.TopDown;
             itemContainer.WrapContents = false;
-            // Ensure the FlowLayoutPanel fills the width of the parent so rows stretch
+
             itemContainer.Resize += (s, e) =>
             {
                 foreach (Control c in itemContainer.Controls) c.Width = itemContainer.ClientSize.Width - 20;
             };
 
             orderReviewListPanel.Controls.Add(itemContainer);
-            // Ensure header stays at top
-            headerTable.SendToBack(); // In Dock logic, SendToBack puts it at the "top" of the docking stack usually, or we manage z-order. 
-            // Actually, DockStyle.Top items added *last* go to the top? No, added *first* go to top.
-            // Let's just use specific controls.
+            headerTable.SendToBack(); 
+
 
             foreach (var item in OrderManager.Items)
             {
                 Panel row = new Panel();
                 row.Height = 40;
-                row.Width = 380; // Approximate
+                row.Width = 380; 
                 row.Margin = new Padding(0, 5, 0, 5);
 
                 // 1. Name
@@ -105,7 +90,7 @@ namespace RestaurantOrderingSystem_Midterm
                 plusBtn.Click += (s, e) => { UpdateItemQuantity(item.Product.Name, 1); };
                 row.Controls.Add(plusBtn);
 
-                // 3. Price
+
                 Label priceLbl = new Label();
                 priceLbl.Text = $"₱ {item.TotalPrice:N2}";
                 priceLbl.Font = new Font("Segoe UI", 10);
@@ -124,7 +109,7 @@ namespace RestaurantOrderingSystem_Midterm
             decimal grandTotal = OrderManager.GetGrandTotal();
 
             subtotalAmountLbl.Text = $"₱ {subtotal:N2}";
-            
+
             // Bundle Discount
             if (bundleDiscount > 0)
             {
@@ -151,26 +136,27 @@ namespace RestaurantOrderingSystem_Midterm
                 percentBasedDiscountAmountLbl.Visible = false;
             }
 
-            // Tax
+
             taxLbl.Visible = true;
             taxAmountLbl.Visible = true;
             taxAmountLbl.Text = $"₱ {tax:N2}";
 
-            // Grand Total
+
             GrandTotalAmountLbl.Text = $"₱ {grandTotal:N2}";
+            mealTypeLbl.Text = OrderManager.MealType;
         }
 
         private void UpdateItemQuantity(string itemName, int delta)
         {
             OrderManager.UpdateQuantity(itemName, delta);
-            LoadOrderReview(); // Refresh UI
+            LoadOrderReview(); 
         }
 
         private void PlaceOrderBtn_Click(object sender, EventArgs e)
         {
             if (OrderManager.Items.Count == 0)
             {
-                MessageBox.Show("Your cart is empty!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You have not added any order!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

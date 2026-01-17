@@ -48,6 +48,7 @@
             burgersSideBarBtn = new Button();
             sweetsMenuPanel = new Panel();
             groupBox2 = new GroupBox();
+            strawberryTiramisuPriceLbl = new Label();
             addOrderTiramisuBtn = new Button();
             tiramisuQuantLbl = new Label();
             reduceTiramisuQuantBtn = new Button();
@@ -55,6 +56,7 @@
             label9 = new Label();
             pictureBox4 = new PictureBox();
             groupBox1 = new GroupBox();
+            cheesecakePriceLbl = new Label();
             addOrderCheesecakeBtn = new Button();
             cheesecakeQuantLbl = new Label();
             reduceCheesecakeQuantBtn = new Button();
@@ -63,15 +65,13 @@
             pictureBox3 = new PictureBox();
             label2 = new Label();
             classicCheeseBurgerGrpBox = new GroupBox();
+            iceCreamPriceLbl = new Label();
             addOrderIceCreamBtn = new Button();
             iceCreamQuantLbl = new Label();
             reduceIceCreamQuantBtn = new Button();
             addIceCreamQuantBtn = new Button();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            iceCreamPriceLbl = new Label();
-            cheesecakePriceLbl = new Label();
-            strawberryTiramisuPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -147,9 +147,9 @@
             itemNumLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemNumLbl.Location = new Point(31, 9);
             itemNumLbl.Name = "itemNumLbl";
-            itemNumLbl.Size = new Size(58, 21);
+            itemNumLbl.Size = new Size(65, 21);
             itemNumLbl.TabIndex = 1;
-            itemNumLbl.Text = "0 Item";
+            itemNumLbl.Text = "0 Items";
             // 
             // checkoutBtn
             // 
@@ -196,6 +196,7 @@
             pizzasLogoLbl.Size = new Size(37, 30);
             pizzasLogoLbl.TabIndex = 9;
             pizzasLogoLbl.Text = "🍕";
+            pizzasLogoLbl.Click += pizzaSideBarBtn_Click;
             // 
             // pizzaSideBarBtn
             // 
@@ -210,6 +211,7 @@
             pizzaSideBarBtn.Text = "Pizzas";
             pizzaSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             pizzaSideBarBtn.UseVisualStyleBackColor = false;
+            pizzaSideBarBtn.Click += pizzaSideBarBtn_Click;
             // 
             // sweetsLogoLabel
             // 
@@ -235,6 +237,7 @@
             sidesLogoLbl.Size = new Size(41, 30);
             sidesLogoLbl.TabIndex = 6;
             sidesLogoLbl.Text = "🍟";
+            sidesLogoLbl.Click += sidesSideBarBtn_Click;
             // 
             // drinksLogoLbl
             // 
@@ -248,6 +251,7 @@
             drinksLogoLbl.Size = new Size(39, 30);
             drinksLogoLbl.TabIndex = 5;
             drinksLogoLbl.Text = "\U0001f964";
+            drinksLogoLbl.Click += drinksSideBarBtn_Click;
             // 
             // burgerLogoLbl
             // 
@@ -261,6 +265,7 @@
             burgerLogoLbl.Size = new Size(43, 30);
             burgerLogoLbl.TabIndex = 4;
             burgerLogoLbl.Text = "🍔";
+            burgerLogoLbl.Click += burgersSideBarBtn_Click;
             // 
             // sweetsSideBarBtn
             // 
@@ -289,6 +294,7 @@
             sidesSideBarBtn.Text = "Sides";
             sidesSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sidesSideBarBtn.UseVisualStyleBackColor = false;
+            sidesSideBarBtn.Click += sidesSideBarBtn_Click;
             // 
             // drinksSideBarBtn
             // 
@@ -303,6 +309,7 @@
             drinksSideBarBtn.Text = "Drinks";
             drinksSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             drinksSideBarBtn.UseVisualStyleBackColor = false;
+            drinksSideBarBtn.Click += drinksSideBarBtn_Click;
             // 
             // burgersSideBarBtn
             // 
@@ -317,6 +324,7 @@
             burgersSideBarBtn.Text = "Burgers";
             burgersSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             burgersSideBarBtn.UseVisualStyleBackColor = false;
+            burgersSideBarBtn.Click += burgersSideBarBtn_Click;
             // 
             // sweetsMenuPanel
             // 
@@ -346,6 +354,19 @@
             groupBox2.Size = new Size(152, 286);
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
+            // 
+            // strawberryTiramisuPriceLbl
+            // 
+            strawberryTiramisuPriceLbl.AutoSize = true;
+            strawberryTiramisuPriceLbl.BackColor = Color.Transparent;
+            strawberryTiramisuPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            strawberryTiramisuPriceLbl.ForeColor = Color.OrangeRed;
+            strawberryTiramisuPriceLbl.Location = new Point(28, 209);
+            strawberryTiramisuPriceLbl.Name = "strawberryTiramisuPriceLbl";
+            strawberryTiramisuPriceLbl.Size = new Size(86, 25);
+            strawberryTiramisuPriceLbl.TabIndex = 8;
+            strawberryTiramisuPriceLbl.Text = "₱ 149.00";
+            strawberryTiramisuPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // addOrderTiramisuBtn
             // 
@@ -377,7 +398,7 @@
             reduceTiramisuQuantBtn.BackColor = Color.Orange;
             reduceTiramisuQuantBtn.Cursor = Cursors.Hand;
             reduceTiramisuQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceTiramisuQuantBtn.Location = new Point(113, 164);
+            reduceTiramisuQuantBtn.Location = new Point(6, 163);
             reduceTiramisuQuantBtn.Name = "reduceTiramisuQuantBtn";
             reduceTiramisuQuantBtn.Size = new Size(33, 33);
             reduceTiramisuQuantBtn.TabIndex = 3;
@@ -389,7 +410,7 @@
             addTiramisuQuantBtn.BackColor = Color.Orange;
             addTiramisuQuantBtn.Cursor = Cursors.Hand;
             addTiramisuQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addTiramisuQuantBtn.Location = new Point(6, 164);
+            addTiramisuQuantBtn.Location = new Point(113, 163);
             addTiramisuQuantBtn.Name = "addTiramisuQuantBtn";
             addTiramisuQuantBtn.Size = new Size(33, 33);
             addTiramisuQuantBtn.TabIndex = 2;
@@ -433,6 +454,19 @@
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             // 
+            // cheesecakePriceLbl
+            // 
+            cheesecakePriceLbl.AutoSize = true;
+            cheesecakePriceLbl.BackColor = Color.Transparent;
+            cheesecakePriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            cheesecakePriceLbl.ForeColor = Color.OrangeRed;
+            cheesecakePriceLbl.Location = new Point(37, 206);
+            cheesecakePriceLbl.Name = "cheesecakePriceLbl";
+            cheesecakePriceLbl.Size = new Size(78, 25);
+            cheesecakePriceLbl.TabIndex = 8;
+            cheesecakePriceLbl.Text = "₱ 99.00";
+            cheesecakePriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderCheesecakeBtn
             // 
             addOrderCheesecakeBtn.BackColor = Color.Firebrick;
@@ -463,7 +497,7 @@
             reduceCheesecakeQuantBtn.BackColor = Color.Orange;
             reduceCheesecakeQuantBtn.Cursor = Cursors.Hand;
             reduceCheesecakeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceCheesecakeQuantBtn.Location = new Point(113, 164);
+            reduceCheesecakeQuantBtn.Location = new Point(7, 165);
             reduceCheesecakeQuantBtn.Name = "reduceCheesecakeQuantBtn";
             reduceCheesecakeQuantBtn.Size = new Size(33, 33);
             reduceCheesecakeQuantBtn.TabIndex = 3;
@@ -475,7 +509,7 @@
             addCheesecakeQuantBtn.BackColor = Color.Orange;
             addCheesecakeQuantBtn.Cursor = Cursors.Hand;
             addCheesecakeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addCheesecakeQuantBtn.Location = new Point(6, 164);
+            addCheesecakeQuantBtn.Location = new Point(113, 165);
             addCheesecakeQuantBtn.Name = "addCheesecakeQuantBtn";
             addCheesecakeQuantBtn.Size = new Size(33, 33);
             addCheesecakeQuantBtn.TabIndex = 2;
@@ -530,6 +564,19 @@
             classicCheeseBurgerGrpBox.TabIndex = 7;
             classicCheeseBurgerGrpBox.TabStop = false;
             // 
+            // iceCreamPriceLbl
+            // 
+            iceCreamPriceLbl.AutoSize = true;
+            iceCreamPriceLbl.BackColor = Color.Transparent;
+            iceCreamPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            iceCreamPriceLbl.ForeColor = Color.OrangeRed;
+            iceCreamPriceLbl.Location = new Point(36, 206);
+            iceCreamPriceLbl.Name = "iceCreamPriceLbl";
+            iceCreamPriceLbl.Size = new Size(78, 25);
+            iceCreamPriceLbl.TabIndex = 8;
+            iceCreamPriceLbl.Text = "₱ 49.00";
+            iceCreamPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderIceCreamBtn
             // 
             addOrderIceCreamBtn.BackColor = Color.Firebrick;
@@ -560,7 +607,7 @@
             reduceIceCreamQuantBtn.BackColor = Color.Orange;
             reduceIceCreamQuantBtn.Cursor = Cursors.Hand;
             reduceIceCreamQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceIceCreamQuantBtn.Location = new Point(113, 164);
+            reduceIceCreamQuantBtn.Location = new Point(6, 165);
             reduceIceCreamQuantBtn.Name = "reduceIceCreamQuantBtn";
             reduceIceCreamQuantBtn.Size = new Size(33, 33);
             reduceIceCreamQuantBtn.TabIndex = 3;
@@ -572,7 +619,7 @@
             addIceCreamQuantBtn.BackColor = Color.Orange;
             addIceCreamQuantBtn.Cursor = Cursors.Hand;
             addIceCreamQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addIceCreamQuantBtn.Location = new Point(6, 164);
+            addIceCreamQuantBtn.Location = new Point(113, 165);
             addIceCreamQuantBtn.Name = "addIceCreamQuantBtn";
             addIceCreamQuantBtn.Size = new Size(33, 33);
             addIceCreamQuantBtn.TabIndex = 2;
@@ -599,45 +646,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            // 
-            // iceCreamPriceLbl
-            // 
-            iceCreamPriceLbl.AutoSize = true;
-            iceCreamPriceLbl.BackColor = Color.Transparent;
-            iceCreamPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            iceCreamPriceLbl.ForeColor = Color.OrangeRed;
-            iceCreamPriceLbl.Location = new Point(36, 206);
-            iceCreamPriceLbl.Name = "iceCreamPriceLbl";
-            iceCreamPriceLbl.Size = new Size(78, 25);
-            iceCreamPriceLbl.TabIndex = 8;
-            iceCreamPriceLbl.Text = "₱ 49.00";
-            iceCreamPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // cheesecakePriceLbl
-            // 
-            cheesecakePriceLbl.AutoSize = true;
-            cheesecakePriceLbl.BackColor = Color.Transparent;
-            cheesecakePriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            cheesecakePriceLbl.ForeColor = Color.OrangeRed;
-            cheesecakePriceLbl.Location = new Point(37, 206);
-            cheesecakePriceLbl.Name = "cheesecakePriceLbl";
-            cheesecakePriceLbl.Size = new Size(78, 25);
-            cheesecakePriceLbl.TabIndex = 8;
-            cheesecakePriceLbl.Text = "₱ 99.00";
-            cheesecakePriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // strawberryTiramisuPriceLbl
-            // 
-            strawberryTiramisuPriceLbl.AutoSize = true;
-            strawberryTiramisuPriceLbl.BackColor = Color.Transparent;
-            strawberryTiramisuPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            strawberryTiramisuPriceLbl.ForeColor = Color.OrangeRed;
-            strawberryTiramisuPriceLbl.Location = new Point(28, 209);
-            strawberryTiramisuPriceLbl.Name = "strawberryTiramisuPriceLbl";
-            strawberryTiramisuPriceLbl.Size = new Size(86, 25);
-            strawberryTiramisuPriceLbl.TabIndex = 8;
-            strawberryTiramisuPriceLbl.Text = "₱ 149.00";
-            strawberryTiramisuPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // ProductSelectionSweetsForm
             // 

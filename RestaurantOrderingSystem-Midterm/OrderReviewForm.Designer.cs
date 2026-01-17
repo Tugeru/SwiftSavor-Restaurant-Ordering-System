@@ -119,6 +119,7 @@
             label4 = new Label();
             label3 = new Label();
             panel2 = new Panel();
+            mealTypeLbl = new Label();
             taxAmountLbl = new Label();
             percentageBasedDiscountLbl = new Label();
             percentBasedDiscountAmountLbl = new Label();
@@ -183,7 +184,7 @@
             // orderReviewListPanel
             // 
             orderReviewListPanel.AutoScroll = true;
-            orderReviewListPanel.BackColor = Color.WhiteSmoke;
+            orderReviewListPanel.BackColor = SystemColors.Control;
             orderReviewListPanel.BorderStyle = BorderStyle.FixedSingle;
             orderReviewListPanel.Controls.Add(AddOrder1QuantBtn);
             orderReviewListPanel.Controls.Add(order1QuantLbl);
@@ -238,9 +239,10 @@
             orderReviewListPanel.Controls.Add(label5);
             orderReviewListPanel.Controls.Add(label4);
             orderReviewListPanel.Controls.Add(label3);
+            orderReviewListPanel.ForeColor = Color.Black;
             orderReviewListPanel.Location = new Point(12, 137);
             orderReviewListPanel.Name = "orderReviewListPanel";
-            orderReviewListPanel.Size = new Size(410, 336);
+            orderReviewListPanel.Size = new Size(410, 302);
             orderReviewListPanel.TabIndex = 2;
             // 
             // AddOrder1QuantBtn
@@ -260,9 +262,9 @@
             // order1QuantLbl
             // 
             order1QuantLbl.AutoSize = true;
-            order1QuantLbl.BackColor = Color.Gray;
+            order1QuantLbl.BackColor = SystemColors.Control;
             order1QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order1QuantLbl.ForeColor = Color.White;
+            order1QuantLbl.ForeColor = Color.Black;
             order1QuantLbl.Location = new Point(201, 43);
             order1QuantLbl.Name = "order1QuantLbl";
             order1QuantLbl.Size = new Size(19, 21);
@@ -301,9 +303,9 @@
             // order16QuantLbl
             // 
             order16QuantLbl.AutoSize = true;
-            order16QuantLbl.BackColor = Color.Gray;
+            order16QuantLbl.BackColor = SystemColors.Control;
             order16QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order16QuantLbl.ForeColor = Color.White;
+            order16QuantLbl.ForeColor = Color.Black;
             order16QuantLbl.Location = new Point(201, 508);
             order16QuantLbl.Name = "order16QuantLbl";
             order16QuantLbl.Size = new Size(19, 21);
@@ -342,9 +344,9 @@
             // order15QuantLbl
             // 
             order15QuantLbl.AutoSize = true;
-            order15QuantLbl.BackColor = Color.Gray;
+            order15QuantLbl.BackColor = SystemColors.Control;
             order15QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order15QuantLbl.ForeColor = Color.White;
+            order15QuantLbl.ForeColor = Color.Black;
             order15QuantLbl.Location = new Point(201, 477);
             order15QuantLbl.Name = "order15QuantLbl";
             order15QuantLbl.Size = new Size(19, 21);
@@ -383,9 +385,9 @@
             // order14QuantLbl
             // 
             order14QuantLbl.AutoSize = true;
-            order14QuantLbl.BackColor = Color.Gray;
+            order14QuantLbl.BackColor = SystemColors.Control;
             order14QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order14QuantLbl.ForeColor = Color.White;
+            order14QuantLbl.ForeColor = Color.Black;
             order14QuantLbl.Location = new Point(201, 446);
             order14QuantLbl.Name = "order14QuantLbl";
             order14QuantLbl.Size = new Size(19, 21);
@@ -424,9 +426,9 @@
             // order13QuantLbl
             // 
             order13QuantLbl.AutoSize = true;
-            order13QuantLbl.BackColor = Color.Gray;
+            order13QuantLbl.BackColor = SystemColors.Control;
             order13QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order13QuantLbl.ForeColor = Color.White;
+            order13QuantLbl.ForeColor = Color.Black;
             order13QuantLbl.Location = new Point(201, 415);
             order13QuantLbl.Name = "order13QuantLbl";
             order13QuantLbl.Size = new Size(19, 21);
@@ -465,9 +467,9 @@
             // order12QuantLbl
             // 
             order12QuantLbl.AutoSize = true;
-            order12QuantLbl.BackColor = Color.Gray;
+            order12QuantLbl.BackColor = SystemColors.Control;
             order12QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order12QuantLbl.ForeColor = Color.White;
+            order12QuantLbl.ForeColor = Color.Black;
             order12QuantLbl.Location = new Point(201, 384);
             order12QuantLbl.Name = "order12QuantLbl";
             order12QuantLbl.Size = new Size(19, 21);
@@ -725,9 +727,9 @@
             // order11QuantLbl
             // 
             order11QuantLbl.AutoSize = true;
-            order11QuantLbl.BackColor = Color.Gray;
+            order11QuantLbl.BackColor = SystemColors.Control;
             order11QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order11QuantLbl.ForeColor = Color.White;
+            order11QuantLbl.ForeColor = Color.Black;
             order11QuantLbl.Location = new Point(201, 353);
             order11QuantLbl.Name = "order11QuantLbl";
             order11QuantLbl.Size = new Size(19, 21);
@@ -766,9 +768,9 @@
             // order10QuantLbl
             // 
             order10QuantLbl.AutoSize = true;
-            order10QuantLbl.BackColor = Color.Gray;
+            order10QuantLbl.BackColor = SystemColors.Control;
             order10QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order10QuantLbl.ForeColor = Color.White;
+            order10QuantLbl.ForeColor = Color.Black;
             order10QuantLbl.Location = new Point(201, 322);
             order10QuantLbl.Name = "order10QuantLbl";
             order10QuantLbl.Size = new Size(19, 21);
@@ -807,9 +809,9 @@
             // order9QuantLbl
             // 
             order9QuantLbl.AutoSize = true;
-            order9QuantLbl.BackColor = Color.Gray;
+            order9QuantLbl.BackColor = SystemColors.Control;
             order9QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order9QuantLbl.ForeColor = Color.White;
+            order9QuantLbl.ForeColor = Color.Black;
             order9QuantLbl.Location = new Point(201, 291);
             order9QuantLbl.Name = "order9QuantLbl";
             order9QuantLbl.Size = new Size(19, 21);
@@ -848,9 +850,9 @@
             // order8QuantLbl
             // 
             order8QuantLbl.AutoSize = true;
-            order8QuantLbl.BackColor = Color.Gray;
+            order8QuantLbl.BackColor = SystemColors.Control;
             order8QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order8QuantLbl.ForeColor = Color.White;
+            order8QuantLbl.ForeColor = Color.Black;
             order8QuantLbl.Location = new Point(201, 260);
             order8QuantLbl.Name = "order8QuantLbl";
             order8QuantLbl.Size = new Size(19, 21);
@@ -889,9 +891,9 @@
             // order7QuantLbl
             // 
             order7QuantLbl.AutoSize = true;
-            order7QuantLbl.BackColor = Color.Gray;
+            order7QuantLbl.BackColor = SystemColors.Control;
             order7QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order7QuantLbl.ForeColor = Color.White;
+            order7QuantLbl.ForeColor = Color.Black;
             order7QuantLbl.Location = new Point(201, 229);
             order7QuantLbl.Name = "order7QuantLbl";
             order7QuantLbl.Size = new Size(19, 21);
@@ -930,9 +932,9 @@
             // order6QuantLbl
             // 
             order6QuantLbl.AutoSize = true;
-            order6QuantLbl.BackColor = Color.Gray;
+            order6QuantLbl.BackColor = SystemColors.Control;
             order6QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order6QuantLbl.ForeColor = Color.White;
+            order6QuantLbl.ForeColor = Color.Black;
             order6QuantLbl.Location = new Point(201, 198);
             order6QuantLbl.Name = "order6QuantLbl";
             order6QuantLbl.Size = new Size(19, 21);
@@ -971,9 +973,9 @@
             // order5QuantLbl
             // 
             order5QuantLbl.AutoSize = true;
-            order5QuantLbl.BackColor = Color.Gray;
+            order5QuantLbl.BackColor = SystemColors.Control;
             order5QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order5QuantLbl.ForeColor = Color.White;
+            order5QuantLbl.ForeColor = Color.Black;
             order5QuantLbl.Location = new Point(201, 167);
             order5QuantLbl.Name = "order5QuantLbl";
             order5QuantLbl.Size = new Size(19, 21);
@@ -1012,9 +1014,9 @@
             // order4QuantLbl
             // 
             order4QuantLbl.AutoSize = true;
-            order4QuantLbl.BackColor = Color.Gray;
+            order4QuantLbl.BackColor = SystemColors.Control;
             order4QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order4QuantLbl.ForeColor = Color.White;
+            order4QuantLbl.ForeColor = Color.Black;
             order4QuantLbl.Location = new Point(201, 136);
             order4QuantLbl.Name = "order4QuantLbl";
             order4QuantLbl.Size = new Size(19, 21);
@@ -1053,9 +1055,9 @@
             // order3QuantLbl
             // 
             order3QuantLbl.AutoSize = true;
-            order3QuantLbl.BackColor = Color.Gray;
+            order3QuantLbl.BackColor = SystemColors.Control;
             order3QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order3QuantLbl.ForeColor = Color.White;
+            order3QuantLbl.ForeColor = Color.Black;
             order3QuantLbl.Location = new Point(201, 105);
             order3QuantLbl.Name = "order3QuantLbl";
             order3QuantLbl.Size = new Size(19, 21);
@@ -1094,9 +1096,9 @@
             // order2QuantLbl
             // 
             order2QuantLbl.AutoSize = true;
-            order2QuantLbl.BackColor = Color.Gray;
+            order2QuantLbl.BackColor = SystemColors.Control;
             order2QuantLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            order2QuantLbl.ForeColor = Color.White;
+            order2QuantLbl.ForeColor = Color.Black;
             order2QuantLbl.Location = new Point(201, 74);
             order2QuantLbl.Name = "order2QuantLbl";
             order2QuantLbl.Size = new Size(19, 21);
@@ -1374,6 +1376,7 @@
             // 
             panel2.BackColor = Color.WhiteSmoke;
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(mealTypeLbl);
             panel2.Controls.Add(taxAmountLbl);
             panel2.Controls.Add(percentageBasedDiscountLbl);
             panel2.Controls.Add(percentBasedDiscountAmountLbl);
@@ -1386,16 +1389,26 @@
             panel2.Controls.Add(subtotalLbl);
             panel2.Controls.Add(placeOrderBtn);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 491);
+            panel2.Location = new Point(0, 460);
             panel2.Name = "panel2";
-            panel2.Size = new Size(434, 270);
+            panel2.Size = new Size(434, 301);
             panel2.TabIndex = 3;
+            // 
+            // mealTypeLbl
+            // 
+            mealTypeLbl.AutoSize = true;
+            mealTypeLbl.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            mealTypeLbl.Location = new Point(25, 15);
+            mealTypeLbl.Name = "mealTypeLbl";
+            mealTypeLbl.Size = new Size(84, 30);
+            mealTypeLbl.TabIndex = 13;
+            mealTypeLbl.Text = "Dine In";
             // 
             // taxAmountLbl
             // 
             taxAmountLbl.AutoSize = true;
             taxAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            taxAmountLbl.Location = new Point(318, 115);
+            taxAmountLbl.Location = new Point(322, 150);
             taxAmountLbl.Name = "taxAmountLbl";
             taxAmountLbl.Size = new Size(24, 21);
             taxAmountLbl.TabIndex = 12;
@@ -1406,7 +1419,7 @@
             // 
             percentageBasedDiscountLbl.AutoSize = true;
             percentageBasedDiscountLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            percentageBasedDiscountLbl.Location = new Point(21, 83);
+            percentageBasedDiscountLbl.Location = new Point(25, 119);
             percentageBasedDiscountLbl.Name = "percentageBasedDiscountLbl";
             percentageBasedDiscountLbl.Size = new Size(240, 21);
             percentageBasedDiscountLbl.TabIndex = 11;
@@ -1417,7 +1430,7 @@
             // 
             percentBasedDiscountAmountLbl.AutoSize = true;
             percentBasedDiscountAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            percentBasedDiscountAmountLbl.Location = new Point(318, 83);
+            percentBasedDiscountAmountLbl.Location = new Point(322, 119);
             percentBasedDiscountAmountLbl.Name = "percentBasedDiscountAmountLbl";
             percentBasedDiscountAmountLbl.Size = new Size(24, 21);
             percentBasedDiscountAmountLbl.TabIndex = 10;
@@ -1428,7 +1441,7 @@
             // 
             burgerDrinkDiscountAmountLbl.AutoSize = true;
             burgerDrinkDiscountAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            burgerDrinkDiscountAmountLbl.Location = new Point(318, 50);
+            burgerDrinkDiscountAmountLbl.Location = new Point(322, 86);
             burgerDrinkDiscountAmountLbl.Name = "burgerDrinkDiscountAmountLbl";
             burgerDrinkDiscountAmountLbl.Size = new Size(24, 21);
             burgerDrinkDiscountAmountLbl.TabIndex = 9;
@@ -1439,7 +1452,7 @@
             // 
             taxLbl.AutoSize = true;
             taxLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            taxLbl.Location = new Point(21, 118);
+            taxLbl.Location = new Point(25, 154);
             taxLbl.Name = "taxLbl";
             taxLbl.Size = new Size(69, 21);
             taxLbl.TabIndex = 8;
@@ -1450,7 +1463,7 @@
             // 
             burgerDrinkDiscountLbl.AutoSize = true;
             burgerDrinkDiscountLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            burgerDrinkDiscountLbl.Location = new Point(21, 50);
+            burgerDrinkDiscountLbl.Location = new Point(25, 86);
             burgerDrinkDiscountLbl.Name = "burgerDrinkDiscountLbl";
             burgerDrinkDiscountLbl.Size = new Size(183, 21);
             burgerDrinkDiscountLbl.TabIndex = 7;
@@ -1461,7 +1474,7 @@
             // 
             subtotalAmountLbl.AutoSize = true;
             subtotalAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            subtotalAmountLbl.Location = new Point(318, 22);
+            subtotalAmountLbl.Location = new Point(322, 58);
             subtotalAmountLbl.Name = "subtotalAmountLbl";
             subtotalAmountLbl.Size = new Size(24, 21);
             subtotalAmountLbl.TabIndex = 6;
@@ -1471,7 +1484,7 @@
             // 
             GrandTotalAmountLbl.AutoSize = true;
             GrandTotalAmountLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            GrandTotalAmountLbl.Location = new Point(294, 172);
+            GrandTotalAmountLbl.Location = new Point(294, 196);
             GrandTotalAmountLbl.Name = "GrandTotalAmountLbl";
             GrandTotalAmountLbl.Size = new Size(26, 30);
             GrandTotalAmountLbl.TabIndex = 5;
@@ -1482,7 +1495,7 @@
             // 
             grandTotalLbl.AutoSize = true;
             grandTotalLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grandTotalLbl.Location = new Point(25, 172);
+            grandTotalLbl.Location = new Point(25, 196);
             grandTotalLbl.Name = "grandTotalLbl";
             grandTotalLbl.Size = new Size(125, 30);
             grandTotalLbl.TabIndex = 4;
@@ -1492,7 +1505,7 @@
             // 
             subtotalLbl.AutoSize = true;
             subtotalLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            subtotalLbl.Location = new Point(21, 20);
+            subtotalLbl.Location = new Point(25, 56);
             subtotalLbl.Name = "subtotalLbl";
             subtotalLbl.Size = new Size(72, 21);
             subtotalLbl.TabIndex = 1;
@@ -1503,7 +1516,7 @@
             placeOrderBtn.BackColor = Color.Firebrick;
             placeOrderBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             placeOrderBtn.ForeColor = Color.White;
-            placeOrderBtn.Location = new Point(21, 208);
+            placeOrderBtn.Location = new Point(21, 238);
             placeOrderBtn.Name = "placeOrderBtn";
             placeOrderBtn.Size = new Size(374, 50);
             placeOrderBtn.TabIndex = 0;
@@ -1639,5 +1652,6 @@
         private Label taxLbl;
         private Label percentBasedDiscountAmountLbl;
         private Label taxAmountLbl;
+        private Label mealTypeLbl;
     }
 }

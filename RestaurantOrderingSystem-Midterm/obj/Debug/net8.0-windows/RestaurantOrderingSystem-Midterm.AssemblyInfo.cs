@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestaurantOrderingSystem-Midterm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1f1bc001b8aa1437cda2f7b7aa1ce56fa65fbec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39bd7cb1151e753b3cb4788abd13bd7b5388c238")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestaurantOrderingSystem-Midterm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestaurantOrderingSystem-Midterm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

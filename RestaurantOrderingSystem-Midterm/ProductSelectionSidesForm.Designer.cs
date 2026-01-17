@@ -49,6 +49,7 @@
             burgersSideBarBtn = new Button();
             sidesMenuPanel = new Panel();
             groupBox2 = new GroupBox();
+            gardenSaladPriceLbl = new Label();
             addOrderSaladBtn = new Button();
             saladQuantLbl = new Label();
             reduceSaladQuantBtn = new Button();
@@ -56,6 +57,7 @@
             label9 = new Label();
             pictureBox4 = new PictureBox();
             groupBox1 = new GroupBox();
+            coleslawPriceLbl = new Label();
             addOrderColeslawBtn = new Button();
             coleslawQuantLbl = new Label();
             reduceColeslawQuantBtn = new Button();
@@ -64,15 +66,13 @@
             pictureBox3 = new PictureBox();
             label2 = new Label();
             classicCheeseBurgerGrpBox = new GroupBox();
+            frenchFriesPriceLbl = new Label();
             addOrderFriesBtn = new Button();
             friesQuantLbl = new Label();
             reduceFriesQuantBtn = new Button();
             addFriesQuantBtn = new Button();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            frenchFriesPriceLbl = new Label();
-            coleslawPriceLbl = new Label();
-            gardenSaladPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -197,6 +197,7 @@
             pizzasLogoLbl.Size = new Size(37, 30);
             pizzasLogoLbl.TabIndex = 9;
             pizzasLogoLbl.Text = "🍕";
+            pizzasLogoLbl.Click += pizzaSideBarBtn_Click;
             // 
             // pizzaSideBarBtn
             // 
@@ -211,6 +212,7 @@
             pizzaSideBarBtn.Text = "Pizzas";
             pizzaSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             pizzaSideBarBtn.UseVisualStyleBackColor = false;
+            pizzaSideBarBtn.Click += pizzaSideBarBtn_Click;
             // 
             // sweetsLogoLabel
             // 
@@ -223,6 +225,7 @@
             sweetsLogoLabel.Size = new Size(43, 30);
             sweetsLogoLabel.TabIndex = 7;
             sweetsLogoLabel.Text = "🍰";
+            sweetsLogoLabel.Click += sweetsSideBarBtn_Click;
             // 
             // sidesLogoLbl
             // 
@@ -248,6 +251,7 @@
             drinksLogoLbl.Size = new Size(39, 30);
             drinksLogoLbl.TabIndex = 5;
             drinksLogoLbl.Text = "\U0001f964";
+            drinksLogoLbl.Click += drinksSideBarBtn_Click;
             // 
             // burgerLogoLbl
             // 
@@ -261,6 +265,7 @@
             burgerLogoLbl.Size = new Size(43, 30);
             burgerLogoLbl.TabIndex = 4;
             burgerLogoLbl.Text = "🍔";
+            burgerLogoLbl.Click += burgersSideBarBtn_Click;
             // 
             // sweetsSideBarBtn
             // 
@@ -274,6 +279,7 @@
             sweetsSideBarBtn.Text = "Sweets";
             sweetsSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sweetsSideBarBtn.UseVisualStyleBackColor = false;
+            sweetsSideBarBtn.Click += sweetsSideBarBtn_Click;
             // 
             // sidesSideBarBtn
             // 
@@ -301,6 +307,7 @@
             drinksSideBarBtn.Text = "Drinks";
             drinksSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             drinksSideBarBtn.UseVisualStyleBackColor = false;
+            drinksSideBarBtn.Click += drinksSideBarBtn_Click;
             // 
             // burgersSideBarBtn
             // 
@@ -315,6 +322,7 @@
             burgersSideBarBtn.Text = "Burgers";
             burgersSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             burgersSideBarBtn.UseVisualStyleBackColor = false;
+            burgersSideBarBtn.Click += burgersSideBarBtn_Click;
             // 
             // sidesMenuPanel
             // 
@@ -345,6 +353,19 @@
             groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             // 
+            // gardenSaladPriceLbl
+            // 
+            gardenSaladPriceLbl.AutoSize = true;
+            gardenSaladPriceLbl.BackColor = Color.Transparent;
+            gardenSaladPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            gardenSaladPriceLbl.ForeColor = Color.OrangeRed;
+            gardenSaladPriceLbl.Location = new Point(35, 206);
+            gardenSaladPriceLbl.Name = "gardenSaladPriceLbl";
+            gardenSaladPriceLbl.Size = new Size(78, 25);
+            gardenSaladPriceLbl.TabIndex = 7;
+            gardenSaladPriceLbl.Text = "₱ 99.00";
+            gardenSaladPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderSaladBtn
             // 
             addOrderSaladBtn.BackColor = Color.Firebrick;
@@ -364,7 +385,7 @@
             saladQuantLbl.BackColor = Color.DimGray;
             saladQuantLbl.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             saladQuantLbl.ForeColor = SystemColors.Control;
-            saladQuantLbl.Location = new Point(67, 170);
+            saladQuantLbl.Location = new Point(67, 177);
             saladQuantLbl.Name = "saladQuantLbl";
             saladQuantLbl.Size = new Size(17, 20);
             saladQuantLbl.TabIndex = 4;
@@ -375,7 +396,7 @@
             reduceSaladQuantBtn.BackColor = Color.Orange;
             reduceSaladQuantBtn.Cursor = Cursors.Hand;
             reduceSaladQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceSaladQuantBtn.Location = new Point(113, 164);
+            reduceSaladQuantBtn.Location = new Point(7, 170);
             reduceSaladQuantBtn.Name = "reduceSaladQuantBtn";
             reduceSaladQuantBtn.Size = new Size(33, 33);
             reduceSaladQuantBtn.TabIndex = 3;
@@ -387,7 +408,7 @@
             addSaladQuantBtn.BackColor = Color.Orange;
             addSaladQuantBtn.Cursor = Cursors.Hand;
             addSaladQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addSaladQuantBtn.Location = new Point(6, 164);
+            addSaladQuantBtn.Location = new Point(112, 170);
             addSaladQuantBtn.Name = "addSaladQuantBtn";
             addSaladQuantBtn.Size = new Size(33, 33);
             addSaladQuantBtn.TabIndex = 2;
@@ -431,6 +452,19 @@
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             // 
+            // coleslawPriceLbl
+            // 
+            coleslawPriceLbl.AutoSize = true;
+            coleslawPriceLbl.BackColor = Color.Transparent;
+            coleslawPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            coleslawPriceLbl.ForeColor = Color.OrangeRed;
+            coleslawPriceLbl.Location = new Point(38, 206);
+            coleslawPriceLbl.Name = "coleslawPriceLbl";
+            coleslawPriceLbl.Size = new Size(78, 25);
+            coleslawPriceLbl.TabIndex = 7;
+            coleslawPriceLbl.Text = "₱ 59.00";
+            coleslawPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderColeslawBtn
             // 
             addOrderColeslawBtn.BackColor = Color.Firebrick;
@@ -461,7 +495,7 @@
             reduceColeslawQuantBtn.BackColor = Color.Orange;
             reduceColeslawQuantBtn.Cursor = Cursors.Hand;
             reduceColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceColeslawQuantBtn.Location = new Point(113, 164);
+            reduceColeslawQuantBtn.Location = new Point(6, 166);
             reduceColeslawQuantBtn.Name = "reduceColeslawQuantBtn";
             reduceColeslawQuantBtn.Size = new Size(33, 33);
             reduceColeslawQuantBtn.TabIndex = 3;
@@ -473,7 +507,7 @@
             addColeslawQuantBtn.BackColor = Color.Orange;
             addColeslawQuantBtn.Cursor = Cursors.Hand;
             addColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addColeslawQuantBtn.Location = new Point(6, 164);
+            addColeslawQuantBtn.Location = new Point(113, 166);
             addColeslawQuantBtn.Name = "addColeslawQuantBtn";
             addColeslawQuantBtn.Size = new Size(33, 33);
             addColeslawQuantBtn.TabIndex = 2;
@@ -528,6 +562,19 @@
             classicCheeseBurgerGrpBox.TabIndex = 7;
             classicCheeseBurgerGrpBox.TabStop = false;
             // 
+            // frenchFriesPriceLbl
+            // 
+            frenchFriesPriceLbl.AutoSize = true;
+            frenchFriesPriceLbl.BackColor = Color.Transparent;
+            frenchFriesPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            frenchFriesPriceLbl.ForeColor = Color.OrangeRed;
+            frenchFriesPriceLbl.Location = new Point(38, 206);
+            frenchFriesPriceLbl.Name = "frenchFriesPriceLbl";
+            frenchFriesPriceLbl.Size = new Size(77, 25);
+            frenchFriesPriceLbl.TabIndex = 7;
+            frenchFriesPriceLbl.Text = "₱ 79.00";
+            frenchFriesPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderFriesBtn
             // 
             addOrderFriesBtn.BackColor = Color.Firebrick;
@@ -558,7 +605,7 @@
             reduceFriesQuantBtn.BackColor = Color.Orange;
             reduceFriesQuantBtn.Cursor = Cursors.Hand;
             reduceFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceFriesQuantBtn.Location = new Point(113, 164);
+            reduceFriesQuantBtn.Location = new Point(6, 164);
             reduceFriesQuantBtn.Name = "reduceFriesQuantBtn";
             reduceFriesQuantBtn.Size = new Size(33, 33);
             reduceFriesQuantBtn.TabIndex = 3;
@@ -570,7 +617,7 @@
             addFriesQuantBtn.BackColor = Color.Orange;
             addFriesQuantBtn.Cursor = Cursors.Hand;
             addFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addFriesQuantBtn.Location = new Point(6, 164);
+            addFriesQuantBtn.Location = new Point(112, 164);
             addFriesQuantBtn.Name = "addFriesQuantBtn";
             addFriesQuantBtn.Size = new Size(33, 33);
             addFriesQuantBtn.TabIndex = 2;
@@ -597,45 +644,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            // 
-            // frenchFriesPriceLbl
-            // 
-            frenchFriesPriceLbl.AutoSize = true;
-            frenchFriesPriceLbl.BackColor = Color.Transparent;
-            frenchFriesPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            frenchFriesPriceLbl.ForeColor = Color.OrangeRed;
-            frenchFriesPriceLbl.Location = new Point(38, 206);
-            frenchFriesPriceLbl.Name = "frenchFriesPriceLbl";
-            frenchFriesPriceLbl.Size = new Size(77, 25);
-            frenchFriesPriceLbl.TabIndex = 7;
-            frenchFriesPriceLbl.Text = "₱ 79.00";
-            frenchFriesPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // coleslawPriceLbl
-            // 
-            coleslawPriceLbl.AutoSize = true;
-            coleslawPriceLbl.BackColor = Color.Transparent;
-            coleslawPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            coleslawPriceLbl.ForeColor = Color.OrangeRed;
-            coleslawPriceLbl.Location = new Point(38, 206);
-            coleslawPriceLbl.Name = "coleslawPriceLbl";
-            coleslawPriceLbl.Size = new Size(78, 25);
-            coleslawPriceLbl.TabIndex = 7;
-            coleslawPriceLbl.Text = "₱ 59.00";
-            coleslawPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // gardenSaladPriceLbl
-            // 
-            gardenSaladPriceLbl.AutoSize = true;
-            gardenSaladPriceLbl.BackColor = Color.Transparent;
-            gardenSaladPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            gardenSaladPriceLbl.ForeColor = Color.OrangeRed;
-            gardenSaladPriceLbl.Location = new Point(35, 206);
-            gardenSaladPriceLbl.Name = "gardenSaladPriceLbl";
-            gardenSaladPriceLbl.Size = new Size(78, 25);
-            gardenSaladPriceLbl.TabIndex = 7;
-            gardenSaladPriceLbl.Text = "₱ 99.00";
-            gardenSaladPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // ProductSelectionSidesForm
             // 

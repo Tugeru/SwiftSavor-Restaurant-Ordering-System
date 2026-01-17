@@ -15,6 +15,7 @@ namespace RestaurantOrderingSystem_Midterm
         public ViewOrderDetailsForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
             LoadOrderDetails();
             closeBtn.Click += (s, e) => this.Close();
         }

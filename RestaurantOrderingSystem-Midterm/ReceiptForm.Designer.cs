@@ -202,7 +202,7 @@
             // 
             receiptTotalOrderAmountLbl.AutoSize = true;
             receiptTotalOrderAmountLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            receiptTotalOrderAmountLbl.Location = new Point(255, 830);
+            receiptTotalOrderAmountLbl.Location = new Point(227, 829);
             receiptTotalOrderAmountLbl.Name = "receiptTotalOrderAmountLbl";
             receiptTotalOrderAmountLbl.Size = new Size(44, 40);
             receiptTotalOrderAmountLbl.TabIndex = 39;
@@ -330,9 +330,9 @@
             receiptPriceFlowLayout.Controls.Add(order15PriceLbl);
             receiptPriceFlowLayout.Controls.Add(order16PriceLbl);
             receiptPriceFlowLayout.FlowDirection = FlowDirection.TopDown;
-            receiptPriceFlowLayout.Location = new Point(277, 129);
+            receiptPriceFlowLayout.Location = new Point(303, 129);
             receiptPriceFlowLayout.Name = "receiptPriceFlowLayout";
-            receiptPriceFlowLayout.Size = new Size(118, 521);
+            receiptPriceFlowLayout.Size = new Size(85, 521);
             receiptPriceFlowLayout.TabIndex = 28;
             receiptPriceFlowLayout.Visible = false;
             // 

@@ -392,7 +392,7 @@
             reduceIcedCoffeeQuantBtn.BackColor = Color.Orange;
             reduceIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
             reduceIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceIcedCoffeeQuantBtn.Location = new Point(113, 164);
+            reduceIcedCoffeeQuantBtn.Location = new Point(7, 170);
             reduceIcedCoffeeQuantBtn.Name = "reduceIcedCoffeeQuantBtn";
             reduceIcedCoffeeQuantBtn.Size = new Size(33, 33);
             reduceIcedCoffeeQuantBtn.TabIndex = 3;
@@ -404,7 +404,7 @@
             addIcedCoffeeQuantBtn.BackColor = Color.Orange;
             addIcedCoffeeQuantBtn.Cursor = Cursors.Hand;
             addIcedCoffeeQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addIcedCoffeeQuantBtn.Location = new Point(6, 164);
+            addIcedCoffeeQuantBtn.Location = new Point(112, 170);
             addIcedCoffeeQuantBtn.Name = "addIcedCoffeeQuantBtn";
             addIcedCoffeeQuantBtn.Size = new Size(33, 33);
             addIcedCoffeeQuantBtn.TabIndex = 2;
@@ -492,7 +492,7 @@
             reduceIcedTeaQuantBtn.BackColor = Color.Orange;
             reduceIcedTeaQuantBtn.Cursor = Cursors.Hand;
             reduceIcedTeaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceIcedTeaQuantBtn.Location = new Point(113, 164);
+            reduceIcedTeaQuantBtn.Location = new Point(7, 164);
             reduceIcedTeaQuantBtn.Name = "reduceIcedTeaQuantBtn";
             reduceIcedTeaQuantBtn.Size = new Size(33, 33);
             reduceIcedTeaQuantBtn.TabIndex = 3;
@@ -504,7 +504,7 @@
             addIcedTeaQuantBtn.BackColor = Color.Orange;
             addIcedTeaQuantBtn.Cursor = Cursors.Hand;
             addIcedTeaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addIcedTeaQuantBtn.Location = new Point(6, 164);
+            addIcedTeaQuantBtn.Location = new Point(112, 164);
             addIcedTeaQuantBtn.Name = "addIcedTeaQuantBtn";
             addIcedTeaQuantBtn.Size = new Size(33, 33);
             addIcedTeaQuantBtn.TabIndex = 2;
@@ -603,7 +603,7 @@
             reduceCocaColaQuantBtn.BackColor = Color.Orange;
             reduceCocaColaQuantBtn.Cursor = Cursors.Hand;
             reduceCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            reduceCocaColaQuantBtn.Location = new Point(113, 164);
+            reduceCocaColaQuantBtn.Location = new Point(7, 164);
             reduceCocaColaQuantBtn.Name = "reduceCocaColaQuantBtn";
             reduceCocaColaQuantBtn.Size = new Size(33, 33);
             reduceCocaColaQuantBtn.TabIndex = 3;
@@ -615,7 +615,7 @@
             addCocaColaQuantBtn.BackColor = Color.Orange;
             addCocaColaQuantBtn.Cursor = Cursors.Hand;
             addCocaColaQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addCocaColaQuantBtn.Location = new Point(6, 164);
+            addCocaColaQuantBtn.Location = new Point(112, 164);
             addCocaColaQuantBtn.Name = "addCocaColaQuantBtn";
             addCocaColaQuantBtn.Size = new Size(33, 33);
             addCocaColaQuantBtn.TabIndex = 2;
