@@ -33,12 +33,12 @@ namespace RestaurantOrderingSystem_Midterm
             // Hawaiian Pizza
             addHawaiianQuantBtn.Click += (s, e) => { hawaiianCount++; hawaiianQuantLbl.Text = hawaiianCount.ToString(); };
             reduceHawaiianQuantBtn.Click += (s, e) => { if (hawaiianCount > 0) hawaiianCount--; hawaiianQuantLbl.Text = hawaiianCount.ToString(); };
-            addOrderHawaiianBtn.Click += (s, e) => AddToCart("Hawaiian Pizza", 159.00m, ref hawaiianCount, hawaiianQuantLbl);
+            addOrderHawaiianBtn.Click += (s, e) => AddToCart("Hawaiian Pizza", 199.00m, ref hawaiianCount, hawaiianQuantLbl);
 
             // Mushroom Pizza
             addMushroomQuantBtn.Click += (s, e) => { mushroomCount++; mushroomQuantLbl.Text = mushroomCount.ToString(); };
             reduceMushroomQuantBtn.Click += (s, e) => { if (mushroomCount > 0) mushroomCount--; mushroomQuantLbl.Text = mushroomCount.ToString(); };
-            addOrderMushroomBtn.Click += (s, e) => AddToCart("Mushroom Pizza", 169.00m, ref mushroomCount, mushroomQuantLbl);
+            addOrderMushroomBtn.Click += (s, e) => AddToCart("Mushroom Pizza", 249.00m, ref mushroomCount, mushroomQuantLbl);
 
             // Navigation
             checkoutBtn.Click += (s, e) => {

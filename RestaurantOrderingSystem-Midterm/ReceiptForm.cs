@@ -23,7 +23,7 @@ namespace RestaurantOrderingSystem_Midterm
         {
             // Set Date/Time
             dateTimeLbl.Text = DateTime.Now.ToString("MMM dd, yyyy | h:mm tt").ToUpper();
-            
+
             // Generate Random Order Number
             Random rnd = new Random();
             orderNumLbl.Text = $"ORDER # {rnd.Next(100, 999)}";
@@ -36,8 +36,6 @@ namespace RestaurantOrderingSystem_Midterm
 
             receiptItemListFlowLayout.Visible = true;
             receiptPriceFlowLayout.Visible = true;
-
-            decimal subtotal = 0;
 
             foreach (var item in OrderManager.Items)
             {
@@ -56,21 +54,50 @@ namespace RestaurantOrderingSystem_Midterm
                 priceLbl.Font = new Font("Segoe UI", 10);
                 priceLbl.Margin = new Padding(0, 0, 0, 5);
                 receiptPriceFlowLayout.Controls.Add(priceLbl);
-
-                subtotal += item.TotalPrice;
             }
 
             // Calculations
-            decimal tax = subtotal * 0.08m;
-            decimal grandTotal = subtotal + tax;
+            decimal subtotal = OrderManager.GetSubtotal();
+            decimal bundleDiscount = OrderManager.GetBundleDiscount();
+            decimal volumeDiscount = OrderManager.GetVolumeDiscount();
+            decimal tax = OrderManager.GetTax();
+            decimal grandTotal = OrderManager.GetGrandTotal();
 
             // Set Labels
-            subtotalPriceLbl.Text = $"₱ {subtotal:N2}";
-            label8.Text = $"₱ {tax:N2}"; // Tax Value Label (inferred from visible=false in designer)
-            label8.Visible = true;
-            receiptTaxLbl.Visible = true;
+            subtotalAmountLbl.Text = $"₱ {subtotal:N2}";
 
-            receiptTotalOrderPriceLbl.Text = $"₱ {grandTotal:N2}";
+            // Bundle Discount
+            if (bundleDiscount > 0)
+            {
+                comboDiscountLbl.Visible = true;
+                discountAmountLbl.Visible = true;
+                discountAmountLbl.Text = $"- ₱ {bundleDiscount:N2}";
+            }
+            else
+            {
+                comboDiscountLbl.Visible = false;
+                discountAmountLbl.Visible = false;
+            }
+
+            // Volume Discount
+            if (volumeDiscount > 0)
+            {
+                percentBasedDiscount.Visible = true;
+                percentBasedDiscountAmountLbl.Visible = true;
+                percentBasedDiscountAmountLbl.Text = $"- ₱ {volumeDiscount:N2}";
+            }
+            else
+            {
+                percentBasedDiscount.Visible = false;
+                percentBasedDiscountAmountLbl.Visible = false;
+            }
+
+            // Tax
+            receiptTaxLbl.Visible = true;
+            taxAmountLbl.Visible = true;
+            taxAmountLbl.Text = $"₱ {tax:N2}";
+
+            receiptTotalOrderAmountLbl.Text = $"₱ {grandTotal:N2}";
         }
 
         private void StartNewOrderBtn_Click(object sender, EventArgs e)
@@ -80,5 +107,6 @@ namespace RestaurantOrderingSystem_Midterm
             landing.Show();
             this.Close();
         }
+
     }
 }

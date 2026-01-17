@@ -30,22 +30,22 @@ namespace RestaurantOrderingSystem_Midterm
             // Classic Cheese Burger
             addClassicQuantBtn.Click += (s, e) => { classicBurgerCount++; classicBurgerQuantLbl.Text = classicBurgerCount.ToString(); };
             reduceClassicQuantBtn.Click += (s, e) => { if (classicBurgerCount > 0) classicBurgerCount--; classicBurgerQuantLbl.Text = classicBurgerCount.ToString(); };
-            addOrderClassicCheeseBurgerBtn.Click += (s, e) => AddToCart("Classic Cheese Burger", 59.00m, ref classicBurgerCount, classicBurgerQuantLbl);
+            addOrderClassicCheeseBurgerBtn.Click += (s, e) => AddToCart("Classic Cheese Burger", 99.00m, ref classicBurgerCount, classicBurgerQuantLbl);
 
             // Double Cheese Burger
             addDoubleCheeseQuantBtn.Click += (s, e) => { doubleCheeseBurgerCount++; doubleCheeseQuantLbl.Text = doubleCheeseBurgerCount.ToString(); };
             reduceDoubleCheeseQuantBtn.Click += (s, e) => { if (doubleCheeseBurgerCount > 0) doubleCheeseBurgerCount--; doubleCheeseQuantLbl.Text = doubleCheeseBurgerCount.ToString(); };
-            addOrderDoubleCheeseBtn.Click += (s, e) => AddToCart("Double Cheese Burger", 79.00m, ref doubleCheeseBurgerCount, doubleCheeseQuantLbl);
+            addOrderDoubleCheeseBtn.Click += (s, e) => AddToCart("Double Cheese Burger", 149.00m, ref doubleCheeseBurgerCount, doubleCheeseQuantLbl);
 
             // Chicken Burger
             addChickenQuantBtn.Click += (s, e) => { chickenBurgerCount++; chickenQuantLbl.Text = chickenBurgerCount.ToString(); };
             reduceChickenQuantBtn.Click += (s, e) => { if (chickenBurgerCount > 0) chickenBurgerCount--; chickenQuantLbl.Text = chickenBurgerCount.ToString(); };
-            addOrderChickenBtn.Click += (s, e) => AddToCart("Chicken Burger", 69.00m, ref chickenBurgerCount, chickenQuantLbl);
+            addOrderChickenBtn.Click += (s, e) => AddToCart("Chicken Burger", 109.00m, ref chickenBurgerCount, chickenQuantLbl);
 
             // Double Chicken Burger
             button10.Click += (s, e) => { doubleChickenBurgerCount++; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); }; // + button
             button9.Click += (s, e) => { if (doubleChickenBurgerCount > 0) doubleChickenBurgerCount--; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); }; // - button
-            addOrderDoubleChickenBtn.Click += (s, e) => AddToCart("Double Chicken Burger", 89.00m, ref doubleChickenBurgerCount, doubleChickenQuantLbl);
+            addOrderDoubleChickenBtn.Click += (s, e) => AddToCart("Double Chicken Burger", 179.00m, ref doubleChickenBurgerCount, doubleChickenQuantLbl);
 
             // Navigation
             checkoutBtn.Click += (s, e) => {

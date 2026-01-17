@@ -148,9 +148,9 @@
             itemNumLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemNumLbl.Location = new Point(31, 9);
             itemNumLbl.Name = "itemNumLbl";
-            itemNumLbl.Size = new Size(58, 21);
+            itemNumLbl.Size = new Size(65, 21);
             itemNumLbl.TabIndex = 1;
-            itemNumLbl.Text = "0 Item";
+            itemNumLbl.Text = "0 Items";
             // 
             // checkoutBtn
             // 

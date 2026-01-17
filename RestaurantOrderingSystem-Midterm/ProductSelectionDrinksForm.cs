@@ -28,17 +28,17 @@ namespace RestaurantOrderingSystem_Midterm
             // Coca Cola
             addCocaColaQuantBtn.Click += (s, e) => { cokeCount++; cocaColaQuantLbl.Text = cokeCount.ToString(); };
             reduceCocaColaQuantBtn.Click += (s, e) => { if (cokeCount > 0) cokeCount--; cocaColaQuantLbl.Text = cokeCount.ToString(); };
-            addOrderCokeBtn.Click += (s, e) => AddToCart("Coca Cola", 49.00m, ref cokeCount, cocaColaQuantLbl);
+            addOrderCokeBtn.Click += (s, e) => AddToCart("Coca Cola", 79.00m, ref cokeCount, cocaColaQuantLbl);
 
             // Iced Tea
             addIcedTeaQuantBtn.Click += (s, e) => { icedTeaCount++; icedTeaQuantLbl.Text = icedTeaCount.ToString(); };
             reduceIcedTeaQuantBtn.Click += (s, e) => { if (icedTeaCount > 0) icedTeaCount--; icedTeaQuantLbl.Text = icedTeaCount.ToString(); };
-            addOrderIcedTeaBtn.Click += (s, e) => AddToCart("Iced Tea", 59.00m, ref icedTeaCount, icedTeaQuantLbl);
+            addOrderIcedTeaBtn.Click += (s, e) => AddToCart("Iced Tea", 49.00m, ref icedTeaCount, icedTeaQuantLbl);
 
             // Iced Coffee
             addIcedCoffeeQuantBtn.Click += (s, e) => { icedCoffeeCount++; icedCoffeeQuantLbl.Text = icedCoffeeCount.ToString(); };
             reduceIcedCoffeeQuantBtn.Click += (s, e) => { if (icedCoffeeCount > 0) icedCoffeeCount--; icedCoffeeQuantLbl.Text = icedCoffeeCount.ToString(); };
-            addOrderIcedCoffeeBtn.Click += (s, e) => AddToCart("Iced Coffee", 79.00m, ref icedCoffeeCount, icedCoffeeQuantLbl);
+            addOrderIcedCoffeeBtn.Click += (s, e) => AddToCart("Iced Coffee", 99.00m, ref icedCoffeeCount, icedCoffeeQuantLbl);
 
             // Navigation
             checkoutBtn.Click += (s, e) =>

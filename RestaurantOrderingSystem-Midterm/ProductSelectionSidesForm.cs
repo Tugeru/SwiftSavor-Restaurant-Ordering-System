@@ -28,17 +28,17 @@
 ﻿            // French Fries
 ﻿            addFriesQuantBtn.Click += (s, e) => { friesCount++; friesQuantLbl.Text = friesCount.ToString(); };
 ﻿            reduceFriesQuantBtn.Click += (s, e) => { if (friesCount > 0) friesCount--; friesQuantLbl.Text = friesCount.ToString(); };
-﻿            addOrderFriesBtn.Click += (s, e) => AddToCart("French Fries", 69.00m, ref friesCount, friesQuantLbl);
+﻿            addOrderFriesBtn.Click += (s, e) => AddToCart("French Fries", 79.00m, ref friesCount, friesQuantLbl);
 ﻿
 ﻿            // Coleslaw
 ﻿            addColeslawQuantBtn.Click += (s, e) => { coleslawCount++; coleslawQuantLbl.Text = coleslawCount.ToString(); };
 ﻿            reduceColeslawQuantBtn.Click += (s, e) => { if (coleslawCount > 0) coleslawCount--; coleslawQuantLbl.Text = coleslawCount.ToString(); };
-﻿            addOrderColeslawBtn.Click += (s, e) => AddToCart("Coleslaw", 49.00m, ref coleslawCount, coleslawQuantLbl);
+﻿            addOrderColeslawBtn.Click += (s, e) => AddToCart("Coleslaw", 59.00m, ref coleslawCount, coleslawQuantLbl);
 ﻿
 ﻿            // Garden Salad
 ﻿            addSaladQuantBtn.Click += (s, e) => { saladCount++; saladQuantLbl.Text = saladCount.ToString(); };
 ﻿            reduceSaladQuantBtn.Click += (s, e) => { if (saladCount > 0) saladCount--; saladQuantLbl.Text = saladCount.ToString(); };
-﻿            addOrderSaladBtn.Click += (s, e) => AddToCart("Garden Salad", 89.00m, ref saladCount, saladQuantLbl);
+﻿            addOrderSaladBtn.Click += (s, e) => AddToCart("Garden Salad", 99.00m, ref saladCount, saladQuantLbl);
 ﻿
 ﻿            // Navigation
 ﻿            checkoutBtn.Click += (s, e) => {

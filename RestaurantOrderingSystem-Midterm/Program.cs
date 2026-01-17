@@ -74,14 +74,50 @@ namespace RestaurantOrderingSystem_Midterm
             return Items.Sum(i => i.Quantity);
         }
 
-        public static decimal GetGrandTotal()
+        public static void ClearOrder()
+        {
+            Items.Clear();
+        }
+
+        public static bool IsBurger(Product p)
+        {
+            return p.Name.Contains("Burger");
+        }
+
+        public static bool IsDrink(Product p)
+        {
+            return p.Name == "Coca Cola" || p.Name == "Iced Tea" || p.Name == "Iced Coffee";
+        }
+
+        public static decimal GetSubtotal()
         {
             return Items.Sum(i => i.TotalPrice);
         }
 
-        public static void ClearOrder()
+        public static decimal GetBundleDiscount()
         {
-            Items.Clear();
+            bool hasBurger = Items.Any(i => IsBurger(i.Product));
+            bool hasDrink = Items.Any(i => IsDrink(i.Product));
+            return (hasBurger && hasDrink) ? 10.00m : 0.00m;
+        }
+
+        public static decimal GetVolumeDiscount()
+        {
+            decimal subtotal = GetSubtotal();
+            return (subtotal >= 200.00m) ? subtotal * 0.10m : 0.00m;
+        }
+
+        public static decimal GetTax()
+        {
+            decimal taxableAmount = GetSubtotal() - GetBundleDiscount() - GetVolumeDiscount();
+            // Ensure taxable amount doesn't go negative (unlikely but safe)
+            if (taxableAmount < 0) taxableAmount = 0;
+            return taxableAmount * 0.08m;
+        }
+
+        public static decimal GetGrandTotal()
+        {
+            return GetSubtotal() - GetBundleDiscount() - GetVolumeDiscount() + GetTax();
         }
     }
 

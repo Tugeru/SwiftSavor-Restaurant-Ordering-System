@@ -33,15 +33,17 @@
             orderNumLbl = new Label();
             label2 = new Label();
             receiptPanel = new Panel();
+            percentBasedDiscountAmountLbl = new Label();
+            percentBasedDiscount = new Label();
             pictureBox1 = new PictureBox();
-            receiptTotalOrderPriceLbl = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            subtotalPriceLbl = new Label();
+            receiptTotalOrderAmountLbl = new Label();
+            taxAmountLbl = new Label();
+            discountAmountLbl = new Label();
+            subtotalAmountLbl = new Label();
             receiptTaxLbl = new Label();
             mealServiceType = new Label();
             receiptTotalLbl = new Label();
-            discountOrTaxLbl = new Label();
+            comboDiscountLbl = new Label();
             receiptSubtotalLbl = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -139,15 +141,17 @@
             // 
             receiptPanel.AutoScroll = true;
             receiptPanel.BorderStyle = BorderStyle.FixedSingle;
+            receiptPanel.Controls.Add(percentBasedDiscountAmountLbl);
+            receiptPanel.Controls.Add(percentBasedDiscount);
             receiptPanel.Controls.Add(pictureBox1);
-            receiptPanel.Controls.Add(receiptTotalOrderPriceLbl);
-            receiptPanel.Controls.Add(label8);
-            receiptPanel.Controls.Add(label7);
-            receiptPanel.Controls.Add(subtotalPriceLbl);
+            receiptPanel.Controls.Add(receiptTotalOrderAmountLbl);
+            receiptPanel.Controls.Add(taxAmountLbl);
+            receiptPanel.Controls.Add(discountAmountLbl);
+            receiptPanel.Controls.Add(subtotalAmountLbl);
             receiptPanel.Controls.Add(receiptTaxLbl);
             receiptPanel.Controls.Add(mealServiceType);
             receiptPanel.Controls.Add(receiptTotalLbl);
-            receiptPanel.Controls.Add(discountOrTaxLbl);
+            receiptPanel.Controls.Add(comboDiscountLbl);
             receiptPanel.Controls.Add(receiptSubtotalLbl);
             receiptPanel.Controls.Add(label4);
             receiptPanel.Controls.Add(label3);
@@ -162,6 +166,28 @@
             receiptPanel.Size = new Size(410, 373);
             receiptPanel.TabIndex = 4;
             // 
+            // percentBasedDiscountAmountLbl
+            // 
+            percentBasedDiscountAmountLbl.AutoSize = true;
+            percentBasedDiscountAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            percentBasedDiscountAmountLbl.Location = new Point(296, 768);
+            percentBasedDiscountAmountLbl.Name = "percentBasedDiscountAmountLbl";
+            percentBasedDiscountAmountLbl.Size = new Size(24, 21);
+            percentBasedDiscountAmountLbl.TabIndex = 42;
+            percentBasedDiscountAmountLbl.Text = "₱ ";
+            percentBasedDiscountAmountLbl.Visible = false;
+            // 
+            // percentBasedDiscount
+            // 
+            percentBasedDiscount.AutoSize = true;
+            percentBasedDiscount.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            percentBasedDiscount.Location = new Point(8, 768);
+            percentBasedDiscount.Name = "percentBasedDiscount";
+            percentBasedDiscount.Size = new Size(240, 21);
+            percentBasedDiscount.TabIndex = 41;
+            percentBasedDiscount.Text = "10% discount (₱ 200 and above)";
+            percentBasedDiscount.Visible = false;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.barcode;
@@ -172,52 +198,53 @@
             pictureBox1.TabIndex = 40;
             pictureBox1.TabStop = false;
             // 
-            // receiptTotalOrderPriceLbl
+            // receiptTotalOrderAmountLbl
             // 
-            receiptTotalOrderPriceLbl.AutoSize = true;
-            receiptTotalOrderPriceLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            receiptTotalOrderPriceLbl.Location = new Point(255, 830);
-            receiptTotalOrderPriceLbl.Name = "receiptTotalOrderPriceLbl";
-            receiptTotalOrderPriceLbl.Size = new Size(44, 40);
-            receiptTotalOrderPriceLbl.TabIndex = 39;
-            receiptTotalOrderPriceLbl.Text = "₱ ";
+            receiptTotalOrderAmountLbl.AutoSize = true;
+            receiptTotalOrderAmountLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            receiptTotalOrderAmountLbl.Location = new Point(255, 830);
+            receiptTotalOrderAmountLbl.Name = "receiptTotalOrderAmountLbl";
+            receiptTotalOrderAmountLbl.Size = new Size(44, 40);
+            receiptTotalOrderAmountLbl.TabIndex = 39;
+            receiptTotalOrderAmountLbl.Text = "₱ ";
             // 
-            // label8
+            // taxAmountLbl
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(275, 772);
-            label8.Name = "label8";
-            label8.Size = new Size(24, 21);
-            label8.TabIndex = 38;
-            label8.Text = "₱ ";
-            label8.Visible = false;
+            taxAmountLbl.AutoSize = true;
+            taxAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            taxAmountLbl.Location = new Point(296, 799);
+            taxAmountLbl.Name = "taxAmountLbl";
+            taxAmountLbl.Size = new Size(24, 21);
+            taxAmountLbl.TabIndex = 38;
+            taxAmountLbl.Text = "₱ ";
+            taxAmountLbl.Visible = false;
             // 
-            // label7
+            // discountAmountLbl
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(275, 740);
-            label7.Name = "label7";
-            label7.Size = new Size(24, 21);
-            label7.TabIndex = 37;
-            label7.Text = "₱ ";
+            discountAmountLbl.AutoSize = true;
+            discountAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            discountAmountLbl.Location = new Point(296, 740);
+            discountAmountLbl.Name = "discountAmountLbl";
+            discountAmountLbl.Size = new Size(64, 21);
+            discountAmountLbl.TabIndex = 37;
+            discountAmountLbl.Text = "₱ 10.00";
+            discountAmountLbl.Visible = false;
             // 
-            // subtotalPriceLbl
+            // subtotalAmountLbl
             // 
-            subtotalPriceLbl.AutoSize = true;
-            subtotalPriceLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            subtotalPriceLbl.Location = new Point(275, 709);
-            subtotalPriceLbl.Name = "subtotalPriceLbl";
-            subtotalPriceLbl.Size = new Size(24, 21);
-            subtotalPriceLbl.TabIndex = 36;
-            subtotalPriceLbl.Text = "₱ ";
+            subtotalAmountLbl.AutoSize = true;
+            subtotalAmountLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            subtotalAmountLbl.Location = new Point(296, 709);
+            subtotalAmountLbl.Name = "subtotalAmountLbl";
+            subtotalAmountLbl.Size = new Size(24, 21);
+            subtotalAmountLbl.TabIndex = 36;
+            subtotalAmountLbl.Text = "₱ ";
             // 
             // receiptTaxLbl
             // 
             receiptTaxLbl.AutoSize = true;
             receiptTaxLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            receiptTaxLbl.Location = new Point(8, 772);
+            receiptTaxLbl.Location = new Point(11, 799);
             receiptTaxLbl.Name = "receiptTaxLbl";
             receiptTaxLbl.Size = new Size(69, 21);
             receiptTaxLbl.TabIndex = 35;
@@ -244,15 +271,16 @@
             receiptTotalLbl.TabIndex = 33;
             receiptTotalLbl.Text = "TOTAL";
             // 
-            // discountOrTaxLbl
+            // comboDiscountLbl
             // 
-            discountOrTaxLbl.AutoSize = true;
-            discountOrTaxLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            discountOrTaxLbl.Location = new Point(8, 740);
-            discountOrTaxLbl.Name = "discountOrTaxLbl";
-            discountOrTaxLbl.Size = new Size(121, 21);
-            discountOrTaxLbl.TabIndex = 32;
-            discountOrTaxLbl.Text = "Discount or Tax";
+            comboDiscountLbl.AutoSize = true;
+            comboDiscountLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            comboDiscountLbl.Location = new Point(8, 740);
+            comboDiscountLbl.Name = "comboDiscountLbl";
+            comboDiscountLbl.Size = new Size(183, 21);
+            comboDiscountLbl.TabIndex = 32;
+            comboDiscountLbl.Text = "burger + drink discount";
+            comboDiscountLbl.Visible = false;
             // 
             // receiptSubtotalLbl
             // 
@@ -856,16 +884,18 @@
         private Label label4;
         private Label label3;
         private Label receiptSubtotalLbl;
-        private Label discountOrTaxLbl;
+        private Label comboDiscountLbl;
         private Label mealServiceType;
         private Label receiptTotalLbl;
         private Label receiptTaxLbl;
-        private Label receiptTotalOrderPriceLbl;
-        private Label label8;
-        private Label label7;
-        private Label subtotalPriceLbl;
+        private Label receiptTotalOrderAmountLbl;
+        private Label taxAmountLbl;
+        private Label discountAmountLbl;
+        private Label subtotalAmountLbl;
         private Label label5;
         private PictureBox pictureBox1;
         private Button startNewOrderBtn;
+        private Label percentBasedDiscountAmountLbl;
+        private Label percentBasedDiscount;
     }
 }

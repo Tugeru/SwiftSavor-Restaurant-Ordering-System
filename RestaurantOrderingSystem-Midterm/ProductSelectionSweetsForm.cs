@@ -28,12 +28,12 @@
 ﻿            // Ice Cream
 ﻿            addIceCreamQuantBtn.Click += (s, e) => { iceCreamCount++; iceCreamQuantLbl.Text = iceCreamCount.ToString(); };
 ﻿            reduceIceCreamQuantBtn.Click += (s, e) => { if (iceCreamCount > 0) iceCreamCount--; iceCreamQuantLbl.Text = iceCreamCount.ToString(); };
-﻿            addOrderIceCreamBtn.Click += (s, e) => AddToCart("Ice Cream", 79.00m, ref iceCreamCount, iceCreamQuantLbl);
+﻿            addOrderIceCreamBtn.Click += (s, e) => AddToCart("Ice Cream", 49.00m, ref iceCreamCount, iceCreamQuantLbl);
 ﻿
 ﻿            // Cheesecake
 ﻿            addCheesecakeQuantBtn.Click += (s, e) => { cheesecakeCount++; cheesecakeQuantLbl.Text = cheesecakeCount.ToString(); };
 ﻿            reduceCheesecakeQuantBtn.Click += (s, e) => { if (cheesecakeCount > 0) cheesecakeCount--; cheesecakeQuantLbl.Text = cheesecakeCount.ToString(); };
-﻿            addOrderCheesecakeBtn.Click += (s, e) => AddToCart("Cheesecake", 129.00m, ref cheesecakeCount, cheesecakeQuantLbl);
+﻿            addOrderCheesecakeBtn.Click += (s, e) => AddToCart("Cheesecake", 99.00m, ref cheesecakeCount, cheesecakeQuantLbl);
 ﻿
 ﻿            // Strawberry Tiramisu
 ﻿            addTiramisuQuantBtn.Click += (s, e) => { tiramisuCount++; tiramisuQuantLbl.Text = tiramisuCount.ToString(); };

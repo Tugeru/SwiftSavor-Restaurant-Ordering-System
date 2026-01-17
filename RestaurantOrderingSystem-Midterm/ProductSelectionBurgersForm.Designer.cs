@@ -49,6 +49,7 @@
             burgersSideBarBtn = new Button();
             burgerMenuPanel = new Panel();
             groupBox3 = new GroupBox();
+            doubleChickenBurgerPriceLbl = new Label();
             addOrderDoubleChickenBtn = new Button();
             doubleChickenQuantLbl = new Label();
             button9 = new Button();
@@ -56,6 +57,7 @@
             label11 = new Label();
             pictureBox5 = new PictureBox();
             groupBox2 = new GroupBox();
+            chickenBurgerPriceLbl = new Label();
             addOrderChickenBtn = new Button();
             chickenQuantLbl = new Label();
             reduceChickenQuantBtn = new Button();
@@ -63,6 +65,7 @@
             label9 = new Label();
             pictureBox4 = new PictureBox();
             groupBox1 = new GroupBox();
+            doubleCheeseBurgerPriceLbl = new Label();
             addOrderDoubleCheeseBtn = new Button();
             doubleCheeseQuantLbl = new Label();
             reduceDoubleCheeseQuantBtn = new Button();
@@ -71,16 +74,13 @@
             pictureBox3 = new PictureBox();
             label2 = new Label();
             classicCheeseBurgerGrpBox = new GroupBox();
+            classicCheeseBurgerPriceLbl = new Label();
             addOrderClassicCheeseBurgerBtn = new Button();
             classicBurgerQuantLbl = new Label();
             reduceClassicQuantBtn = new Button();
             addClassicQuantBtn = new Button();
             label4 = new Label();
             pictureBox2 = new PictureBox();
-            classicCheeseBurgerPriceLbl = new Label();
-            doubleCheeseBurgerPriceLbl = new Label();
-            chickenBurgerPriceLbl = new Label();
-            doubleChickenBurgerPriceLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -158,9 +158,9 @@
             itemNumLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemNumLbl.Location = new Point(31, 9);
             itemNumLbl.Name = "itemNumLbl";
-            itemNumLbl.Size = new Size(58, 21);
+            itemNumLbl.Size = new Size(65, 21);
             itemNumLbl.TabIndex = 1;
-            itemNumLbl.Text = "0 Item";
+            itemNumLbl.Text = "0 Items";
             // 
             // checkoutBtn
             // 
@@ -359,6 +359,19 @@
             groupBox3.TabIndex = 9;
             groupBox3.TabStop = false;
             // 
+            // doubleChickenBurgerPriceLbl
+            // 
+            doubleChickenBurgerPriceLbl.AutoSize = true;
+            doubleChickenBurgerPriceLbl.BackColor = Color.Transparent;
+            doubleChickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            doubleChickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            doubleChickenBurgerPriceLbl.Location = new Point(38, 204);
+            doubleChickenBurgerPriceLbl.Name = "doubleChickenBurgerPriceLbl";
+            doubleChickenBurgerPriceLbl.Size = new Size(85, 25);
+            doubleChickenBurgerPriceLbl.TabIndex = 7;
+            doubleChickenBurgerPriceLbl.Text = "₱ 179.00";
+            doubleChickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderDoubleChickenBtn
             // 
             addOrderDoubleChickenBtn.BackColor = Color.Firebrick;
@@ -445,6 +458,19 @@
             groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
             // 
+            // chickenBurgerPriceLbl
+            // 
+            chickenBurgerPriceLbl.AutoSize = true;
+            chickenBurgerPriceLbl.BackColor = Color.Transparent;
+            chickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            chickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            chickenBurgerPriceLbl.Location = new Point(34, 203);
+            chickenBurgerPriceLbl.Name = "chickenBurgerPriceLbl";
+            chickenBurgerPriceLbl.Size = new Size(86, 25);
+            chickenBurgerPriceLbl.TabIndex = 7;
+            chickenBurgerPriceLbl.Text = "₱ 109.00";
+            chickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderChickenBtn
             // 
             addOrderChickenBtn.BackColor = Color.Firebrick;
@@ -530,6 +556,19 @@
             groupBox1.Size = new Size(152, 286);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
+            // 
+            // doubleCheeseBurgerPriceLbl
+            // 
+            doubleCheeseBurgerPriceLbl.AutoSize = true;
+            doubleCheeseBurgerPriceLbl.BackColor = Color.Transparent;
+            doubleCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            doubleCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            doubleCheeseBurgerPriceLbl.Location = new Point(31, 205);
+            doubleCheeseBurgerPriceLbl.Name = "doubleCheeseBurgerPriceLbl";
+            doubleCheeseBurgerPriceLbl.Size = new Size(86, 25);
+            doubleCheeseBurgerPriceLbl.TabIndex = 7;
+            doubleCheeseBurgerPriceLbl.Text = "₱ 149.00";
+            doubleCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // addOrderDoubleCheeseBtn
             // 
@@ -627,6 +666,19 @@
             classicCheeseBurgerGrpBox.TabIndex = 7;
             classicCheeseBurgerGrpBox.TabStop = false;
             // 
+            // classicCheeseBurgerPriceLbl
+            // 
+            classicCheeseBurgerPriceLbl.AutoSize = true;
+            classicCheeseBurgerPriceLbl.BackColor = Color.Transparent;
+            classicCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            classicCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
+            classicCheeseBurgerPriceLbl.Location = new Point(33, 205);
+            classicCheeseBurgerPriceLbl.Name = "classicCheeseBurgerPriceLbl";
+            classicCheeseBurgerPriceLbl.Size = new Size(78, 25);
+            classicCheeseBurgerPriceLbl.TabIndex = 6;
+            classicCheeseBurgerPriceLbl.Text = "₱ 99.00";
+            classicCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
+            // 
             // addOrderClassicCheeseBurgerBtn
             // 
             addOrderClassicCheeseBurgerBtn.BackColor = Color.Firebrick;
@@ -696,58 +748,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            // 
-            // classicCheeseBurgerPriceLbl
-            // 
-            classicCheeseBurgerPriceLbl.AutoSize = true;
-            classicCheeseBurgerPriceLbl.BackColor = Color.Transparent;
-            classicCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            classicCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
-            classicCheeseBurgerPriceLbl.Location = new Point(33, 205);
-            classicCheeseBurgerPriceLbl.Name = "classicCheeseBurgerPriceLbl";
-            classicCheeseBurgerPriceLbl.Size = new Size(78, 25);
-            classicCheeseBurgerPriceLbl.TabIndex = 6;
-            classicCheeseBurgerPriceLbl.Text = "₱ 99.00";
-            classicCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // doubleCheeseBurgerPriceLbl
-            // 
-            doubleCheeseBurgerPriceLbl.AutoSize = true;
-            doubleCheeseBurgerPriceLbl.BackColor = Color.Transparent;
-            doubleCheeseBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            doubleCheeseBurgerPriceLbl.ForeColor = Color.OrangeRed;
-            doubleCheeseBurgerPriceLbl.Location = new Point(31, 205);
-            doubleCheeseBurgerPriceLbl.Name = "doubleCheeseBurgerPriceLbl";
-            doubleCheeseBurgerPriceLbl.Size = new Size(86, 25);
-            doubleCheeseBurgerPriceLbl.TabIndex = 7;
-            doubleCheeseBurgerPriceLbl.Text = "₱ 149.00";
-            doubleCheeseBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // chickenBurgerPriceLbl
-            // 
-            chickenBurgerPriceLbl.AutoSize = true;
-            chickenBurgerPriceLbl.BackColor = Color.Transparent;
-            chickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            chickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
-            chickenBurgerPriceLbl.Location = new Point(34, 203);
-            chickenBurgerPriceLbl.Name = "chickenBurgerPriceLbl";
-            chickenBurgerPriceLbl.Size = new Size(86, 25);
-            chickenBurgerPriceLbl.TabIndex = 7;
-            chickenBurgerPriceLbl.Text = "₱ 109.00";
-            chickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // doubleChickenBurgerPriceLbl
-            // 
-            doubleChickenBurgerPriceLbl.AutoSize = true;
-            doubleChickenBurgerPriceLbl.BackColor = Color.Transparent;
-            doubleChickenBurgerPriceLbl.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            doubleChickenBurgerPriceLbl.ForeColor = Color.OrangeRed;
-            doubleChickenBurgerPriceLbl.Location = new Point(38, 204);
-            doubleChickenBurgerPriceLbl.Name = "doubleChickenBurgerPriceLbl";
-            doubleChickenBurgerPriceLbl.Size = new Size(85, 25);
-            doubleChickenBurgerPriceLbl.TabIndex = 7;
-            doubleChickenBurgerPriceLbl.Text = "₱ 179.00";
-            doubleChickenBurgerPriceLbl.TextAlign = ContentAlignment.TopCenter;
             // 
             // ProductSelectionBurgersForm
             // 

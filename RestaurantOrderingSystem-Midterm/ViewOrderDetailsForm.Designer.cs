@@ -393,7 +393,7 @@
             receiptPriceFlowLayout.FlowDirection = FlowDirection.TopDown;
             receiptPriceFlowLayout.Location = new Point(218, 38);
             receiptPriceFlowLayout.Name = "receiptPriceFlowLayout";
-            receiptPriceFlowLayout.Size = new Size(78, 521);
+            receiptPriceFlowLayout.Size = new Size(78, 450);
             receiptPriceFlowLayout.TabIndex = 32;
             receiptPriceFlowLayout.Visible = false;
             // 
@@ -612,7 +612,7 @@
             receiptItemListFlowLayout.FlowDirection = FlowDirection.TopDown;
             receiptItemListFlowLayout.Location = new Point(6, 38);
             receiptItemListFlowLayout.Name = "receiptItemListFlowLayout";
-            receiptItemListFlowLayout.Size = new Size(112, 521);
+            receiptItemListFlowLayout.Size = new Size(112, 450);
             receiptItemListFlowLayout.TabIndex = 29;
             receiptItemListFlowLayout.Visible = false;
             // 
