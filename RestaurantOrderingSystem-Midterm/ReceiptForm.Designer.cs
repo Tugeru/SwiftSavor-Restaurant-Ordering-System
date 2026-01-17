@@ -33,6 +33,11 @@
             orderNumLbl = new Label();
             label2 = new Label();
             receiptPanel = new Panel();
+            pictureBox1 = new PictureBox();
+            receiptTotalOrderPriceLbl = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            subtotalPriceLbl = new Label();
             receiptTaxLbl = new Label();
             mealServiceType = new Label();
             receiptTotalLbl = new Label();
@@ -78,17 +83,12 @@
             order14Lbl = new Label();
             order15Lbl = new Label();
             order16Lbl = new Label();
-            subtotalPriceLbl = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            receiptTotalOrderPriceLbl = new Label();
             label5 = new Label();
-            pictureBox1 = new PictureBox();
             startNewOrderBtn = new Button();
             receiptPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             receiptPriceFlowLayout.SuspendLayout();
             receiptItemListFlowLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // checkLogoLbl
@@ -161,6 +161,57 @@
             receiptPanel.Name = "receiptPanel";
             receiptPanel.Size = new Size(410, 373);
             receiptPanel.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.barcode;
+            pictureBox1.Location = new Point(34, 888);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(325, 93);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 40;
+            pictureBox1.TabStop = false;
+            // 
+            // receiptTotalOrderPriceLbl
+            // 
+            receiptTotalOrderPriceLbl.AutoSize = true;
+            receiptTotalOrderPriceLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            receiptTotalOrderPriceLbl.Location = new Point(255, 830);
+            receiptTotalOrderPriceLbl.Name = "receiptTotalOrderPriceLbl";
+            receiptTotalOrderPriceLbl.Size = new Size(44, 40);
+            receiptTotalOrderPriceLbl.TabIndex = 39;
+            receiptTotalOrderPriceLbl.Text = "₱ ";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(275, 772);
+            label8.Name = "label8";
+            label8.Size = new Size(24, 21);
+            label8.TabIndex = 38;
+            label8.Text = "₱ ";
+            label8.Visible = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(275, 740);
+            label7.Name = "label7";
+            label7.Size = new Size(24, 21);
+            label7.TabIndex = 37;
+            label7.Text = "₱ ";
+            // 
+            // subtotalPriceLbl
+            // 
+            subtotalPriceLbl.AutoSize = true;
+            subtotalPriceLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            subtotalPriceLbl.Location = new Point(275, 709);
+            subtotalPriceLbl.Name = "subtotalPriceLbl";
+            subtotalPriceLbl.Size = new Size(24, 21);
+            subtotalPriceLbl.TabIndex = 36;
+            subtotalPriceLbl.Text = "₱ ";
             // 
             // receiptTaxLbl
             // 
@@ -253,7 +304,7 @@
             receiptPriceFlowLayout.FlowDirection = FlowDirection.TopDown;
             receiptPriceFlowLayout.Location = new Point(277, 129);
             receiptPriceFlowLayout.Name = "receiptPriceFlowLayout";
-            receiptPriceFlowLayout.Size = new Size(105, 521);
+            receiptPriceFlowLayout.Size = new Size(118, 521);
             receiptPriceFlowLayout.TabIndex = 28;
             receiptPriceFlowLayout.Visible = false;
             // 
@@ -512,7 +563,7 @@
             receiptItemListFlowLayout.FlowDirection = FlowDirection.TopDown;
             receiptItemListFlowLayout.Location = new Point(24, 129);
             receiptItemListFlowLayout.Name = "receiptItemListFlowLayout";
-            receiptItemListFlowLayout.Size = new Size(105, 521);
+            receiptItemListFlowLayout.Size = new Size(180, 521);
             receiptItemListFlowLayout.TabIndex = 23;
             receiptItemListFlowLayout.Visible = false;
             // 
@@ -709,47 +760,6 @@
             order16Lbl.Text = "Order16";
             order16Lbl.Visible = false;
             // 
-            // subtotalPriceLbl
-            // 
-            subtotalPriceLbl.AutoSize = true;
-            subtotalPriceLbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            subtotalPriceLbl.Location = new Point(275, 709);
-            subtotalPriceLbl.Name = "subtotalPriceLbl";
-            subtotalPriceLbl.Size = new Size(24, 21);
-            subtotalPriceLbl.TabIndex = 36;
-            subtotalPriceLbl.Text = "₱ ";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(275, 740);
-            label7.Name = "label7";
-            label7.Size = new Size(24, 21);
-            label7.TabIndex = 37;
-            label7.Text = "₱ ";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(275, 772);
-            label8.Name = "label8";
-            label8.Size = new Size(24, 21);
-            label8.TabIndex = 38;
-            label8.Text = "₱ ";
-            label8.Visible = false;
-            // 
-            // receiptTotalOrderPriceLbl
-            // 
-            receiptTotalOrderPriceLbl.AutoSize = true;
-            receiptTotalOrderPriceLbl.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            receiptTotalOrderPriceLbl.Location = new Point(255, 830);
-            receiptTotalOrderPriceLbl.Name = "receiptTotalOrderPriceLbl";
-            receiptTotalOrderPriceLbl.Size = new Size(44, 40);
-            receiptTotalOrderPriceLbl.TabIndex = 39;
-            receiptTotalOrderPriceLbl.Text = "₱ ";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -760,16 +770,6 @@
             label5.Size = new Size(376, 21);
             label5.TabIndex = 5;
             label5.Text = "Please take your receipt and wait for your number.";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.barcode;
-            pictureBox1.Location = new Point(34, 888);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(325, 93);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 40;
-            pictureBox1.TabStop = false;
             // 
             // startNewOrderBtn
             // 
@@ -799,11 +799,11 @@
             Text = "SwiftSavor";
             receiptPanel.ResumeLayout(false);
             receiptPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             receiptPriceFlowLayout.ResumeLayout(false);
             receiptPriceFlowLayout.PerformLayout();
             receiptItemListFlowLayout.ResumeLayout(false);
             receiptItemListFlowLayout.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

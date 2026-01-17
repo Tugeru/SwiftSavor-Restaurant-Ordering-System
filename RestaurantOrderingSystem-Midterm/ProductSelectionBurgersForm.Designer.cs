@@ -32,7 +32,6 @@
             topHeaderPanel = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
-            viewOrderDetailsLbl = new Label();
             selectedItemsPrice = new Label();
             itemNumLbl = new Label();
             checkoutBtn = new Button();
@@ -76,6 +75,7 @@
             button10 = new Button();
             label11 = new Label();
             pictureBox5 = new PictureBox();
+            viewOrderDetailsLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -122,17 +122,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(434, 69);
             panel2.TabIndex = 2;
-            // 
-            // viewOrderDetailsLbl
-            // 
-            viewOrderDetailsLbl.AutoSize = true;
-            viewOrderDetailsLbl.BackColor = Color.LightGray;
-            viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            viewOrderDetailsLbl.Location = new Point(31, 42);
-            viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";
-            viewOrderDetailsLbl.Size = new Size(117, 17);
-            viewOrderDetailsLbl.TabIndex = 3;
-            viewOrderDetailsLbl.Text = "View Order Details";
             // 
             // selectedItemsPrice
             // 
@@ -664,6 +653,17 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
+            // viewOrderDetailsLbl
+            // 
+            viewOrderDetailsLbl.AutoSize = true;
+            viewOrderDetailsLbl.BackColor = Color.LightGray;
+            viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            viewOrderDetailsLbl.Location = new Point(31, 42);
+            viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";
+            viewOrderDetailsLbl.Size = new Size(117, 17);
+            viewOrderDetailsLbl.TabIndex = 3;
+            viewOrderDetailsLbl.Text = "View Order Details";
+            // 
             // ProductSelectionBurgersForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -720,7 +720,6 @@
         private GroupBox classicCheeseBurgerGrpBox;
         private Label selectedItemsPrice;
         private Label itemNumLbl;
-        private Label viewOrderDetailsLbl;
         private Label label2;
         private Label pizzasLogoLbl;
         private Button pizzaSideBarBtn;
@@ -751,5 +750,6 @@
         private Button button10;
         private Label label11;
         private PictureBox pictureBox5;
+        private Label viewOrderDetailsLbl;
     }
 }
