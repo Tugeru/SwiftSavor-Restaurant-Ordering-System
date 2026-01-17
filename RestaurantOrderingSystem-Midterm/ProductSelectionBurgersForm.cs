@@ -12,7 +12,7 @@ namespace RestaurantOrderingSystem_Midterm
 {
     public partial class ProductSelectionBurgersForm : Form
     {
-        // Local state for quantities
+       
         private int classicBurgerCount = 0;
         private int doubleCheeseBurgerCount = 0;
         private int chickenBurgerCount = 0;
@@ -44,8 +44,8 @@ namespace RestaurantOrderingSystem_Midterm
             addOrderChickenBtn.Click += (s, e) => AddToCart("Chicken Burger", 109.00m, ref chickenBurgerCount, chickenQuantLbl);
 
             // Double Chicken Burger
-            button10.Click += (s, e) => { doubleChickenBurgerCount++; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); }; // + button
-            button9.Click += (s, e) => { if (doubleChickenBurgerCount > 0) doubleChickenBurgerCount--; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); }; // - button
+            button10.Click += (s, e) => { doubleChickenBurgerCount++; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); }; 
+            button9.Click += (s, e) => { if (doubleChickenBurgerCount > 0) doubleChickenBurgerCount--; doubleChickenQuantLbl.Text = doubleChickenBurgerCount.ToString(); };
             addOrderDoubleChickenBtn.Click += (s, e) => AddToCart("Double Chicken Burger", 179.00m, ref doubleChickenBurgerCount, doubleChickenQuantLbl);
 
             // Navigation
@@ -62,7 +62,7 @@ namespace RestaurantOrderingSystem_Midterm
 
             viewOrderDetailsLbl.Click += (s, e) => {
                 ViewOrderDetailsForm detailsForm = new ViewOrderDetailsForm();
-                detailsForm.ShowDialog(); // Show as modal
+                detailsForm.ShowDialog(); 
             };
         }
 

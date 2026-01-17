@@ -60,7 +60,7 @@
                 row.Width = 380; 
                 row.Margin = new Padding(0, 5, 0, 5);
 
-                // 1. Name
+                //Item name
                 Label nameLbl = new Label();
                 nameLbl.Text = item.Product.Name;
                 nameLbl.Font = new Font("Segoe UI", 10);
@@ -68,14 +68,15 @@
                 nameLbl.AutoSize = true;
                 row.Controls.Add(nameLbl);
 
-                // 2. Quantity Controls ( - Qty + )
+                //Quantity reduce
                 Button minusBtn = new Button();
                 minusBtn.Text = "-";
                 minusBtn.Size = new Size(25, 25);
                 minusBtn.Location = new Point(160, 5);
                 minusBtn.Click += (s, e) => { UpdateItemQuantity(item.Product.Name, -1); };
                 row.Controls.Add(minusBtn);
-
+                
+                //quantty label
                 Label qtyLbl = new Label();
                 qtyLbl.Text = item.Quantity.ToString();
                 qtyLbl.Font = new Font("Segoe UI", 10);
@@ -83,6 +84,7 @@
                 qtyLbl.AutoSize = true;
                 row.Controls.Add(qtyLbl);
 
+                // add quant button
                 Button plusBtn = new Button();
                 plusBtn.Text = "+";
                 plusBtn.Size = new Size(25, 25);
@@ -90,7 +92,7 @@
                 plusBtn.Click += (s, e) => { UpdateItemQuantity(item.Product.Name, 1); };
                 row.Controls.Add(plusBtn);
 
-
+                // price label
                 Label priceLbl = new Label();
                 priceLbl.Text = $"₱ {item.TotalPrice:N2}";
                 priceLbl.Font = new Font("Segoe UI", 10);
