@@ -58,10 +58,7 @@
 ﻿                    };
 ﻿                }
 ﻿        
-﻿                private void sidesSideBarBtn_Click(object sender, EventArgs e)
-﻿                {
-﻿                    // Already on this page
-﻿                }
+﻿
 ﻿        
 ﻿                private void AddToCart(string name, decimal price, ref int count, Label countLabel)
 ﻿                {

@@ -541,11 +541,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(-4, -1);
+            label2.Location = new Point(3, 0);
             label2.Name = "label2";
-            label2.Size = new Size(88, 40);
+            label2.Size = new Size(112, 40);
             label2.TabIndex = 8;
-            label2.Text = "Sides";
+            label2.Text = "Sweets";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // classicCheeseBurgerGrpBox

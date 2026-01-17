@@ -111,8 +111,9 @@ namespace RestaurantOrderingSystem_Midterm
         public static decimal GetTax()
         {
             decimal taxableAmount = GetSubtotal() - GetBundleDiscount() - GetVolumeDiscount();
+
             if (taxableAmount < 0) taxableAmount = 0;
-            return taxableAmount * 0.08m;
+            return taxableAmount * 0.12m;
         }
 
         public static decimal GetGrandTotal()

@@ -246,9 +246,9 @@
             receiptTaxLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             receiptTaxLbl.Location = new Point(11, 799);
             receiptTaxLbl.Name = "receiptTaxLbl";
-            receiptTaxLbl.Size = new Size(69, 21);
+            receiptTaxLbl.Size = new Size(80, 21);
             receiptTaxLbl.TabIndex = 35;
-            receiptTaxLbl.Text = "Tax (8%)";
+            receiptTaxLbl.Text = "VAT (12%)";
             receiptTaxLbl.Visible = false;
             // 
             // mealServiceType

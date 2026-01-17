@@ -137,6 +137,7 @@
             }
 
 
+            // Tax
             taxLbl.Visible = true;
             taxAmountLbl.Visible = true;
             taxAmountLbl.Text = $"₱ {tax:N2}";

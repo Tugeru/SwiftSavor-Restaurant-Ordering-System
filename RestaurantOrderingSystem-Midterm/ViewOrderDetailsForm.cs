@@ -22,16 +22,12 @@ namespace RestaurantOrderingSystem_Midterm
 
         private void LoadOrderDetails()
         {
-            // Clear existing controls from the panel - wait, the designer has labels inside flow layouts inside the panel. 
-            // To be safe and clean, we will clear the FlowLayoutPanels if we were using them, or just use the main panel.
-            // The designer has `receiptItemListFlowLayout`, `flowLayoutPanel1` (quantity), and `receiptPriceFlowLayout`.
-            // We will clear these specific flow layouts and populate them.
 
             receiptItemListFlowLayout.Controls.Clear();
             flowLayoutPanel1.Controls.Clear();
             receiptPriceFlowLayout.Controls.Clear();
 
-            // Make them visible if they were hidden
+
             receiptItemListFlowLayout.Visible = true;
             flowLayoutPanel1.Visible = true;
             receiptPriceFlowLayout.Visible = true;
@@ -40,15 +36,14 @@ namespace RestaurantOrderingSystem_Midterm
 
             foreach (var item in OrderManager.Items)
             {
-                // Item Name
+
                 Label nameLabel = new Label();
                 nameLabel.Text = item.Product.Name;
                 nameLabel.AutoSize = true;
                 nameLabel.Font = new Font("Segoe UI", 10F);
-                nameLabel.Margin = new Padding(0, 0, 0, 10); // Spacing
+                nameLabel.Margin = new Padding(0, 0, 0, 10); 
                 receiptItemListFlowLayout.Controls.Add(nameLabel);
 
-                // Quantity
                 Label quantLabel = new Label();
                 quantLabel.Text = item.Quantity.ToString();
                 quantLabel.AutoSize = true;
@@ -56,7 +51,6 @@ namespace RestaurantOrderingSystem_Midterm
                 quantLabel.Margin = new Padding(0, 0, 0, 10);
                 flowLayoutPanel1.Controls.Add(quantLabel);
 
-                // Price
                 Label priceLabel = new Label();
                 priceLabel.Text = $"₱ {item.TotalPrice:N2}";
                 priceLabel.AutoSize = true;

@@ -1454,9 +1454,9 @@
             taxLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             taxLbl.Location = new Point(25, 154);
             taxLbl.Name = "taxLbl";
-            taxLbl.Size = new Size(69, 21);
+            taxLbl.Size = new Size(80, 21);
             taxLbl.TabIndex = 8;
-            taxLbl.Text = "Tax (8%)";
+            taxLbl.Text = "VAT (12%)";
             taxLbl.Visible = false;
             // 
             // burgerDrinkDiscountLbl
