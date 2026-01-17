@@ -3,7 +3,6 @@ C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSy
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\bin\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.runtimeconfig.json
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\bin\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.dll
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\bin\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.pdb
-C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.MainMenuForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.csproj.GenerateResource.cache
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.AssemblyInfoInputs.cache
@@ -15,7 +14,14 @@ C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSy
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.genruntimeconfig.cache
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\ref\RestaurantOrderingSystem-Midterm.dll
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.Properties.Resources.resources
-C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.CheckoutForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ReceiptForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ViewOrderDetailsForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.LandingForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.OrderReviewForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionBurgersForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionDrinksForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionPizzasForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionSidesForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionSweetsForm.resources
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.sourcelink.json

@@ -46,7 +46,7 @@
             // 
             // touchStartBtn
             // 
-            touchStartBtn.BackColor = Color.IndianRed;
+            touchStartBtn.BackColor = Color.Firebrick;
             touchStartBtn.Cursor = Cursors.Hand;
             touchStartBtn.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             touchStartBtn.ForeColor = Color.White;
@@ -175,7 +175,7 @@
             pictureBox2.TabIndex = 11;
             pictureBox2.TabStop = false;
             // 
-            // MainMenuForm
+            // LandingForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -192,7 +192,7 @@
             Controls.Add(hungryLbl);
             Controls.Add(touchStartBtn);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "MainMenuForm";
+            Name = "LandingForm";
             Text = "SwiftSavor ";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -183,6 +183,7 @@
             // 
             pizzasLogoLbl.AutoSize = true;
             pizzasLogoLbl.BackColor = Color.Gainsboro;
+            pizzasLogoLbl.Cursor = Cursors.Hand;
             pizzasLogoLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             pizzasLogoLbl.ForeColor = Color.Black;
             pizzasLogoLbl.Location = new Point(34, 126);
@@ -209,6 +210,7 @@
             // 
             sweetsLogoLabel.AutoSize = true;
             sweetsLogoLabel.BackColor = Color.Gainsboro;
+            sweetsLogoLabel.Cursor = Cursors.Hand;
             sweetsLogoLabel.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             sweetsLogoLabel.Location = new Point(28, 420);
             sweetsLogoLabel.Name = "sweetsLogoLabel";
@@ -232,6 +234,7 @@
             // 
             drinksLogoLbl.AutoSize = true;
             drinksLogoLbl.BackColor = Color.Gainsboro;
+            drinksLogoLbl.Cursor = Cursors.Hand;
             drinksLogoLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             drinksLogoLbl.ForeColor = Color.Black;
             drinksLogoLbl.Location = new Point(31, 226);
@@ -244,6 +247,7 @@
             // 
             burgerLogoLbl.AutoSize = true;
             burgerLogoLbl.BackColor = Color.Gainsboro;
+            burgerLogoLbl.Cursor = Cursors.Hand;
             burgerLogoLbl.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             burgerLogoLbl.ForeColor = Color.Black;
             burgerLogoLbl.Location = new Point(28, 34);
@@ -268,7 +272,6 @@
             // sidesSideBarBtn
             // 
             sidesSideBarBtn.BackColor = Color.Brown;
-            sidesSideBarBtn.Cursor = Cursors.Hand;
             sidesSideBarBtn.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             sidesSideBarBtn.ForeColor = Color.White;
             sidesSideBarBtn.Location = new Point(12, 315);
@@ -325,6 +328,7 @@
             // addOrderFriesBtn
             // 
             addOrderFriesBtn.BackColor = Color.Firebrick;
+            addOrderFriesBtn.Cursor = Cursors.Hand;
             addOrderFriesBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderFriesBtn.ForeColor = SystemColors.Control;
             addOrderFriesBtn.Location = new Point(7, 203);
@@ -349,6 +353,7 @@
             // reduceFriesQuantBtn
             // 
             reduceFriesQuantBtn.BackColor = Color.Orange;
+            reduceFriesQuantBtn.Cursor = Cursors.Hand;
             reduceFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             reduceFriesQuantBtn.Location = new Point(113, 164);
             reduceFriesQuantBtn.Name = "reduceFriesQuantBtn";
@@ -360,6 +365,7 @@
             // addFriesQuantBtn
             // 
             addFriesQuantBtn.BackColor = Color.Orange;
+            addFriesQuantBtn.Cursor = Cursors.Hand;
             addFriesQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addFriesQuantBtn.Location = new Point(6, 164);
             addFriesQuantBtn.Name = "addFriesQuantBtn";
@@ -418,6 +424,7 @@
             // addOrderColeslawBtn
             // 
             addOrderColeslawBtn.BackColor = Color.Firebrick;
+            addOrderColeslawBtn.Cursor = Cursors.Hand;
             addOrderColeslawBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderColeslawBtn.ForeColor = SystemColors.Control;
             addOrderColeslawBtn.Location = new Point(7, 203);
@@ -442,6 +449,7 @@
             // reduceColeslawQuantBtn
             // 
             reduceColeslawQuantBtn.BackColor = Color.Orange;
+            reduceColeslawQuantBtn.Cursor = Cursors.Hand;
             reduceColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             reduceColeslawQuantBtn.Location = new Point(113, 164);
             reduceColeslawQuantBtn.Name = "reduceColeslawQuantBtn";
@@ -453,6 +461,7 @@
             // addColeslawQuantBtn
             // 
             addColeslawQuantBtn.BackColor = Color.Orange;
+            addColeslawQuantBtn.Cursor = Cursors.Hand;
             addColeslawQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addColeslawQuantBtn.Location = new Point(6, 164);
             addColeslawQuantBtn.Name = "addColeslawQuantBtn";
@@ -500,6 +509,7 @@
             // addOrderSaladBtn
             // 
             addOrderSaladBtn.BackColor = Color.Firebrick;
+            addOrderSaladBtn.Cursor = Cursors.Hand;
             addOrderSaladBtn.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addOrderSaladBtn.ForeColor = SystemColors.Control;
             addOrderSaladBtn.Location = new Point(7, 203);
@@ -524,6 +534,7 @@
             // reduceSaladQuantBtn
             // 
             reduceSaladQuantBtn.BackColor = Color.Orange;
+            reduceSaladQuantBtn.Cursor = Cursors.Hand;
             reduceSaladQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             reduceSaladQuantBtn.Location = new Point(113, 164);
             reduceSaladQuantBtn.Name = "reduceSaladQuantBtn";
@@ -535,6 +546,7 @@
             // addSaladQuantBtn
             // 
             addSaladQuantBtn.BackColor = Color.Orange;
+            addSaladQuantBtn.Cursor = Cursors.Hand;
             addSaladQuantBtn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             addSaladQuantBtn.Location = new Point(6, 164);
             addSaladQuantBtn.Name = "addSaladQuantBtn";
@@ -641,6 +653,6 @@
         private Label label9;
         private PictureBox pictureBox4;
 
-        #endregion
+      
     }
 }
