@@ -118,6 +118,7 @@
             // 
             viewOrderDetailsLbl.AutoSize = true;
             viewOrderDetailsLbl.BackColor = Color.LightGray;
+            viewOrderDetailsLbl.Cursor = Cursors.Hand;
             viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             viewOrderDetailsLbl.Location = new Point(31, 42);
             viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";

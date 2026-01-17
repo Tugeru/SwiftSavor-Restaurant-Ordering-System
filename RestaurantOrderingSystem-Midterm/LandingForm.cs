@@ -7,6 +7,30 @@ namespace RestaurantOrderingSystem_Midterm
         {
             InitializeComponent();
         }
-      
+        private void touchStartBtn_Click(object sender, EventArgs e)
+        {
+            ProductSelectionBurgersForm productSelectionBurgersForm = new ProductSelectionBurgersForm();
+
+            productSelectionBurgersForm.Show();
+            this.Hide();
+        }
+
+        private void dineInBtn_Click(object sender, EventArgs e)
+        {
+            ProductSelectionBurgersForm productSelectionBurgersForm = new ProductSelectionBurgersForm();
+
+            productSelectionBurgersForm.Show();
+            this.Hide();
+
+        }
+
+        private void takeOutButton_Click(object sender, EventArgs e)
+        {
+            ProductSelectionBurgersForm productSelectionBurgersForm = new ProductSelectionBurgersForm();
+
+            productSelectionBurgersForm.Show();
+            this.Hide();
+
+        }
     }
 }

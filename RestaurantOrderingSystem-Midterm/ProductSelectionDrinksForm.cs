@@ -17,5 +17,24 @@ namespace RestaurantOrderingSystem_Midterm
             InitializeComponent();
         }
 
+        private void burgersSideBarBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pizzaSideBarBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sidesSideBarBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sweetsSideBarBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

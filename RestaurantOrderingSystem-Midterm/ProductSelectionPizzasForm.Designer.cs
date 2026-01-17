@@ -117,6 +117,7 @@
             // 
             viewOrderDetailsLbl.AutoSize = true;
             viewOrderDetailsLbl.BackColor = Color.LightGray;
+            viewOrderDetailsLbl.Cursor = Cursors.Hand;
             viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             viewOrderDetailsLbl.Location = new Point(31, 42);
             viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";
@@ -214,6 +215,7 @@
             sweetsLogoLabel.Size = new Size(43, 30);
             sweetsLogoLabel.TabIndex = 7;
             sweetsLogoLabel.Text = "🍰";
+            sweetsLogoLabel.Click += sweetsSideBarBtn_Click;
             // 
             // sidesLogoLbl
             // 
@@ -227,6 +229,7 @@
             sidesLogoLbl.Size = new Size(41, 30);
             sidesLogoLbl.TabIndex = 6;
             sidesLogoLbl.Text = "🍟";
+            sidesLogoLbl.Click += sidesSideBarBtn_Click;
             // 
             // drinksLogoLbl
             // 
@@ -240,6 +243,7 @@
             drinksLogoLbl.Size = new Size(39, 30);
             drinksLogoLbl.TabIndex = 5;
             drinksLogoLbl.Text = "\U0001f964";
+            drinksLogoLbl.Click += drinksSideBarBtn_Click;
             // 
             // burgerLogoLbl
             // 
@@ -253,6 +257,7 @@
             burgerLogoLbl.Size = new Size(43, 30);
             burgerLogoLbl.TabIndex = 4;
             burgerLogoLbl.Text = "🍔";
+            burgerLogoLbl.Click += burgersSideBarBtn_Click;
             // 
             // sweetsSideBarBtn
             // 
@@ -266,6 +271,7 @@
             sweetsSideBarBtn.Text = "Sweets";
             sweetsSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sweetsSideBarBtn.UseVisualStyleBackColor = false;
+            sweetsSideBarBtn.Click += sweetsSideBarBtn_Click;
             // 
             // sidesSideBarBtn
             // 
@@ -279,6 +285,7 @@
             sidesSideBarBtn.Text = "Sides";
             sidesSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sidesSideBarBtn.UseVisualStyleBackColor = false;
+            sidesSideBarBtn.Click += sidesSideBarBtn_Click;
             // 
             // drinksSideBarBtn
             // 
@@ -293,6 +300,7 @@
             drinksSideBarBtn.Text = "Drinks";
             drinksSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             drinksSideBarBtn.UseVisualStyleBackColor = false;
+            drinksSideBarBtn.Click += drinksSideBarBtn_Click;
             // 
             // burgersSideBarBtn
             // 
@@ -307,6 +315,7 @@
             burgersSideBarBtn.Text = "Burgers";
             burgersSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             burgersSideBarBtn.UseVisualStyleBackColor = false;
+            burgersSideBarBtn.Click += burgersSideBarBtn_Click;
             // 
             // classicCheeseBurgerGrpBox
             // 

@@ -32,6 +32,7 @@
             topHeaderPanel = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            viewOrderDetailsLbl = new Label();
             selectedItemsPrice = new Label();
             itemNumLbl = new Label();
             checkoutBtn = new Button();
@@ -75,7 +76,6 @@
             button10 = new Button();
             label11 = new Label();
             pictureBox5 = new PictureBox();
-            viewOrderDetailsLbl = new Label();
             topHeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -122,6 +122,18 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(434, 69);
             panel2.TabIndex = 2;
+            // 
+            // viewOrderDetailsLbl
+            // 
+            viewOrderDetailsLbl.AutoSize = true;
+            viewOrderDetailsLbl.BackColor = Color.LightGray;
+            viewOrderDetailsLbl.Cursor = Cursors.Hand;
+            viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            viewOrderDetailsLbl.Location = new Point(31, 42);
+            viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";
+            viewOrderDetailsLbl.Size = new Size(117, 17);
+            viewOrderDetailsLbl.TabIndex = 3;
+            viewOrderDetailsLbl.Text = "View Order Details";
             // 
             // selectedItemsPrice
             // 
@@ -188,6 +200,7 @@
             pizzasLogoLbl.Size = new Size(37, 30);
             pizzasLogoLbl.TabIndex = 9;
             pizzasLogoLbl.Text = "🍕";
+            pizzasLogoLbl.Click += pizzaSideBarBtn_Click;
             // 
             // pizzaSideBarBtn
             // 
@@ -201,6 +214,7 @@
             pizzaSideBarBtn.Text = "Pizzas";
             pizzaSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             pizzaSideBarBtn.UseVisualStyleBackColor = false;
+            pizzaSideBarBtn.Click += pizzaSideBarBtn_Click;
             // 
             // sweetsLogoLabel
             // 
@@ -213,6 +227,7 @@
             sweetsLogoLabel.Size = new Size(43, 30);
             sweetsLogoLabel.TabIndex = 7;
             sweetsLogoLabel.Text = "🍰";
+            sweetsLogoLabel.Click += sweetsSideBarBtn_Click;
             // 
             // sidesLogoLbl
             // 
@@ -226,6 +241,7 @@
             sidesLogoLbl.Size = new Size(41, 30);
             sidesLogoLbl.TabIndex = 6;
             sidesLogoLbl.Text = "🍟";
+            sidesLogoLbl.Click += sidesSideBarBtn_Click;
             // 
             // drinksLogoLbl
             // 
@@ -238,6 +254,7 @@
             drinksLogoLbl.Size = new Size(39, 30);
             drinksLogoLbl.TabIndex = 5;
             drinksLogoLbl.Text = "\U0001f964";
+            drinksLogoLbl.Click += drinksSideBarBtn_Click;
             // 
             // burgerLogoLbl
             // 
@@ -263,6 +280,7 @@
             sweetsSideBarBtn.Text = "Sweets";
             sweetsSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sweetsSideBarBtn.UseVisualStyleBackColor = false;
+            sweetsSideBarBtn.Click += sweetsSideBarBtn_Click;
             // 
             // sidesSideBarBtn
             // 
@@ -276,6 +294,7 @@
             sidesSideBarBtn.Text = "Sides";
             sidesSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             sidesSideBarBtn.UseVisualStyleBackColor = false;
+            sidesSideBarBtn.Click += sidesSideBarBtn_Click;
             // 
             // drinksSideBarBtn
             // 
@@ -289,6 +308,7 @@
             drinksSideBarBtn.Text = "Drinks";
             drinksSideBarBtn.TextAlign = ContentAlignment.BottomCenter;
             drinksSideBarBtn.UseVisualStyleBackColor = false;
+            drinksSideBarBtn.Click += drinksSideBarBtn_Click;
             // 
             // burgersSideBarBtn
             // 
@@ -652,17 +672,6 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
-            // 
-            // viewOrderDetailsLbl
-            // 
-            viewOrderDetailsLbl.AutoSize = true;
-            viewOrderDetailsLbl.BackColor = Color.LightGray;
-            viewOrderDetailsLbl.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            viewOrderDetailsLbl.Location = new Point(31, 42);
-            viewOrderDetailsLbl.Name = "viewOrderDetailsLbl";
-            viewOrderDetailsLbl.Size = new Size(117, 17);
-            viewOrderDetailsLbl.TabIndex = 3;
-            viewOrderDetailsLbl.Text = "View Order Details";
             // 
             // ProductSelectionBurgersForm
             // 

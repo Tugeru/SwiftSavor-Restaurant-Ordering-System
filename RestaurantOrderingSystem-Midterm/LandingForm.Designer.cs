@@ -56,6 +56,7 @@
             touchStartBtn.TabIndex = 0;
             touchStartBtn.Text = "👆 TOUCH TO START";
             touchStartBtn.UseVisualStyleBackColor = false;
+            touchStartBtn.Click += touchStartBtn_Click;
             // 
             // hungryLbl
             // 
@@ -115,6 +116,7 @@
             dineInBtn.Text = "Dine In";
             dineInBtn.TextAlign = ContentAlignment.BottomCenter;
             dineInBtn.UseVisualStyleBackColor = false;
+            dineInBtn.Click += dineInBtn_Click;
             // 
             // dineInLogo
             // 
@@ -127,6 +129,7 @@
             dineInLogo.Size = new Size(69, 47);
             dineInLogo.TabIndex = 9;
             dineInLogo.Text = "🍽";
+            dineInLogo.Click += dineInBtn_Click;
             // 
             // takeOutButton
             // 
@@ -140,6 +143,7 @@
             takeOutButton.Text = "Take Out";
             takeOutButton.TextAlign = ContentAlignment.BottomCenter;
             takeOutButton.UseVisualStyleBackColor = false;
+            takeOutButton.Click += takeOutButton_Click;
             // 
             // takeOutLogo
             // 
@@ -152,6 +156,7 @@
             takeOutLogo.Size = new Size(69, 47);
             takeOutLogo.TabIndex = 9;
             takeOutLogo.Text = "🚗";
+            takeOutLogo.Click += takeOutButton_Click;
             // 
             // label1
             // 

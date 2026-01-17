@@ -25,3 +25,4 @@ C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSy
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionSidesForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.ProductSelectionSweetsForm.resources
 C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem-Midterm.sourcelink.json
+C:\Users\Andy\source\repos\RestaurantOrderingSystem-Midterm\RestaurantOrderingSystem-Midterm\obj\Debug\net8.0-windows\RestaurantOrderingSystem_Midterm.MealTypeForm.resources
